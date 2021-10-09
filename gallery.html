@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BelWar — Тэст</title>
+    <title>BelWar — Галерэя</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="gallery.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     </style>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Шріфт Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
     <!-- Шріфт Comfortaa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,15 +28,10 @@
         <div class="sidebar">
             <div class="logo-content">
                 <div class="logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 29 26" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z"
-                            fill="#BE0B20" />
-                    </svg>
-                    <!-- <div class="logo_name">BelWar</div> -->
+                    <i class='bx bxs-star'></i>
+                    <div class="logo_name">BelWar</div>
                 </div>
-                <i class='bx bx-menu' id="btn"
-                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
             </div>
             <ul class="nav_list">
                 <li>
@@ -47,7 +39,13 @@
                     <input type="text" placeholder="Пошук...">
                     <span class="tooltip">Пошук</span>
                 </li>
-            
+                <li>
+                    <a href="main.html">
+                        <i class='bx bxs-star'></i>
+                        <span class="links_name">Галоўная</span>
+                    </a>
+                    <span class="tooltip">Галоўная</span>
+                </li>
                 <li>
                     <a href="#">
                         <i class='bx bxs-landmark'></i>
