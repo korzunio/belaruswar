@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="by">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BelWar — Галоўная</title>
+    <link rel="stylesheet" href="main.css"></style>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Шріфт Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <!-- Подключение библиотеки с Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла wow.js -->
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <div id="web-page">
+        <div class="sidebar">
+            <div class="logo-content">
+                <div class="logo">
+                    <i class='bx bxs-star'></i>
+                    <div class="logo_name">BelWar</div>
+                </div>
+                <i class='bx bx-menu' id="btn"  onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+            </div>
+            <ul class="nav_list">
+                    <li>
+                        <i class = 'bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                        <input type="text" placeholder="Пошук...">
+                        <span class="tooltip">Пошук</span>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <i class='bx bxs-landmark'></i>
+                            <span class="links_name">Музей</span>
+                        </a>
+                        <span class="tooltip">Музей</span>
+                    </li>
+                    <li>
+                        <a href="gallery.html">
+                            <i class='bx bx-photo-album'></i>
+                            <span class="links_name">Галерэя</span>
+                        </a>
+                        <span class="tooltip">Галерэя</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxs-news'></i>
+                            <span class="links_name">Навіны</span>
+                        </a>
+                        <span class="tooltip">Навіны</span>
+                    </li>
+                    <li>
+                        <a href="test.html">
+                            <i class='bx bx-question-mark'></i>
+                            <span class="links_name">Тэст</span>
+                        </a>
+                        <span class="tooltip">Тэст</span>
+                    </li>   
+                    <li class="language"></li>
+                        <ul class="sub-menu">
+                            <li><a href="#">ENG<span class="links_name">Тэст</span></a><span class="tooltip">English</span></li>
+                            <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
+                            <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                        </ul>
+                    </li>
+            </ul>
+        </div> 
+        <!-- Блок с контентом страницы сайта -->
+        <div class="content" id="webpage_content">
+            <div class="cover_block">
+                    <div class="text_cover">
+                        <div class="site_name_cover">
+                            <h1 class="title_cover">BelWar</h1>
+                        </div>
+                        <div class="defenition_site_cover animate__animated animate__fadeInRightBig">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </div>
+            </div>
+            <div class="text_about">
+                <div class="title_about_with_stars animate__animated animate__fadeInRightBig wow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z"
+                            fill="#BE0B20" />
+                    </svg>
+            
+                    <div class="title_about animate__animated animate__fadeInRightBig wow">О САЙТЕ</div>
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z"
+                            fill="#BE0B20" />
+                    </svg>
+                </div>
+                <div class="paragraph_about animate__animated animate__fadeInRightBig wow">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="blocks">
+                <div class="test_block  div_blocks animate__animated animate__fadeInRightBig wow">
+                    <div class="text_block">
+                        Прайдзіце тэст
+                    </div>
+                    <div class="definiton_test_block definiton_block">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div class="button_blocks">
+                        <a href="test.html"><button class="button_block">ПРАЙЦІ ТЭСТ</button></a>
+                    </div>
+                </div>
+                <div class="news_block  div_blocks animate__animated animate__fadeInRightBig wow">
+                    <div class="text_block">
+                        Пачытайце навіны
+                    </div>
+                    <div class="definiton_news_block definiton_block">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div class="button_blocks">
+                        <a href="#"><button class="button_block">ЧЫТАЦЬ НАВІНЫ</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Беларусь памятае -->
+            <div class="belarus_remember">
+                <div class="title_belarus_remember title_about text_belarus animate__animated animate__fadeInRightBig wow">
+                    БЕЛАРУСЬ ПАМЯТАЕ
+                </div>
+                <div class="defenition_belarus_remember text_belarus animate__animated animate__fadeInRightBig wow">
+                    Хто не памятае гісторыі сваёй краіны - той не мае будучыні. 75 гадоў прайшло, Беларусь памятае і шануе подзвіг тых, хто
+                    загінуў і жывых, вядомых і безыменных беларусаў - салдат Вялікай Айчыннай, партызан і падпольшчыкаў. Беларусь памятае
+                    мільёны грамадзян, сагнаных у фашысцкае рабства, закатаваных у канцлагерах і гета, памятае тых, хто каваў Перамогу ў
+                    тыле ворага ў станкоў і вызваляў краіну ад нямецка-фашысцкіх захопнікаў. Беларусь памятае і шануе Вялікую Перамогу, якая
+                    аб'яднала і заўсёды будзе аб'ядноўваць людзей розных пакаленняў ад малога да вялікага, колькі б часу ні прайшло, памятае
+                    кожнага без выключэння абаронцы Айчыны. Мы верныя гэтай памяці, беларусы захоўваюць яе ў кожным доме, кожнай сям'і. І
+                    маладое пакаленне не дазволіць перапісаць праўдзівую гісторыю пра той страшнай вайне і гераізм нашых прадзедаў, дзядоў і
+                    бацькоў
+                </div>
+            </div>
+        </div>
+   </div>
+   <!-- <script src="main.js"></script> -->
+</body>
+</html>
