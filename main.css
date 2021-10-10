@@ -35,7 +35,6 @@ body {
 }
 .sidebar .logo-content .logo {
   color: #be0b20;
-  display: flex;
   width: 100%;
   align-items: center;
   display: none;
@@ -47,7 +46,7 @@ body {
   display: flex;
 }
 .expanded .logo-content .logo {
-  display: block;
+  display: flex;
 }
 .logo-content .logo .logo_name {
   font-size: 20px;
