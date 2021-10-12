@@ -95,55 +95,54 @@
                 </div>
                 <div class="definition_promo_test">
                     <p class="first_paragraph animate__animated animate__fadeInRightBig wow">
-                        Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
-                        месцы старажытных паселішчаў і самыя сучасныя
-                        мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
-                        мастацтвам.
-                    </p>
-                    <p class="second_paragraph animate__animated animate__fadeInRightBig wow">
-                        Каб зразумець Беларусь, трэба ўбачыць яе прыроду. Прайсці ляснымі дарогамі, праплыць па азёрах і
-                        рэках. Сустрэць у дарозе
-                        ранішняе сонца. Пачуць радасную песню жаўрака над вясновым полем і развітальны плач журавоў у
-                        асеннім небе.
+                        Гісторыя Вялікай Айчыннай вайны, як і гісторыя ў цэлым, складаецца з фактаў. У гэтым раздзеле сайта можна праверыць свае
+                        веды, адказаўшы на пытанні гістарычнага тэсту. На сайце будуць з'яўляцца новыя тэсты на розныя тэмы - ад побыту салдат
+                        да хронікі апошніх месяцаў вайны.
                     </p>
                 </div>
             </div>
             <!-- Тэст -->
-            <div class="quiz-over-modal">
-                <div class="content">
-                    <h1>Хороший результат !</h1>
-                    <p>Ты ответил на
-                        <span id="correct-answer"></span> из
-                        <span id="number-of-all-questions-2"></span> вопроса
-                    </p>
-                    <button id="btn-try-again">Попробуй снова</button>
+                <div class="quiz-over-modal">
+                    <div class="content-modal">
+                        <h1>Добры вынік!</h1>
+                        <p>Вы адказалі на
+                            <span id="correct-answer"></span> з
+                            <span id="number-of-all-questions-2"></span> пытанняў
+                        </p>
+                        <button id="btn-try-again">Паспрабаваць зноў</button>
+                        <a href="main.html"><button>Больш не трэба</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="quiz-container">
-                <div class="question-number">
-                    <h3>Вопрос
-                        <span id="number-of-question"></span>
-                        из
-                        <span id="number-of-all-questions"></span>
-                    </h3>
-                </div>
-                <div id="question"></div>
-                <div class="options">
-                    <div data-id="0" class="option option1"></div>
-                    <div data-id="1" class="option option2"></div>
-                    <div data-id="2" class="option option3"></div>
-                    <div data-id="3" class="option option4"></div>
-                </div>
-                <div class="button">
-                    <button id="btn-next">Next</button>
-                </div>
-                <div id="answers-tracker">
-            
+                <div class="quiz-container">
+                    <div class="quiz-title-container">
+                        <h2>Ваенны тэст</h2>
+                        <p>У 4 гадзіны раніцы без абвяшчэння вайны гітлераўская Германія напала на Савецкі Саюз. Наперадзе быў доўгі, цяжкі і
+                        кровапралітны дзень - першы дзень вайны. Падзеі гэтага дня шмат у чым вызначылі ход далейшых баявых дзеянняў.</p>
+                    </div>
+                    <div class="question-number">
+                        <h3>Пытанне
+                            <span id="number-of-question"></span>
+                            з
+                            <span id="number-of-all-questions"></span>
+                        </h3>
+                    </div>
+                    <div id="question"></div>
+                    <div class="options">
+                        <div data-id="0" class="option option1"></div>
+                        <div data-id="1" class="option option2"></div>
+                        <div data-id="2" class="option option3"></div>
+                        <div data-id="3" class="option option4"></div>
+                    </div>
+                    <div class="button">
+                        <button id="btn-next">Наступнае пытанне</button>
+                        <button data-id="0" class="option option5 dont-know">Не ведаю</button>
+                    </div>
+                    <div id="answers-tracker">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 <script src="test.js"></script>
 </body>
 </html>
