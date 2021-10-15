@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="by">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кіеў — горад герой!</title>
+    <link rel="stylesheet" href="kiev.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Шріфт Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <!-- Подключение библиотеки с Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла wow.js -->
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <div id="web-page">
+        <div class="sidebar">
+            <div class="logo-content">
+                <div class="logo">
+                    <i class='bx bxs-star'></i>
+                    <div class="logo_name">belaruswar</div>
+                </div>
+                <i class='bx bx-menu' id="btn"
+                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <i class='bx bx-search'
+                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <input type="text" placeholder="Пошук...">
+                    <span class="tooltip">Пошук</span>
+                </li>
+                <li>
+                    <a href="../main.html">
+                        <i class='bx bxs-star'></i>
+                        <span class="links_name">Галоўная</span>
+                    </a>
+                    <span class="tooltip">Галоўная</span>
+                </li>
+                <li>
+                    <a href="../museum.html">
+                        <i class='bx bxs-landmark'></i>
+                        <span class="links_name">Музей</span>
+                    </a>
+                    <span class="tooltip">Музей</span>
+                </li>
+                <li>
+                    <a href="../gallery.html">
+                        <i class='bx bx-photo-album'></i>
+                        <span class="links_name">Галерэя</span>
+                    </a>
+                    <span class="tooltip">Галерэя</span>
+                </li>
+                <li>
+                    <a href="../news.html">
+                        <i class='bx bxs-news'></i>
+                        <span class="links_name">Навіны</span>
+                    </a>
+                    <span class="tooltip">Навіны</span>
+                </li>
+                <li>
+                    <a href="../test.html">
+                        <i class='bx bx-question-mark'></i>
+                        <span class="links_name">Тэст</span>
+                    </a>
+                    <span class="tooltip">Тэст</span>
+                </li>
+                <li class="language"></li>
+                <ul class="sub-menu">
+                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
+                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
+                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content" id="webpage_content">
+            <div class="cover_block">
+                <div class="text_cover">
+                    <div class="site_name_cover">
+                        <h1 class="title_cover">Кіеў — горад герой!</h1>
+                    </div>
+                    <div class="defenition_site_cover animate__animated animate__fadeInRightBig">
+                        Раптоўны ўдар з паветра па Кіеве нямецкія войскі нанеслі 22 чэрвеня 1941 г. - у самыя першыя гадзіны вайны. 6 ліпеня быў
+                        створаны Камітэт па абароне горада. З гэтага дня пачалася гераічная барацьба за Кіеў, якая працягвалася 72 дні.
+                    </div>
+                </div>
+            </div>
+            <div class="about_brest about_city">
+                <div class="image_about_brest">
+                    <img src="../img/киев-2.jpg" alt="Кіев">
+                </div>
+                <div class="text_about_first">
+                    Абаранялі Кіеў не толькі савецкія салдаты, але і жыхары горада. Вялікі ўклад у абарону ўнеслі атрады народнага
+                    апалчэння, якіх да пачатку ліпеня налічвалася 19. З ліку гараджан было сфарміравана 13 знішчальных батальёнаў. У абароне
+                    Кіева прыняло ўдзел 33 тыс. Кіяўлян. У тыя цяжкія ліпеньскія дні гараджане пабудавалі больш за 1400 дотаў, ўручную
+                    вырылі 55 км процітанкавых равоў.
+                </div>
+            </div>
+            <div class="info_war_brest info_war">
+                <div class="first-child_info_war child_info_war">
+                    <div class="marker_info_war">
+                        160 ТЫС.
+                    </div>
+                    <div class="title_info_war">
+                        кіяўлян і жыхароў прылеглых вёсак працавалі над стварэннем барыкад
+                    </div>
+                </div>
+                <div class="last-child_info_war child_info_war">
+                    <div class="marker_info_war">
+                        200 ТЫС.
+                    </div>
+                    <div class="title_info_war">
+                        чалавек было мабілізавана 23 чэрвеня 1941 года
+                    </div>
+                </div>
+            </div>
+            <div class="about_brest-second about_city-second">
+                <div class="image_about_brest-second">
+                    <img src="../img/киев-3.jpg" alt="Киев">
+                </div>
+                <div class="text_about_second text_about">
+                    Кіеў быў вызвалены 6 лістапада 1943 году. Абаронцы горада і яго жыхары праявілі дзіўную адвагу і стойкасць перад тварам
+                    ворага. Прэзідыум Вярхоўнага Савета СССР ў 1961 годзе заснаваў новую ўзнагароду - медаль «За абарону Кіева».
+                </div>
+            </div>
+        </div>
+</body>
+</html>
