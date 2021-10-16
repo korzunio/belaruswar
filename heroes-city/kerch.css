@@ -1,0 +1,98 @@
+/* Блок с контентом страницы сайта */
+.content {
+  height: 100%;
+  transition: all 0.5s ease;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/керчь.jpg");
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+/* О Бресте */
+.about_city {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+.about_city div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about_city img {
+  height: 400px;
+}
+.text_about_city {
+  width: 40%;
+  font-size: 18px;
+}
+.text_about_city p:last-child {
+  padding-top: 30px;
+}
+/* Информация */
+.info_war {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: black;
+  align-items: center;
+}
+.marker_info_war {
+  background-color: #be0b20;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+.title_info_war {
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+}
+.child_info_war {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 150px;
+}
+
+/* О Бресте 2 блок */
+.about_city_second {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+.about_city_second div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about_city_second img {
+  height: 400px;
+}
+.text_about_city_second {
+  width: 40%;
+  font-size: 18px;
+}
+
+/* Адаптация */
+@media (max-width: 1380px) {
+  .about_city,
+  .about_city_second {
+    flex-direction: column;
+  }
+  .text_about_city,
+  .text_about_city_second {
+    width: 70%;
+  }
+  .about_city img {
+    height: 600px;
+  }
+  .about_city_second img {
+    height: 600px;
+  }
+}

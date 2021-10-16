@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="by">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Севастопаль — горад герой!</title>
+    <link rel="stylesheet" href="sevastopol.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Шріфт Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <!-- Подключение библиотеки с Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла wow.js -->
+    <script src="../wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <div id="web-page">
+        <div class="sidebar">
+            <div class="logo-content">
+                <div class="logo">
+                    <i class='bx bxs-star'></i>
+                    <div class="logo_name">belaruswar</div>
+                </div>
+                <i class='bx bx-menu' id="btn"
+                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <i class='bx bx-search'
+                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <input type="text" placeholder="Пошук...">
+                    <span class="tooltip">Пошук</span>
+                </li>
+                <li>
+                    <a href="../main.html">
+                        <i class='bx bxs-star'></i>
+                        <span class="links_name">Галоўная</span>
+                    </a>
+                    <span class="tooltip">Галоўная</span>
+                </li>
+                <li>
+                    <a href="../museum.html">
+                        <i class='bx bxs-landmark'></i>
+                        <span class="links_name">Музей</span>
+                    </a>
+                    <span class="tooltip">Музей</span>
+                </li>
+                <li>
+                    <a href="../gallery.html">
+                        <i class='bx bx-photo-album'></i>
+                        <span class="links_name">Галерэя</span>
+                    </a>
+                    <span class="tooltip">Галерэя</span>
+                </li>
+                <li>
+                    <a href="../news.html">
+                        <i class='bx bxs-news'></i>
+                        <span class="links_name">Навіны</span>
+                    </a>
+                    <span class="tooltip">Навіны</span>
+                </li>
+                <li>
+                    <a href="../test.html">
+                        <i class='bx bx-question-mark'></i>
+                        <span class="links_name">Тэст</span>
+                    </a>
+                    <span class="tooltip">Тэст</span>
+                </li>
+                <li class="language"></li>
+                <ul class="sub-menu">
+                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
+                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
+                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content" id="webpage_content">
+            <div class="cover_block">
+                <div class="text_cover">
+                    <div class="site_name_cover">
+                        <h1 class="title_cover">Севастопаль — горад герой!</h1>
+                    </div>
+                    <div class="defenition_site_cover animate__animated animate__fadeInRightBig">
+                        Да пачатку Вялікай Айчыннай вайны горад Севастопаль быў найбуйнейшым савецкім портам на Чорным моры і галоўнай
+                        ваенна-марской базай краіны.
+                    </div>
+                </div>
+            </div>
+            <div class="about_city">
+                <div class="image_about_city animate__animated animate__fadeInLeftBig wow">
+                    <img src="../img/севастополь-2.jpg" alt="Севастополь | Севастопаль">
+                </div>
+                <div class="text_about_city animate__animated animate__fadeInRightBig wow">
+                    Да канца вясны 1942 году немцы сцягнулі да Севастопаля групоўку колькасцю 200 тыс. Салдат, 600 самалётаў, 450 танкаў і
+                    больш чым 2 тыс. Гармат і мінамётаў. Ім удалося блакаваць горад з паветра і павялічыць сваю актыўнасць на моры. У выніку
+                    разлютаваных штурму, цаной велізарных страт гітлераўцам удалося захапіць горад. У ходзе жорсткіх баёў героі Севастопаля
+                    нанеслі сур'ёзны ўрон сілам нямецка-фашысцкіх войскаў і парушылі іх планы на паўднёвым крыле фронту.
+                </div>
+            </div>
+            <div class="info_war animate__animated animate__fadeInRightBig wow">
+                <div class="first_child_info_war child_info_war">
+                    <div class="marker_info_war">
+                        3 ШТУРМА
+                    </div>
+                    <div class="title_info_war">
+                        Севастопаля рабілі фашысты
+                    </div>
+                </div>
+                <div class="second_child_info_war child_info_war">
+                    <div class="marker_info_war">
+                        580 ТОН
+                    </div>
+                    <div class="title_info_war">
+                        снарадаў у суткі выдаткоўваў абаронцы горада
+                    </div>
+                </div>
+            </div>
+            <div class="about_city_second">
+                <div class="image_about_city_second animate__animated animate__fadeInRightBig wow">
+                    <img src="../img/севастополь-3.jpg" alt="Севастополь | Севастопаль">
+                </div>
+                <div class="text_about_city_second animate__animated animate__fadeInLeftBig wow">
+                    У 1967 года ў Севастопалі на цэнтральнай плошчы імя Нахімава быў узведзены мемарыял, прысвечаны доблеснай абароне горада
+                    ў гады Вялікай Айчыннай вайны. На бетоннай сцяне помніка намаляваны воін, які адлюстроўвае два штыка. Штыкі сімвалізуюць
+                    два беспаспяховых для гітлераўцаў штурму ў лістападзе-снежні 1941 года. У цэнтры мемарыяла знаходзяцца дошкі з граніту,
+                    на якіх выгравіраваны назвы баявых частак і злучэнняў Чарнаморскага флоту, Прыморскай арміі і севастопальскіх
+                    прадпрыемстваў, якія працавалі на патрэбы фронту.
+                </div>
+            </div>
+        </div>
+</body>
+</html>

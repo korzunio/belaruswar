@@ -1,0 +1,44 @@
+.promo_museum {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("../img/музей.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Comfortaa", cursive;
+}
+.animate__animated.first_paragraph {
+  --animate-duration: 2s;
+}
+.animate__animated.second_paragraph {
+  --animate-duration: 2.5s;
+  /*  --animate-delay: 0.9s; - Такис способом тоже можно */
+}
+.title_promo_museum {
+  font-size: 160px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  background: url("../img/back.png");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  margin-left: 80px;
+  font-weight: bold;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+.definition_promo_museum {
+  width: 70%;
+  margin-left: 80px;
+  font-size: 18px;
+}
+.definition_promo_museum p:last-child {
+  padding-top: 20px;
+}

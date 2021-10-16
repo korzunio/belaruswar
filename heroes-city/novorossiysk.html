@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="by">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наварасійск — горад герой!</title>
+    <link rel="stylesheet" href="novorossiysk.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Шріфт Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <!-- Подключение библиотеки с Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла wow.js -->
+    <script src="../wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <div id="web-page">
+        <div class="sidebar">
+            <div class="logo-content">
+                <div class="logo">
+                    <i class='bx bxs-star'></i>
+                    <div class="logo_name">belaruswar</div>
+                </div>
+                <i class='bx bx-menu' id="btn"
+                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <i class='bx bx-search'
+                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <input type="text" placeholder="Пошук...">
+                    <span class="tooltip">Пошук</span>
+                </li>
+                <li>
+                    <a href="../main.html">
+                        <i class='bx bxs-star'></i>
+                        <span class="links_name">Галоўная</span>
+                    </a>
+                    <span class="tooltip">Галоўная</span>
+                </li>
+                <li>
+                    <a href="../museum.html">
+                        <i class='bx bxs-landmark'></i>
+                        <span class="links_name">Музей</span>
+                    </a>
+                    <span class="tooltip">Музей</span>
+                </li>
+                <li>
+                    <a href="../gallery.html">
+                        <i class='bx bx-photo-album'></i>
+                        <span class="links_name">Галерэя</span>
+                    </a>
+                    <span class="tooltip">Галерэя</span>
+                </li>
+                <li>
+                    <a href="../news.html">
+                        <i class='bx bxs-news'></i>
+                        <span class="links_name">Навіны</span>
+                    </a>
+                    <span class="tooltip">Навіны</span>
+                </li>
+                <li>
+                    <a href="../test.html">
+                        <i class='bx bx-question-mark'></i>
+                        <span class="links_name">Тэст</span>
+                    </a>
+                    <span class="tooltip">Тэст</span>
+                </li>
+                <li class="language"></li>
+                <ul class="sub-menu">
+                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
+                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
+                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content" id="webpage_content">
+            <div class="cover_block">
+                <div class="text_cover">
+                    <div class="site_name_cover">
+                        <h1 class="title_cover">Наварасійск — горад герой!</h1>
+                    </div>
+                    <div class="defenition_site_cover animate__animated animate__fadeInRightBig">
+                        Пасля таго як савецкія войскі сарвалі нямецкі план правядзення наступальных аперацый на каўказскім напрамку,
+                        гітлераўскае камандаванне пачатак атакі на Наварасійск, каб з яго захопам пачаць паэтапна прасоўвацца ўздоўж паўднёвага
+                        ўзбярэжжа Чорнага мора.
+                    </div>
+                </div>
+            </div>
+            <div class="about_city">
+                <div class="image_about_city animate__animated animate__fadeInLeftBig wow">
+                    <img src="../img/новороссийск-2.jpg" alt="Новороссийск | Novorossiysk">
+                </div>
+                <div class="text_about_city animate__animated animate__fadeInRightBig wow">
+                    Для абароны Наварасійска 17 жніўня 1942 году быў створаны Наварасійскі абарончы раён, у які ўваходзілі 47-я армія,
+                    маракі Азоўскай ваеннай флатыліі і Чарнаморскага флоту. У горадзе актыўна ствараліся атрады народнага апалчэння, было
+                    пабудавана звыш 200 агнявых абаронных кропак і камандных пунктаў, была абсталявана паласа процітанкавых і проціпяхотных
+                    перашкод даўжынёй больш за 30 кіламетраў.
+                </div>
+            </div>
+            <div class="info_war animate__animated animate__fadeInRightBig wow">
+                <div class="first_child_info_war child_info_war">
+                    <div class="marker_info_war">
+                        28 КВ.КМ
+                    </div>
+                    <div class="title_info_war">
+                        складала плошча Малой Зямлі
+                    </div>
+                </div>
+                <div class="second_child_info_war child_info_war">
+                    <div class="marker_info_war">
+                        17 680 ІМЕНАЎ
+                    </div>
+                    <div class="title_info_war">
+                        загінуўшых абаронцаў устаноўлены на сённяшні дзень
+                    </div>
+                </div>
+            </div>
+            <div class="about_city_second">
+                <div class="image_about_city_second animate__animated animate__fadeInRightBig wow">
+                    <img src="../img/новороссийск.jpg" alt="Новороссийск | Novorossiysk">
+                </div>
+                <div class="text_about_city_second animate__animated animate__fadeInLeftBig wow">
+                У памяць аб падзеях ваенных гадоў на тэрыторыі плацдарма Малая Зямля ў 1982 годзе адкрылі аднайменны мемарыяльны
+                комплекс. Кампазіцыя з граніту і бронзы, якая ўтварае нахільную трохкутную арку, нагадвае нос дэсантнага карабля,
+                застылага ў імклівым рыўку з мора на бераг. На левай баку знаходзіцца скульптурная Шматфігурнасць група «Дэсант»:
+                камандзір, марак, пяхотнік і дзяўчына-санінструктар. Супрацьлеглы борт карабля сыходзіць у моры, на ім змешчаны барэльеф
+                - байцы, гатовыя да нападу.
+                </div>
+            </div>
+        </div>
+</body>
+</html>

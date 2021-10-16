@@ -1,0 +1,212 @@
+.promo_test {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("../img/test.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Comfortaa", cursive;
+}
+.animate__animated.first_paragraph {
+  --animate-duration: 2s;
+}
+.animate__animated.second_paragraph {
+  --animate-duration: 2.5s;
+  /*  --animate-delay: 0.9s; - Такис способом тоже можно */
+}
+.title_promo_test {
+  font-size: 160px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  background: url("../img/back.png");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  margin-left: 80px;
+  font-weight: bold;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+.definition_promo_test {
+  width: 70%;
+  margin-left: 80px;
+  font-size: 18px;
+}
+.definition_promo_test p:last-child {
+  padding-top: 20px;
+}
+
+/* Тест */
+.quiz-container {
+  width: 95%;
+  min-height: 497px;
+  background-color: #ffffff;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 25px;
+}
+.quiz-title-container {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: space-around;
+}
+.question-number h3 {
+  color: #be0b20;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding-bottom: 10px;
+}
+#question {
+  font-size: 24px;
+  color: #000000;
+  padding: 15px 0;
+  margin-bottom: 10px;
+}
+.options {
+  margin-bottom: 15px;
+}
+.options div {
+  background-color: #cccccc;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.options div:hover {
+  background-color: rgba(207, 207, 207, 0.686);
+}
+.options div.correct {
+  color: #ffffff;
+  background-color: green;
+}
+.options div.wrong {
+  color: #ffffff;
+  background-color: #be0b20;
+}
+.options div.disabled {
+  pointer-events: none;
+}
+.button #btn-next {
+  padding: 10px 50px;
+  background-color: #be0b20;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 15px;
+  border: 1px solid #be0b20;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+.dont-know {
+  padding: 10px 50px;
+  background-color: white;
+  font-size: 18px;
+  color: #be0b20;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 15px;
+  border: 1px solid #be0b20;
+}
+.dont-know:hover {
+  border: 2px solid #be0b20;
+  font-weight: bold;
+}
+.button #btn-next:hover {
+  background-color: white;
+  color: #be0b20;
+}
+#answers-tracker {
+  border-top: 1px solid #cccccc;
+  padding-top: 15px;
+}
+#answers-tracker div {
+  height: 25px;
+  width: 25px;
+  background-color: #cccccc;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+#answers-tracker div.correct {
+  background-color: green;
+}
+#answers-tracker div.wrong {
+  background-color: #be0b20;
+}
+.quiz-over-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.quiz-over-modal.active {
+  display: flex;
+}
+.quiz-over-modal .content-modal {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  flex-basis: 700px;
+  max-width: 700px;
+  color: #ffffff;
+  text-align: center;
+}
+.quiz-over-modal .content-modal h1 {
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+.quiz-over-modal .content-modal button {
+  padding: 15px 50px;
+  border: none;
+  background-color: #be0b20;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+  transition: 0.5s;
+  margin-top: 30px;
+  width: 100%;
+}
+.quiz-over-modal .content-modal button:last-child {
+  color: #be0b20;
+  background-color: white;
+  border: none;
+  transition: 0.3s all ease;
+}
+.quiz-over-modal .content-modal button:last-child:hover {
+  background-color: #be0b20;
+  color: white;
+}
+.quiz-over-modal .content-modal button:hover {
+  background-color: #fff;
+  color: #be0b20;
+}

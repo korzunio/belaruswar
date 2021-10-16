@@ -331,8 +331,14 @@ i.bxs-star:first-child {
 }
 
 /* Города герои */
+.title_places {
+  color: white;
+  background-color: black;
+  padding: 50px 0 50px 0;
+}
 .places {
   background-color: black;
+  padding-bottom: 50px;
 }
 .places_cards {
   display: grid;

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="by">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Керч — горад герой!</title>
+    <link rel="stylesheet" href="kerch.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Шріфт Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <!-- Подключение библиотеки с Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла wow.js -->
+    <script src="../wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <div id="web-page">
+        <div class="sidebar">
+            <div class="logo-content">
+                <div class="logo">
+                    <i class='bx bxs-star'></i>
+                    <div class="logo_name">belaruswar</div>
+                </div>
+                <i class='bx bx-menu' id="btn"
+                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <i class='bx bx-search'
+                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <input type="text" placeholder="Пошук...">
+                    <span class="tooltip">Пошук</span>
+                </li>
+                <li>
+                    <a href="../main.html">
+                        <i class='bx bxs-star'></i>
+                        <span class="links_name">Галоўная</span>
+                    </a>
+                    <span class="tooltip">Галоўная</span>
+                </li>
+                <li>
+                    <a href="../museum.html">
+                        <i class='bx bxs-landmark'></i>
+                        <span class="links_name">Музей</span>
+                    </a>
+                    <span class="tooltip">Музей</span>
+                </li>
+                <li>
+                    <a href="../gallery.html">
+                        <i class='bx bx-photo-album'></i>
+                        <span class="links_name">Галерэя</span>
+                    </a>
+                    <span class="tooltip">Галерэя</span>
+                </li>
+                <li>
+                    <a href="../news.html">
+                        <i class='bx bxs-news'></i>
+                        <span class="links_name">Навіны</span>
+                    </a>
+                    <span class="tooltip">Навіны</span>
+                </li>
+                <li>
+                    <a href="../test.html">
+                        <i class='bx bx-question-mark'></i>
+                        <span class="links_name">Тэст</span>
+                    </a>
+                    <span class="tooltip">Тэст</span>
+                </li>
+                <li class="language"></li>
+                <ul class="sub-menu">
+                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
+                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
+                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content" id="webpage_content">
+            <div class="cover_block">
+                <div class="text_cover">
+                    <div class="site_name_cover">
+                        <h1 class="title_cover">Керч — горад герой!</h1>
+                    </div>
+                    <div class="defenition_site_cover animate__animated animate__fadeInRightBig">
+                        Керч была адным з першых гарадоў, якія трапілі пад удар нямецка-фашысцкіх войскаў у пачатку вайны. За ўвесь час вайны
+                        праз горад чатыры разы праходзіла лінія фронту і ён двойчы быў акупаваны варожымі войскамі.
+                    </div>
+                </div>
+            </div>
+            <div class="about_city">
+                <div class="image_about_city animate__animated animate__fadeInLeftBig wow">
+                    <img src="../img/керчь-2.jpg" alt="Керчь| Kerch">
+                </div>
+                <div class="text_about_city animate__animated animate__fadeInRightBig wow">
+                    <p>
+                    У маі 1942 года фашысты засяродзілі буйныя сілы на Керчанскім паўвостраве і пачалі новы наступ на горад. У выніку цяжкіх
+                    і ўпартых баёў Керч зноў была пакінутая ворагу. Легендарнай старонкай гісторыі Вялікай Айчыннай вайны стала упартая
+                    барацьба і працяглая абарона ў Аджимушкайских каменяломнях. Актыўную барацьбу з акупантамі вялі падпольшчыкі і
+                    партызаны.
+                    </p>
+                    <p>
+                    За 320 дзён, пакуль горад быў у руках ворага, акупанты разбурылі ўсе заводы і фабрыкі, спалілі ўсе масты і суда, высеклі
+                    і спалілі паркі і сады, знішчылі электрастанцыю і тэлеграф, пашкодзілі чыгуначныя лініі на паўвостраве. Керч была амаль
+                    цалкам стёрта з твару зямлі.
+                    </p>
+                </div>
+            </div>
+            <div class="info_war animate__animated animate__fadeInRightBig wow">
+                <div class="first_child_info_war child_info_war">
+                    <div class="marker_info_war">
+                        320 ДЗЕН
+                    </div>
+                    <div class="title_info_war">
+                        горад быў акупаваны нямецкімі войскамі
+                    </div>
+                </div>
+                <div class="second_child_info_war child_info_war">
+                    <div class="marker_info_war">
+                        15 ТЫС.
+                    </div>
+                    <div class="title_info_war">
+                        мірных жыхароў загінулі за час акупацыі
+                    </div>
+                </div>
+            </div>
+            <div class="about_city_second">
+                <div class="image_about_city_second animate__animated animate__fadeInRightBig wow">
+                    <img src="../img/керчь.jpg" alt="Керчь| Kerch">
+                </div>
+                <div class="text_about_city_second animate__animated animate__fadeInLeftBig wow">
+                    Сімвалам горада-героя Керчы стаў Абеліск Славы на гары Мітрыдат. Манумент прысвечаны загінулым у бітвах за вызваленне
+                    Крыма ў перыяд з лістапада 1943 года да красавіка 1944 года. Адкрыты 8 жніўня 1944 года мемарыял стаў першым помнікам,
+                    прысвечаным Вялікай Айчыннай вайне, на тэрыторыі СССР. Помнік уяўляе сабой трёхгранный абеліск з светла-шэрага каменя
+                    вышынёй 24 метры. Побач на пастаменце размешчаны тры 76-мм гарматы і вялікая мемарыяльная дошка ў выглядзе разгорнутай
+                    кнігі.
+                </div>
+            </div>
+        </div>
+</body>
+</html>
