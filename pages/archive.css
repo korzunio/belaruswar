@@ -1,0 +1,107 @@
+.promo_archive {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url("../img/table-mess.png");
+  background-color: black;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Comfortaa", cursive;
+}
+.animate__animated.first_paragraph {
+  --animate-duration: 2s;
+}
+.animate__animated.second_paragraph {
+  --animate-duration: 2.5s;
+  /*  --animate-delay: 0.9s; - Такис способом тоже можно */
+}
+.title_promo_archive {
+  font-size: 160px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  background: url("../img/back.png");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  margin-left: 80px;
+  font-weight: bold;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+.definition_promo_archive {
+  width: 70%;
+  margin-left: 80px;
+  font-size: 22px;
+  line-height: 35px;
+}
+.links_blocks_archive {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.link_block {
+  width: 30%;
+  height: 500px;
+  background-size: cover;
+  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.title_link_block {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.defenition_link_block {
+  display: none;
+  font-size: 20px;
+}
+.link_block:hover .defenition_link_block {
+  display: inline;
+}
+.link_block:hover .title_link_block {
+  border-bottom: 3px solid #be0b20;
+  transition: 0.5s all ease;
+}
+.link_gallery {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../img/фотограф.jpg");
+  background-position: center center;
+}
+.link_letters {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../img/газеты.jpg");
+  background-size: cover;
+}
+.link_newspapers {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../img/письма.jpg");
+}
+.link_newspapers:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/письма.jpg");
+  cursor: pointer;
+}
+.link_letters:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/газеты.jpg");
+  cursor: pointer;
+  background-size: cover;
+}
+.link_gallery:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/фотограф.jpg");
+  cursor: pointer;
+  background-position: center center;
+}

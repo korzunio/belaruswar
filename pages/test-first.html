@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="by">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BelWar — Тэст "Вайна"</title>
+    <link rel="stylesheet" href="test-first.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+    </style>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Шріфт Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <!-- Шріфт Comfortaa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Подключение библиотеки с Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла wow.js -->
+    <script src="../wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <div id="web-page">
+        <div class="sidebar">
+            <div class="logo-content">
+                <div class="logo">
+                    <i class='bx bxs-star'></i>
+                    <div class="logo_name">BelWar</div>
+                </div>
+                <i class='bx bx-menu' id="btn"
+                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Пошук...">
+                    <span class="tooltip">Пошук</span>
+                </li>
+                <li>
+                    <a href="../main.html">
+                        <i class='bx bxs-star'></i>
+                        <span class="links_name">Галоўная</span>
+                    </a>
+                    <span class="tooltip">Галоўная</span>
+                </li>
+                <li>
+                    <a href="museum.html">
+                        <i class='bx bxs-landmark'></i>
+                        <span class="links_name">Музей</span>
+                    </a>
+                    <span class="tooltip">Музей</span>
+                </li>
+                <li>
+                    <a href="archive.html">
+                        <i class='bx bx-archive'></i>
+                        <span class="links_name">Архів</span>
+                    </a>
+                    <span class="tooltip">Архів</span>
+                </li>
+                <li>
+                    <a href="news.html">
+                        <i class='bx bxs-news'></i>
+                        <span class="links_name">Навіны</span>
+                    </a>
+                    <span class="tooltip">Навіны</span>
+                </li>
+                <li>
+                    <a href="test.html">
+                        <i class='bx bx-question-mark'></i>
+                        <span class="links_name">Тэст</span>
+                    </a>
+                    <span class="tooltip">Тэст</span>
+                </li>
+                <li class="language"></li>
+                <ul class="sub-menu">
+                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
+                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
+                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Блок с контентом страницы сайта -->
+        <div class="content" id="webpage_content">
+            <div class="promo_test">
+                <div class="title_promo_test">
+                    Тэст "Вайна"
+                </div>
+                <div class="definition_promo_test animate__animated animate__fadeInRightBig wow">
+                        Гісторыя Вялікай Айчыннай вайны, як і гісторыя ў цэлым, складаецца з фактаў. У гэтым раздзеле
+                        сайта можна праверыць свае
+                        веды, адказаўшы на пытанні гістарычнага тэсту. На сайце будуць з'яўляцца новыя тэсты на розныя
+                        тэмы - ад побыту салдат
+                        да хронікі апошніх месяцаў вайны.
+                </div>
+            </div>
+            <!-- Тэст -->
+            <div class="quiz-over-modal">
+                <div class="content-modal">
+                    <h1>Добры вынік!</h1>
+                    <p>Вы адказалі на
+                        <span id="correct-answer"></span> з
+                        <span id="number-of-all-questions-2"></span> пытанняў
+                    </p>
+                    <button id="btn-try-again">Паспрабаваць зноў</button>
+                    <a href="main.html"><button>Больш не трэба</button></a>
+                </div>
+            </div>
+            <div class="quiz-container">
+                <div class="quiz-title-container">
+                    <h2>Тэст "Вайна"</h2>
+                    <p>У 4 гадзіны раніцы без абвяшчэння вайны гітлераўская Германія напала на Савецкі Саюз. Наперадзе
+                        быў доўгі, цяжкі і
+                        кровапралітны дзень - першы дзень вайны. Падзеі гэтага дня шмат у чым вызначылі ход далейшых
+                        баявых дзеянняў.</p>
+                </div>
+                <div class="question-number">
+                    <h3>Пытанне
+                        <span id="number-of-question"></span>
+                        з
+                        <span id="number-of-all-questions"></span>
+                    </h3>
+                </div>
+                <div id="question"></div>
+                <div class="options">
+                    <div data-id="0" class="option option1"></div>
+                    <div data-id="1" class="option option2"></div>
+                    <div data-id="2" class="option option3"></div>
+                    <div data-id="3" class="option option4"></div>
+                </div>
+                <div class="button">
+                    <button id="btn-next">Наступнае пытанне</button>
+                    <button data-id="0" class="option option5 dont-know">Не ведаю</button>
+                </div>
+                <div id="answers-tracker">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../test.js"></script>
+</body>
+</html>

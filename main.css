@@ -246,7 +246,7 @@ i.bxs-star:first-child {
   width: 100%;
 }
 .text_about {
-  background-image: url(img/background_about.jpg);
+  background-image: url("img/background_about.jpg");
   background-size: cover;
   display: flex;
   justify-content: space-around;
