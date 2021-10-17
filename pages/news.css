@@ -40,3 +40,41 @@
   font-size: 30px;
   line-height: 35px;
 }
+/* Footer */
+.footer {
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+.menu_footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.menu_footer a:not(:first-child),
+.email_footer_list {
+  margin-top: 15px;
+}
+.logo_footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 9%;
+}
+.menu_footer a,
+.email_footer_list {
+  opacity: 0.5;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.menu_footer a:hover,
+.email_footer_list:hover {
+  opacity: 1;
+}
+.footer_first_child {
+  font-weight: bold;
+}

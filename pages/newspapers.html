@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belaruswar — Навіны</title>
+    <title>Belaruswar — Газеты</title>
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="newspapers.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Шріфт Poppins -->
@@ -16,7 +16,8 @@
     <!-- Шріфт Comfortaa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Подключение библиотеки с Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Подключение файла wow.js -->
@@ -34,11 +35,13 @@
                     <i class='bx bxs-star'></i>
                     <div class="logo_name">belaruswar</div>
                 </div>
-                <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                <i class='bx bx-menu' id="btn"
+                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
             </div>
             <ul class="nav_list">
                 <li>
-                    <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <i class='bx bx-search'
+                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
                     <input type="text" placeholder="Пошук...">
                     <span class="tooltip">Пошук</span>
                 </li>
@@ -90,11 +93,37 @@
         <div class="content" id="webpage_content">
             <div class="promo_museum">
                 <div class="title_promo_museum">
-                    Навіны
+                    Газеты
                 </div>
-                <div class="definition_promo_museum animate__animated animate__fadeInRightBig">
-                        Гэта раздзел з навінамі, тут будуць актуальныя навіны Беларусі, якія будуць абнаўляцца кожны дзень, каб даносіць ўсю
-                        інфармацыю Вам!
+                <div class="definition_promo_museum">
+                    Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
+                    месцы старажытных паселішчаў і самыя сучасныя
+                    мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
+                    мастацтвам.
+                </div>
+            </div>
+            <div class="newspapers">
+                <div class="newspaper_first newspaper_variant" onclick="newspaper1()">
+                    <div class="title_newspaper_variant">
+                        «Бальшавік»
+                    </div>
+                    <div class="defenition_newspaper_variant animate__animated animate__fadeInUp">
+                        «Бальшавік» - тэарэтычны і палітычны часопіс. Выходзіў з 1924 года, раз у два тыдні. У часопісе асвятляліся пытанні
+                        марксісцка-ленінскай тэорыі, гісторыі міжнароднага камуністычнага руху і будаўніцтва камуністычнага грамадства ў СССР.
+                        Друкаваліся артыкулы па філасофіі, эканоміцы, літаратуры і мастацтву. У лістападзе 1952 года часопіс перайменаваны ў
+                        «Камуніст». У сапраўдны момант часопіс выходзіць пад назвай «Свабодная думка».
+                    </div>
+                </div>
+                <div class="newspaper_second newspaper_variant" onclick="newspaper2()">
+                    <div class="title_newspaper_variant">
+                        «Вайна і рабочы клас»
+                    </div>
+                    <div class="defenition_newspaper_variant animate__animated animate__fadeInUp">
+                        «Вайна і рабочы клас» выдаваўся ў Маскве з 1943 па 1945 гады два разы на месяц. Ён асвятляў пытанні знешняй палітыкі
+                        СССР і замежных дзяржаў, актуальныя падзеі міжнароднага жыцця. У ім прымалі ўдзел навукоўцы, пісьменнікі, журналісты,
+                        кіраўнікі прафсаюзнага руху ў іншыя грамадскія дзеячы. Пасля заканчэння вайны часопіс быў перайменаваны ў «Новы час», і
+                        перафарматаваць: гэта стаў «савецкі палітычны часопіс». У 1998 годзе яго перайменавалі ў «The New Times».
+                    </div>
                 </div>
             </div>
             <div class="footer">
@@ -126,5 +155,13 @@
             </div>
         </div>
     </div>
+    <script>
+        function newspaper1() {
+            window.open("newspaper1.html");
+        }
+        function newspaper2() {
+            window.open("newspaper2.html");
+        }
+    </script>
 </body>
 </html>

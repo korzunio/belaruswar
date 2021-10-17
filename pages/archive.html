@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div class="links_blocks_archive">
-                <div class="link_gallery link_block" onclick="myFunction()">
+                <div class="link_gallery link_block" onclick="gallery()">
                     <div class="title_link_block">
                         ФОТОАЛЬБОМ
                     </div>
@@ -108,7 +108,7 @@
                         мастацтвам.
                     </div>
                 </div>
-                <div class="link_letters link_block" onclick="myFunction()">
+                <div class="link_letters link_block" onclick="newspapers()">
                     <div class="title_link_block">
                         ГАЗЕТЫ
                     </div>
@@ -119,7 +119,7 @@
                         мастацтвам.
                     </div>
                 </div>
-                <div class="link_newspapers link_block" onclick="myFunction()">
+                <div class="link_newspapers link_block" onclick="letters()">
                     <div class="title_link_block">
                         ЛІСТЫ
                     </div>
@@ -131,12 +131,45 @@
                     </div>
                 </div>
             </div>
+            <div class="footer">
+                <div class="logo_footer">
+                    <div class="logo_footer_name footer_first_child">belaruswar</div>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div class="menu_footer">
+                    <div class="footer_first_child">Змест сайта:</div>
+                    <a href="main.html">
+                        <div class="menu_footer_list">Галоўная</div>
+                    </a>
+                    <a href="pages/museum.html">
+                        <div class="menu_footer_list">Музей</div>
+                    </a>
+                    <a href="pages/archive.html">
+                        <div class="menu_footer_list">Архіў</div>
+                    </a>
+                    <a href="pages/test.html">
+                        <div class="menu_footer_list">Тэст</div>
+                    </a>
+                </div>
+                <div class="email_footer">
+                    <div class="footer_first_child">Пошта:</div>
+                    <a href="#" class="email_link">
+                        <div class="email_footer_list">korsynilya77@gmail.com</div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
-        function myFunction() {
+        function gallery() {
             window.open("gallery.html");
+        }
+        function newspapers() {
+                window.open("newspapers.html");
+        }
+        function letters() {
+                window.open("letters.html");
         }
     </script>
 </body>

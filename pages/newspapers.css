@@ -1,9 +1,8 @@
 .promo_museum {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/мое.jpg");
+    url("../img/газеты.jpg");
   height: 100vh;
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   color: white;
   display: flex;
@@ -39,6 +38,64 @@
   margin-left: 80px;
   font-size: 22px;
   line-height: 32px;
+}
+
+/* Выбор варианта газеты */
+.newspapers {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  color: white;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-color: black;
+}
+.newspaper_variant {
+  width: 45%;
+  height: 500px;
+  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.title_newspaper_variant {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.defenition_newspaper_variant {
+  display: none;
+  font-size: 20px;
+  line-height: 30px;
+}
+.newspaper_variant:hover .defenition_newspaper_variant {
+  display: block;
+}
+.newspaper_variant:hover .title_newspaper_variant {
+  border-bottom: 3px solid #be0b20;
+  transition: 0.5s all ease;
+}
+.newspaper_first {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/большевик.jpg");
+  background-size: cover;
+}
+.newspaper_second {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/война\ и\ рабочий\ класс.jpg");
+  background-size: cover;
+}
+.newspaper_first:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/большевик.jpg");
+  cursor: pointer;
+  background-size: cover;
+}
+.newspaper_second:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/война\ и\ рабочий\ класс.jpg");
+  background-size: cover;
+  cursor: pointer;
 }
 /* Footer */
 .footer {
