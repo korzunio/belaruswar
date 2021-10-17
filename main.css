@@ -195,7 +195,7 @@ i.bxs-star:first-child {
   font-size: 160px;
   color: transparent;
   -webkit-text-stroke: 1px white;
-  background: url("../img/back.png");
+  background: url("img/back.png");
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
