@@ -20,7 +20,7 @@ body {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Comfortaa", cursive;
   overflow-x: hidden;
 }
 .sidebar {
@@ -32,6 +32,7 @@ body {
   height: 100%;
   width: var(--nav-panel-width);
   background-color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
 }
 .sidebar .logo-content .logo {
   color: #fff;
@@ -171,54 +172,48 @@ i.bxs-star:first-child {
   flex: 2;
 }
 
-/* Блок с контентом страницы сайта */
+/* Настройка контента */
 .content {
   height: 100%;
   transition: all 0.5s ease;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url("img/background8.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
-.text_cover {
-  margin-left: 80px;
-  margin-top: 100px;
+/* Обложка сайта */
+.promo_main {
+  height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
-  width: 60%;
   justify-content: space-around;
-  height: 400px;
 }
-.title_cover {
+.title_promo_main {
   font-size: 160px;
   color: transparent;
   -webkit-text-stroke: 1px white;
-  background: url("img/back.png");
+  background: url("../img/back.png");
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
+  margin-left: 80px;
+  font-weight: bold;
 }
 @keyframes back {
   100% {
     background-position: 2000px 0;
   }
 }
-.site_name_cover {
-  font-size: 45px;
-  color: white;
+.definition_promo_main {
+  width: 70%;
+  margin-left: 80px;
+  font-size: 25px;
+  line-height: 35px;
 }
-.defenition_site_cover {
-  font-size: 18px;
-  color: white;
-  width: 90%;
-}
-.animate__animated.title_cover {
-  --animate-duration: 2.5s;
-}
-.animate__animated.defenition_site_cover {
+.animate__animated.definition_promo_main {
   --animate-duration: 3s;
   /*  --animate-delay: 0.9s; - Такис способом тоже можно */
 }
@@ -238,13 +233,6 @@ i.bxs-star:first-child {
   margin-left: var(--nav-panel-width);
   flex: 2;
 }
-.cover_block {
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-}
 .text_about {
   background-image: url("img/background_about.jpg");
   background-size: cover;
@@ -254,12 +242,12 @@ i.bxs-star:first-child {
   height: 450px;
 }
 .paragraph_about {
-  margin-left: 40px;
-  margin-right: 40px;
-  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 22px;
+  line-height: 32px;
 }
 .title_about {
-  font-family: "Prata", serif;
   font-size: 45px;
 }
 .title_about_with_stars {
@@ -294,6 +282,7 @@ i.bxs-star:first-child {
 }
 .definiton_block {
   opacity: 0.7;
+  line-height: 27px;
 }
 .button_block {
   background-color: #be0b20;
@@ -315,18 +304,20 @@ i.bxs-star:first-child {
   flex-direction: column;
   justify-content: space-around;
   color: white;
-  height: 450px;
+  height: 500px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
     url("img/background10.jpg");
   background-size: cover;
   background-position: center center;
-  align-self: flex-start;
 }
-.defenition_belarus_remember {
+.text_belarus_remember {
   width: 90%;
-  font-size: 18px;
+  margin-left: 80px;
+  font-size: 22px;
+  line-height: 32px;
 }
-.text_belarus {
+.title_belarus_remember {
+  font-size: 45px;
   margin-left: 80px;
 }
 
