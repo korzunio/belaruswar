@@ -1,5 +1,5 @@
 .promo_museum {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../img/мое.jpg");
   height: 100vh;
   background-size: cover;
@@ -40,6 +40,102 @@
   font-size: 22px;
   line-height: 32px;
 }
+
+/* О музее */
+.about_museum {
+  background-color: black;
+  color: white;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-bottom: 80px;
+  padding-top: 50px;
+}
+.title_about {
+  font-size: 45px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.text_about_museum {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+.animate__animated.text_about_museum {
+  --animate-duration: 2s;
+  /*  --animate-delay: 0.9s; - Такис способом тоже можно */
+}
+
+/* Факты музея */
+.facts_museum {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../img/музей1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 500px;
+}
+.list_facts_museum {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 32px;
+}
+.list_facts_museum li {
+  padding-top: 20px;
+}
+
+/* Галерея музея */
+.places_cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.places_card_size_sm {
+  grid-column: span 2;
+}
+.places_card-pic {
+  width: 100%;
+  transition: 0.15s;
+  /* Свойство object-fit сжимает картинки без потери качества и с фокусировкой на главном предмете. ОЧЕНЬ НУЖНАЯ ВЕЩЬ */
+}
+.places_card {
+  position: relative;
+  overflow: hidden;
+}
+.places_card::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.places_card:hover .places_card-pic {
+  transform: scale(1.05);
+}
+.places_card-pic_size-sm {
+  height: 283px;
+  object-fit: cover;
+}
+.places {
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  padding-top: 50px;
+}
+
+/* Текст финальный */
+.final_about {
+  background-color: black;
+  padding-bottom: 50px;
+}
 /* Footer */
 .footer {
   color: white;
@@ -48,7 +144,6 @@
   align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 50px;
-  padding-top: 50px;
 }
 .menu_footer {
   display: flex;
