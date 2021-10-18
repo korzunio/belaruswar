@@ -247,7 +247,6 @@ i.bxs-star:first-child {
 .tests_variants {
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
   color: white;
   padding-top: 50px;
 }
