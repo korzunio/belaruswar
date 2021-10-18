@@ -249,6 +249,7 @@ i.bxs-star:first-child {
   justify-content: space-around;
   color: white;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .test_variant {
   width: 45%;
@@ -257,6 +258,7 @@ i.bxs-star:first-child {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  overflow: hidden;
 }
 .title_test_variant {
   font-weight: bold;
@@ -294,7 +296,10 @@ i.bxs-star:first-child {
   background-size: cover;
   cursor: pointer;
 }
-/* Footer */
+
+/* 
+Footer
+
 .footer {
   color: white;
   background-color: black;
@@ -332,4 +337,5 @@ i.bxs-star:first-child {
 }
 .footer_first_child {
   font-weight: bold;
-}
+} 
+*/

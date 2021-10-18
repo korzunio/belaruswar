@@ -40,7 +40,10 @@
   font-size: 30px;
   line-height: 35px;
 }
-/* Footer */
+
+/* 
+Footer
+
 .footer {
   color: white;
   background-color: black;
@@ -78,4 +81,5 @@
 }
 .footer_first_child {
   font-weight: bold;
-}
+} 
+*/

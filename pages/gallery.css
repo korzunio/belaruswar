@@ -84,7 +84,10 @@
   font-size: 22px;
   line-height: 32px;
 }
-/* Footer */
+
+/* 
+Footer
+
 .footer {
   color: white;
   background-color: black;
@@ -121,7 +124,9 @@
 }
 .footer_first_child {
   font-weight: bold;
-}
+} 
+*/
+
 @media screen and (max-width: 960px) {
   .places_card_size_lg {
     grid-column: span 6;

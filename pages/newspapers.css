@@ -57,6 +57,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  overflow: hidden;
 }
 .title_newspaper_variant {
   font-weight: bold;
@@ -95,10 +96,12 @@
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/война\ и\ рабочий\ класс.jpg");
   background-size: cover;
-  cursor: pointer;
 }
-/* Footer */
-.footer {
+
+/* 
+Footer 
+
+ .footer {
   color: white;
   background-color: black;
   display: flex;
@@ -134,4 +137,5 @@
 }
 .footer_first_child {
   font-weight: bold;
-}
+} 
+*/
