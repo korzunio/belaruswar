@@ -62,6 +62,7 @@
 .links_year a:hover {
   color: #520911;
 }
+
 /* Footer */
 .footer {
   color: white;
@@ -70,6 +71,7 @@
   align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 .menu_footer {
   display: flex;
