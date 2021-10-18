@@ -46,7 +46,6 @@
   justify-content: space-around;
   background-color: black;
   color: white;
-  padding-bottom: 50px;
   padding-top: 50px;
 }
 .link_block {
@@ -113,6 +112,7 @@
   align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 .menu_footer {
   display: flex;

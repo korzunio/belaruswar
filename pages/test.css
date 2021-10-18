@@ -15,7 +15,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #9b0b1c;
 }
-
+i.bxs-star {
+  color: #be0b20;
+}
 body {
   position: relative;
   min-height: 100vh;
@@ -179,6 +181,7 @@ i.bxs-star:first-child {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  font-family: "Comfortaa", cursive;
 }
 
 :root {
@@ -246,7 +249,6 @@ i.bxs-star:first-child {
   justify-content: space-around;
   flex-direction: row;
   color: white;
-  padding-bottom: 50px;
   padding-top: 50px;
 }
 .test_variant {
@@ -301,6 +303,7 @@ i.bxs-star:first-child {
   align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 .menu_footer {
   display: flex;

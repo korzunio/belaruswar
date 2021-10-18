@@ -178,8 +178,11 @@ i.bxs-star:first-child {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  font-family: "Comfortaa", cursive;
 }
-
+i.bxs-star {
+  color: #be0b20;
+}
 :root {
   --nav-panel-width: 78px;
 }
@@ -414,6 +417,7 @@ i.bxs-star:first-child {
   align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 .menu_footer {
   display: flex;
