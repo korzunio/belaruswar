@@ -71,8 +71,8 @@
 
 /* Факты музея */
 .facts_museum {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("../img/музей1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("../img/фотомузей2.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: white;
@@ -137,9 +137,53 @@
   padding-bottom: 50px;
 }
 
-/* 
-Footer
+/* Ссылка на remember */
+.block_link_remember {
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.link_block {
+  width: 90%;
+  height: 500px;
+  padding: 0 45px 0 45px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.title_link_block {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.defenition_link_block {
+  display: none;
+  font-size: 20px;
+}
+.link_block:hover .defenition_link_block {
+  display: block;
+}
+.link_block:hover .title_link_block {
+  border-bottom: 3px solid #be0b20;
+  transition: 0.5s all ease;
+}
+.link_block {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../img/background.jpg");
+  background-size: cover;
+}
+.link_block:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/background.jpg");
+  background-size: cover;
+  cursor: pointer;
+}
 
+/* Footer */
 .footer {
   color: white;
   background-color: black;
@@ -155,7 +199,7 @@ Footer
 }
 .menu_footer a:not(:first-child),
 .email_footer_list {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .logo_footer {
   display: flex;
@@ -176,5 +220,4 @@ Footer
 }
 .footer_first_child {
   font-weight: bold;
-} 
-*/
+}

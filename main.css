@@ -182,6 +182,20 @@ i.bxs-star {
   background-position: center;
   background-size: cover;
 }
+:root {
+  --nav-panel-width: 78px;
+}
+#web-page.expanded {
+  --nav-panel-width: 240px;
+}
+#web-page {
+  display: flex;
+}
+#webpage_content {
+  min-height: 100vh;
+  margin-left: var(--nav-panel-width);
+  flex: 2;
+}
 
 /* Обложка сайта */
 .promo_main {
@@ -219,20 +233,6 @@ i.bxs-star {
 }
 
 /* О сайте */
-:root {
-  --nav-panel-width: 78px;
-}
-#web-page.expanded {
-  --nav-panel-width: 240px;
-}
-#web-page {
-  display: flex;
-}
-#webpage_content {
-  min-height: 100vh;
-  margin-left: var(--nav-panel-width);
-  flex: 2;
-}
 .text_about {
   background-image: url("img/background_about.jpg");
   background-size: cover;
@@ -304,11 +304,11 @@ i.bxs-star {
   flex-direction: column;
   justify-content: space-around;
   color: white;
-  height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("img/background10.jpg");
+  height: 550px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)),
+    url("img/background11.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
 }
 .text_belarus_remember {
   width: 90%;
@@ -406,7 +406,7 @@ i.bxs-star {
 }
 .menu_footer a:not(:first-child),
 .email_footer_list {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .logo_footer {
   display: flex;
@@ -428,6 +428,8 @@ i.bxs-star {
 .footer_first_child {
   font-weight: bold;
 }
+
+/* Адаптация сайта */
 @media screen and (max-width: 850px) {
   .places_card_size_sm {
     grid-column: span 6;

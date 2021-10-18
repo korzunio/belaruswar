@@ -1,0 +1,171 @@
+.promo_museum {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/background.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Comfortaa", cursive;
+}
+.animate__animated.first_paragraph {
+  --animate-duration: 2s;
+}
+.animate__animated.second_paragraph {
+  --animate-duration: 2.5s;
+  /*  --animate-delay: 0.9s; - Такис способом тоже можно */
+}
+.title_promo_museum {
+  font-size: 160px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  background: url("../img/back.png");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  margin-left: 80px;
+  font-weight: bold;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+.definition_promo_museum {
+  width: 70%;
+  margin-left: 80px;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+/* О музее */
+.about_museum {
+  background-color: black;
+  color: white;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-bottom: 80px;
+  padding-top: 50px;
+}
+.title_about {
+  font-size: 45px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.text_about_museum {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+.animate__animated.text_about_museum {
+  --animate-duration: 2s;
+  /*  --animate-delay: 0.9s; - Такис способом тоже можно */
+}
+
+/* Факты музея */
+.facts_museum {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("../img/фотомузей2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 500px;
+}
+.list_facts_museum {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 32px;
+}
+.list_facts_museum li {
+  padding-top: 20px;
+}
+
+/* Галерея музея */
+.places_cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.places_card_size_sm {
+  grid-column: span 2;
+}
+.places_card-pic {
+  width: 100%;
+  transition: 0.15s;
+  /* Свойство object-fit сжимает картинки без потери качества и с фокусировкой на главном предмете. ОЧЕНЬ НУЖНАЯ ВЕЩЬ */
+}
+.places_card {
+  position: relative;
+  overflow: hidden;
+}
+.places_card::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.places_card:hover .places_card-pic {
+  transform: scale(1.05);
+}
+.places_card-pic_size-sm {
+  height: 330px;
+  object-fit: cover;
+}
+.places {
+  background-color: black;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+/* Footer */
+.footer {
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+.menu_footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.menu_footer a:not(:first-child),
+.email_footer_list {
+  margin-top: 10px;
+}
+.logo_footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 9%;
+}
+.menu_footer a,
+.email_footer_list {
+  opacity: 0.5;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.menu_footer a:hover,
+.email_footer_list:hover {
+  opacity: 1;
+}
+.footer_first_child {
+  font-weight: bold;
+}

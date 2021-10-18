@@ -98,10 +98,8 @@
   background-size: cover;
 }
 
-/* 
-Footer 
-
- .footer {
+/* Footer */
+.footer {
   color: white;
   background-color: black;
   display: flex;
@@ -116,7 +114,7 @@ Footer
 }
 .menu_footer a:not(:first-child),
 .email_footer_list {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .logo_footer {
   display: flex;
@@ -137,5 +135,4 @@ Footer
 }
 .footer_first_child {
   font-weight: bold;
-} 
-*/
+}

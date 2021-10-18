@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="by">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belaruswar — Музей</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="remember.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Шріфт Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <!-- Шріфт Comfortaa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Подключение библиотеки с Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла wow.js -->
+    <script src="../wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <div id="web-page">
+        <div class="sidebar">
+            <div class="logo-content">
+                <div class="logo">
+                    <i class='bx bxs-star'></i>
+                    <div class="logo_name">belaruswar</div>
+                </div>
+                <i class='bx bx-menu' id="btn"
+                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <i class='bx bx-search'
+                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <input type="text" placeholder="Пошук...">
+                    <span class="tooltip">Пошук</span>
+                </li>
+                <li>
+                    <a href="../main.html">
+                        <i class='bx bxs-star'></i>
+                        <span class="links_name">Галоўная</span>
+                    </a>
+                    <span class="tooltip">Галоўная</span>
+                </li>
+                <li>
+                    <a href="museum.html">
+                        <i class='bx bxs-landmark'></i>
+                        <span class="links_name">Музей</span>
+                    </a>
+                    <span class="tooltip">Музей</span>
+                </li>
+                <li>
+                    <a href="archive.html">
+                        <i class='bx bx-archive'></i>
+                        <span class="links_name">Архіў</span>
+                    </a>
+                    <span class="tooltip">Архіў</span>
+                </li>
+                <li>
+                    <a href="test.html">
+                        <i class='bx bx-question-mark'></i>
+                        <span class="links_name">Тэст</span>
+                    </a>
+                    <span class="tooltip">Тэст</span>
+                </li>
+                <!-- <li>
+                    <a href="pages/news.html">
+                        <i class='bx bx-book-bookmark'></i>
+                        <span class="links_name">Гісторыя</span>
+                    </a>
+                    <span class="tooltip">Гісторыя</span>
+                </li> -->
+                <li>
+                    <a href="news.html">
+                        <i class='bx bxs-news'></i>
+                        <span class="links_name">Навіны</span>
+                    </a>
+                    <span class="tooltip">Навіны</span>
+                </li>
+                <li class="language"></li>
+                <ul class="sub-menu">
+                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
+                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
+                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Блок с контентом страницы сайта -->
+        <div class="content" id="webpage_content">
+            <div class="promo_museum">
+                <div class="title_promo_museum">
+                    Мы памятаем
+                </div>
+                <div class="definition_promo_museum animate__animated animate__fadeInRightBig">
+                    Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
+                    месцы старажытных паселішчаў і самыя сучасныя
+                    мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
+                    мастацтвам.
+                </div>
+            </div>
+            <div class="places" id="locations">
+                <div class="wrapper-full">
+                    <div class="places_cards">
+
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember1.JPG"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInRightBig wow">
+                            <a href="../img/remember1.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember2.JPG"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInBottomLeft wow">
+                            <a href="../img/remember2.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember3.JPG"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInBottomRight wow">
+                            <a href="../img/remember3.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember13.JPG"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInRightBig wow">
+                            <a href="../img/remember13.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember14.JPG"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInBottomLeft wow">
+                            <a href="../img/remember14.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember9.jpg"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInBottomRight wow">
+                            <a href="../img/remember9.jpg" target="_blank" class="places_card-link"></a>
+                        </figure>
+
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember5.JPG"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInRightBig wow">
+                            <a href="../img/remember5.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember7.JPG"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInBottomLeft wow">
+                            <a href="../img/remember7.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember8.jpg"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInBottomRight wow">
+                            <a href="../img/remember8.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember10.JPG"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInRightBig wow">
+                            <a href="../img/remember10.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+                        
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember11.JPG"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInBottomLeft wow">
+                            <a href="../img/remember11.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+                        
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember12.jpg"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInBottomRight wow">
+                            <a href="../img/remember12.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember15.JPG"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInRightBig wow">
+                            <a href="../img/remember15.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+                        
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember16.JPG"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInBottomLeft wow">
+                            <a href="../img/remember16.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+                        
+                        <figure class="places_card places_card_size_sm">
+                            <img src="../img/remember17.jpg"
+                                class="places_card-pic places_card-pic_size-sm animate__animated animate__fadeInBottomRight wow">
+                            <a href="../img/remember17.JPG" target="_blank" class="places_card-link"></a>
+                        </figure>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="logo_footer">
+                    <div class="logo_footer_name footer_first_child">belaruswar</div>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div class="menu_footer">
+                    <div class="footer_first_child">Змест сайта:</div>
+                    <a href="../main.html">
+                        <div class="menu_footer_list">Галоўная</div>
+                    </a>
+                    <a href="museum.html">Музей</a>
+                    <a href="archive.html">Архіў</a>
+                    <a href="test.html">Тэст</a>
+                </div>
+                <div class="menu_footer">
+                    <div class="footer_first_child">Мова:</div>
+                    <a href="#">English</a>
+                    <a href="#">Русский</a>
+                    <a href="#">Беларуская мова</a>
+                </div>
+                <div class="email_footer">
+                    <div class="footer_first_child">Пошта:</div>
+                    <a href="mailto:korsynilya77@gmail.com" class="email_link">
+                        <div class="email_footer_list">korsynilya77@gmail.com</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

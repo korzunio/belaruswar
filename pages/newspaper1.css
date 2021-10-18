@@ -63,9 +63,7 @@
   color: #520911;
 }
 
-/* 
-Footer
-
+/* Footer */
 .footer {
   color: white;
   background-color: black;
@@ -73,7 +71,6 @@ Footer
   align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 50px;
-  padding-top: 50px;
 }
 .menu_footer {
   display: flex;
@@ -82,7 +79,7 @@ Footer
 }
 .menu_footer a:not(:first-child),
 .email_footer_list {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .logo_footer {
   display: flex;
@@ -103,5 +100,4 @@ Footer
 }
 .footer_first_child {
   font-weight: bold;
-} 
-*/
+}
