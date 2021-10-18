@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="by">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belaruswar — Лісты</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="letters.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Шріфт Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <!-- Шріфт Comfortaa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Подключение библиотеки с Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла wow.js -->
+    <script src="../wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <div id="web-page">
+        <div class="sidebar">
+            <div class="logo-content">
+                <div class="logo">
+                    <i class='bx bxs-star'></i>
+                    <div class="logo_name">belaruswar</div>
+                </div>
+                <i class='bx bx-menu' id="btn"
+                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <i class='bx bx-search'
+                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <input type="text" placeholder="Пошук...">
+                    <span class="tooltip">Пошук</span>
+                </li>
+                <li>
+                    <a href="../main.html">
+                        <i class='bx bxs-star'></i>
+                        <span class="links_name">Галоўная</span>
+                    </a>
+                    <span class="tooltip">Галоўная</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-landmark'></i>
+                        <span class="links_name">Музей</span>
+                    </a>
+                    <span class="tooltip">Музей</span>
+                </li>
+                <li>
+                    <a href="archive.html">
+                        <i class='bx bx-archive'></i>
+                        <span class="links_name">Архіў</span>
+                    </a>
+                    <span class="tooltip">Архіў</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-news'></i>
+                        <span class="links_name">Навіны</span>
+                    </a>
+                    <span class="tooltip">Навіны</span>
+                </li>
+                <li>
+                    <a href="test.html">
+                        <i class='bx bx-question-mark'></i>
+                        <span class="links_name">Тэст</span>
+                    </a>
+                    <span class="tooltip">Тэст</span>
+                </li>
+                <li class="language"></li>
+                <ul class="sub-menu">
+                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
+                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
+                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Блок с контентом страницы сайта -->
+        <div class="content" id="webpage_content">
+            <div class="promo_museum">
+                <div class="title_promo_museum">
+                    Лісты
+                </div>
+                <div class="definition_promo_museum animate__animated animate__fadeInRightBig">
+                    Лісты ваенных гадоў захоўваюць памяць пра тыя дні. У іх ёсць усё: кароткія апавяданні пра вайну, вершы, пажоўклыя
+                    фатаграфіі военкоров, выразкі з баявых лісткоў і газет, словы кахання да сваіх блізкіх і мары аб пасляваенным шчасце. У
+                    многіх сем'ях беражліва, як рэліквіі, захоўваюць лісты бацькоў і дзядоў.
+                </div>
+            </div>
+            <div class="letters_blocks">
+                <div class="letter_block">
+                    <div class="image_letter_block" onclick="letter1()">
+                        <img src="../img/письмо1.jpg" alt="Письмо 1">
+                    </div>
+                    <div class="test_letter_block">
+                        <p>Дорогая Сонька!</p>
+                        <p>
+                        Нe помню какого числа я тебе послал последнее письмо, но факт, что это было давно и ты вероятно беспокоишься. Поэтому
+                        решил хотя бы пару слов написать, заверив в том, что я жив и здоров и беспокоиться обо мне не стоит. А письма я не писал
+                        ввиду перемены адреса, который я тебе на днях пришлю.
+                        </p>
+                        <p>
+                        О делах наших тебе достаточно известно из сообщений печати. Не далек день, когда будем праздновать полное освобождение
+                        нашей советской земли от фашистской нечисти, затем большим праздником отметим окончательную победу над гитлеровской
+                        Германией. Нам до Берлина оказалось ближе, чем немцам до Москвы.
+                        </p>
+                        <p>
+                            30.09.1944
+                        </p>
+                    </div>
+                </div>
+                <div class="letter_block">
+                    <div class="image_letter_block" onclick="letter2()">
+                        <img src="../img/письмо2.jpg" alt="Письмо 2">
+                    </div>
+                    <div class="test_letter_block">
+                        <p>Привет москвичам из действующей армии!</p>
+                        <p>
+                            Пользуюсь свободной минутой, чтобы сообщить вам о том, что я жив, абсолютно здоров и чувствую себя великолепно. Я себе
+                            представляю с каким восторгом москвичи, в т.ч. и вы, встречаете каждое сообщение о победоносном шествии Красной Армии.
+                            Можете себе представить, что самих фронтовиков это не в меньшей степени радует. Вот почему я себя чувствую так хорошо.
+                        </p>
+                        <p>
+                        Фронтовая «музыка» почти не прекращается. А если она временно прекращается, то кажется несколько скучновато. Вот сейчас
+                        «сыграла» неподалеку от меня «Катюша». На немцев эта игра действует ошеломляюще. Нас же эта музыка бодрит. Добровольно
+                        немцы ни одного захваченного клочка не возвращают. Все приходится брать с боем. Они огрызаются артогнем, но нам он не
+                        страшен. Мы его заглушаем и идем вперед.....
+                        </p>
+                        <p>
+                            24.07.1944
+                        </p>
+                    </div>
+                </div>
+                <div class="letter_block">
+                    <div class="image_letter_block" onclick="letter3()">
+                        <img src="../img/письмо3.jpg" alt="Письмо 3">
+                    </div>
+                    <div class="test_letter_block">
+                        <p>Здравствуйте мои дорогие!</p>
+                        <p>
+                            За последнее время я стал еще реже писать. Пусть это вас не беспокоит. Я жив, здоров, цел и невредим. За прошедшее время
+                            со дня моего отъезда, я побывал во многих местах, многое видел и пережил. Повстречал я людей из под Ленинграда,
+                            Новгорода, Калининской и Орловской областей и других районов, людей наших – советских, превращенных гитлеровцами в
+                            рабов, а ныне нами освобожденных. Можете себе представить с какой радостью они встречают своих освободителей, стремясь
+                            скорее попасть к себе на Родину. Видел я сотни советских деревень и городов, разрушенных до основания гитлеровскими
+                            бандитами. Посетил места, где гитлеровские палачи замучили и истребили тысячи и десятки тысяч наших советских людей, в
+                            том числе совершенно ни в чем не повинных детей. Никто из нас никогда не забудет то, что лично видел и что узнал из
+                            сообщений печати о зверствах гитлеровских разбойников в других местах.
+                        </p>
+                        <p>
+                            И вот теперь, когда мы приближаемся к границам Германии и собираемся непременно там побывать, перед каждым из нас встает
+                            вопрос: как отомстить за все эти злодеяния? Разумеется, мы не сможем вести себя на территории Германии так, как они вели
+                            себя на нашей земле. Но как же им заплатить за всё? Трудно придумать. Поживем – увидим.......
+                        </p>
+                        <p>
+                            06.10.1944
+                        </p>
+                    </div>
+                </div>
+                <div class="letter_block">
+                    <div class="image_letter_block" onclick="letter4()">
+                        <img src="../img/письмо4.jpg" alt="Письмо 4">
+                    </div>
+                    <div class="test_letter_block">
+                        <p>Здравствуй дорогая мамочка!</p>
+                        <p>
+                            Шлю тебе свой горячий красноармейский привет и сообщаю, что я жив, здоров, чего и вам желаю.
+                            Чувствую себя еще лучше, чем до ранения. Ранило меня, как я тебе уже писал, в поясницу. В прорыве между Оршей и
+                            Витебском. В госпитале лежал в г.Ярцево Смоленской области. Мама, деньги, которые ты мне выслала, я еще не получил.
+                            Сфотографироваться, конечно, есть возможность, но нет денег. Мама, напиши подробней, что с Николаем Борисовичем. Ну а
+                            пока писать кончаю, остаюсь ваш сын Виктор. Привет всем родным и знакомым.
+                        </p>
+                        <p>
+                            28.09.1944
+                        </p>
+                    </div>
+                </div>
+                <div class="letter_block">
+                    <div class="image_letter_block" onclick="letter5()">
+                        <img src="../img/письмо5.jpg" alt="Письмо 5">
+                    </div>
+                    <div class="test_letter_block">
+                        <p>Здравствуйте мои родненькие дочь Панюся и жена Мусинька!</p>
+                        <p>
+                            Панюся, поздравляю тебя с днем рождения, который будет 22 апреля, так как наша почта медленно идет, но я надеюсь, что к
+                            этому дню оно дойдет. Панюся, желаю тебе быть здоровой, расти и дождаться своего папки. Он вернется только к вам с
+                            мамой. Я пока чувствую себя хорошо, но как вы - я не знаю, давно получал от вас письма. Прошу вас с мамой не обижаться
+                            на меня за мои письма. Я вам стал реже писать, ввиду того, у меня нет бумаги. Вот пока все. Привет всем нашим. Я всех
+                            прошу, чтобы не обижались на меня. А пока до свидания. Крепко, несчетно вас целую с мамочкой.
+                        </p>
+                        <p>
+                            02.04.1944
+                        </p>
+                    </div>
+                </div>
+                <div class="letter_block">
+                    <div class="image_letter_block" onclick="letter6()">
+                        <img src="../img/письмо6.jpg" alt="Письмо 6">
+                    </div>
+                    <div class="test_letter_block">
+                        <p>Здравствуй Даша!</p>
+                        <p>
+                            На посланных вам два письма никакого ответа не получал, странно почему, доходят ли до тебя эти строки, читаете ли вы их,
+                            не знаю. Если ты читаешь, отзовись, напиши, как сестра, ведь второй год, как у нас прервалась переписка, надеюсь,
+                            ответите!
+                            О себе: окончил курсы, жду назначений, письма по указанному адресу пока не пишите, ждите новый, опять длительные минуты
+                            ожидания. Пишите, кто из родных и знакомых живёт в Ленинграде, или ещё где, как дети, Валя? С нетерпением жду. Ваш брат.
+                            Поздравляю с великим праздником, 25-й годовщиной октября.
+                            Желаю успехов в жизни. 04-11-42 г.
+                        </p>
+                        <p>
+                            04.11.1942
+                        </p>
+                    </div>
+                </div>
+                <div class="letter_block">
+                    <div class="image_letter_block" onclick="letter7()">
+                        <img src="../img/письмо7.jpeg" alt="Извещение">
+                    </div>
+                    <div class="test_letter_block">
+                        <p>Извещение</p>
+                        <p>
+                            Ваш муж кр-ец Фирсов Александр Карпович, уроженец г. Ростов-на-Дону, в боях за Социалистическую Родину, верный воинской
+                            присяге, проявив геройство и мужество был убит 23.12.1943. Похоронен: братская могила село Горбатово Радомыжского р-на
+                            Житомирской области. Настоящее извещение является документом для ходатайства пенсии (приказ НКО СССР).
+                        </p>
+                        <p>
+                            1943
+                        </p>
+                    </div>
+                </div>
+                <div class="letter_block">
+                    <div class="image_letter_block" onclick="letter8()">
+                        <img src="../img/письмо8.jfif" alt="Письмо 7">
+                    </div>
+                    <div class="test_letter_block">
+                        <p>Здравствуй, милый Витя.</p>
+                        <p>
+                            Шлю привет с наилучшими пожеланиями. Витя, все мои товарищи получают много писем, лишь я не получаю. Я получил всего
+                            одно — Владимира Митрофановича. Пиши чаще, не знаю, где мама с Галочкой. Пришли мне адрес тёти Наташи. Пиши, как у тебя
+                            дело с деньгами и вообще как идут дела по учёбе. Я работаю в канцелярии. До свидания, жду писем.
+                            Твой папа.
+                        </p>
+                        <p>
+                            1941
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="logo_footer">
+                    <div class="logo_footer_name footer_first_child">belaruswar</div>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div class="menu_footer">
+                    <div class="footer_first_child">Змест сайта:</div>
+                    <a href="main.html">
+                        <div class="menu_footer_list">Галоўная</div>
+                    </a>
+                    <a href="pages/museum.html">
+                        <div class="menu_footer_list">Музей</div>
+                    </a>
+                    <a href="pages/archive.html">
+                        <div class="menu_footer_list">Архіў</div>
+                    </a>
+                    <a href="pages/test.html">
+                        <div class="menu_footer_list">Тэст</div>
+                    </a>
+                </div>
+                <div class="email_footer">
+                    <div class="footer_first_child">Пошта:</div>
+                    <a href="#" class="email_link">
+                        <div class="email_footer_list">korsynilya77@gmail.com</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function letter1() {
+            window.open("../img/письмо1.jpg");
+        }
+        function letter2() {
+            window.open("../img/письмо2.jpg");
+        }
+        function letter3() {
+            window.open("../img/письмо3.jpg");
+        }
+        function letter4() {
+            window.open("../img/письмо4.jpg");
+        }
+        function letter5() {
+            window.open("../img/письмо5.jpg");
+        }
+        function letter6() {
+            window.open("../img/письмо6.jpg");
+        }
+        function letter7() {
+            window.open("../img/письмо7.jpg");
+        }
+        function letter3() {
+            window.open("../img/письмо8.jpg");
+        }
+    </script>
+</body>
+</html>
