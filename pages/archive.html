@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belaruswar — Архіў</title>
+    <title class="lang" key="title_archive">Belaruswar — Архіў</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="archive.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Подключение библиотеки с Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла jquery.min.js -->
+    <script src="../jquery.min.js"></script>
 </head>
 <body>
     <div id="web-page">
@@ -81,9 +83,9 @@
                 </li>
                 <li class="language"></li>
                 <ul class="sub-menu">
-                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
-                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
-                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                    <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
+                    <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
+                    <li><a href="archive.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
                 </ul>
                 </li>
             </ul>
@@ -91,20 +93,20 @@
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
             <div class="promo_archive">
-                <div class="title_promo_archive">
+                <div class="title_promo_archive lang" key="title_promo_archive">
                     Архіў
                 </div>
-                <div class="definition_promo_archive animate__animated animate__fadeInRightBig wow">
+                <div class="definition_promo_archive animate__animated animate__fadeInRightBig lang" key="defenition_promo_archive">
                         На нашым сайце ёсць архіў з газетамі, фатаграфіямі і франтавымі лістамі ваенных гадоў. Архіў пастаянна абнаўляецца, каб
                         ушанаваць памяць ўдзельнікам Вялікай Айчыннай Вайны!
                 </div>
             </div>
             <div class="links_blocks_archive">
                 <div class="link_gallery link_block" onclick="gallery()">
-                    <div class="title_link_block">
+                    <div class="title_link_block lang" key="title_block_gallery">
                         ФОТОАЛЬБОМ
                     </div>
-                    <div class="defenition_link_block animate__animated animate__fadeInUp">
+                    <div class="defenition_link_block animate__animated animate__fadeInUp lang" key="defenition_block_gallery">
                         Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
                         месцы старажытных паселішчаў і самыя сучасныя
                         мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
@@ -112,10 +114,10 @@
                     </div>
                 </div>
                 <div class="link_letters link_block" onclick="newspapers()">
-                    <div class="title_link_block">
+                    <div class="title_link_block lang" key="title_block_newspapers">
                         ГАЗЕТЫ
                     </div>
-                    <div class="defenition_link_block animate__animated animate__fadeInUp">
+                    <div class="defenition_link_block animate__animated animate__fadeInUp lang" key="defenition_block_newspapers">
                         Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
                         месцы старажытных паселішчаў і самыя сучасныя
                         мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
@@ -123,10 +125,10 @@
                     </div>
                 </div>
                 <div class="link_newspapers link_block" onclick="letters()">
-                    <div class="title_link_block">
+                    <div class="title_link_block lang" key="title_block_letters">
                         ЛІСТЫ
                     </div>
-                    <div class="defenition_link_block animate__animated animate__fadeInUp">
+                    <div class="defenition_link_block animate__animated animate__fadeInUp lang" key="defenition_block_letters">
                         Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
                         месцы старажытных паселішчаў і самыя сучасныя
                         мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
@@ -140,22 +142,22 @@
                     <i class='bx bxs-star'></i>
                 </div>
                 <div class="menu_footer">
-                    <div class="footer_first_child">Змест сайта:</div>
-                    <a href="../main.html">
-                        <div class="menu_footer_list">Галоўная</div>
+                    <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
+                    <a href="main.html">
+                        <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
                     </a>
-                    <a href="museum.html">Музей</a>
-                    <a href="archive.html">Архіў</a>
-                    <a href="test.html">Тэст</a>
+                    <a href="pages/museum.html" class="lang" key="museum_footer">Музей</a>
+                    <a href="pages/archive.html" class="lang" key="archive_footer">Архіў</a>
+                    <a href="pages/test.html" class="lang" key="test_footer">Тэст</a>
                 </div>
-                <div class="menu_footer">
-                    <div class="footer_first_child">Мова:</div>
-                    <a href="#">English</a>
-                    <a href="#">Русский</a>
-                    <a href="#">Беларуская мова</a>
+                <div class="menu_footer lang">
+                    <div class="footer_first_child lang" key="language_footer">Мова:</div>
+                    <a href="#" class="lang">English</a>
+                    <a href="#" class="lang">Русский</a>
+                    <a href="#" class="lang">Беларуская мова</a>
                 </div>
-                <div class="email_footer">
-                    <div class="footer_first_child">Пошта:</div>
+                <div class="email_footer lang">
+                    <div class="footer_first_child lang" key="email">Пошта:</div>
                     <a href="mailto:korsynilya77@gmail.com" class="email_link">
                         <div class="email_footer_list">korsynilya77@gmail.com</div>
                     </a>
