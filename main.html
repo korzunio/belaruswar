@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Подключение библиотеки с Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла jquery.min.js -->
+    <script src="jquery.min.js"></script>
     <!-- Подключение файла wow.js -->
     <script src="wow.min.js"></script>
     <script>
@@ -37,29 +39,29 @@
             <ul class="nav_list">
                     <li>
                         <i class = 'bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
-                        <input type="text" placeholder="Пошук...">
-                        <span class="tooltip">Пошук</span>
+                        <input type="text" placeholder="Search...">
+                        <span class="tooltip lang" key="search">Пошук</span>
                     </li>
                     <li>
-                        <a href="pages/museum.html">
+                        <a href="pages/museum.html" class="lang">
                             <i class='bx bxs-landmark'></i>
-                            <span class="links_name">Музей</span>
+                            <span class="links_name lang" key="museum">Музей</span>
                         </a>
-                        <span class="tooltip">Музей</span>
+                        <span class="tooltip lang" key="museum">Музей</span>
                     </li>
                     <li>
-                        <a href="pages/archive.html">
+                        <a href="pages/archive.html" class="lang">
                             <i class='bx bx-archive'></i>
-                            <span class="links_name">Архіў</span>
+                            <span class="links_name lang" key="archive">Архіў</span>
                         </a>
-                        <span class="tooltip">Архіў</span>
+                        <span class="tooltip lang" key="archive">Архіў</span>
                     </li>
                     <li>
-                        <a href="pages/test.html">
+                        <a href="pages/test.html" class="lang">
                             <i class='bx bx-question-mark'></i>
-                            <span class="links_name">Тэст</span>
+                            <span class="links_name lang" key="test">Тэст</span>
                         </a>
-                        <span class="tooltip">Тэст</span>
+                        <span class="tooltip lang" key="test">Тэст</span>
                     </li>
                     <!-- <li>
                         <a href="pages/news.html">
@@ -71,15 +73,15 @@
                     <li>
                         <a href="pages/news.html">
                             <i class='bx bxs-news'></i>
-                            <span class="links_name">Навіны</span>
+                            <span class="links_name lang" key="news">Навіны</span>
                         </a>
-                        <span class="tooltip">Навіны</span>
+                        <span class="tooltip lang" key="news">Навіны</span>
                     </li>
                     <li class="language"></li>
                         <ul class="sub-menu">
-                            <li><a href="#">ENG</a><span class="tooltip">English</span></li>
-                            <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
-                            <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                            <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
+                            <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
+                            <li><a href="main.html" id="by" class="translate">BY</a><span class="tooltip bel">Беларуская мова</span></li>
                         </ul>
                     </li>
             </ul>
@@ -90,7 +92,7 @@
                 <div class="title_promo_main">
                     belaruswar.by
                 </div>
-                <div class="definition_promo_main animate__animated animate__fadeInRightBig">
+                <div class="definition_promo_main animate__animated animate__fadeInRightBig lang"  key="promo_main_text">
                     Перамога ў Вялікай Айчыннай вайне — гераічны подзвіг народа. Дзень Перамогі мы адзначаем як галоўнае свята краіны.
                     Вечная памяць загінуўшым у баях! Слава пераможцам!
                 </div>
@@ -103,7 +105,7 @@
                             fill="#BE0B20" />
                     </svg>
             
-                    <div class="title_about animate__animated animate__fadeInRightBig wow">О САЙТЕ</div>
+                    <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="about_site_text">О САЙТЕ</div>
             
                     <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -134,34 +136,34 @@
             </div>
             <div class="blocks">
                 <div class="test_block  div_blocks animate__animated animate__fadeInRightBig wow">
-                    <div class="text_block">
+                    <div class="text_block lang" key="blocks_test">
                         Прайдзіце тэст
                     </div>
-                    <div class="definiton_test_block definiton_block">
+                    <div class="definiton_test_block definiton_block lang" key="defenition_blocks_test">
                         Каб даведацца, наколькі добра вы ведаеце Вялікую Айчынную Вайну, прайдзіце тэст Belaruswar!
                     </div>
                     <div class="button_blocks">
-                        <a href="pages/test.html"><button class="button_block">ПРАЙCЦІ ТЭСТ</button></a>
+                        <a href="pages/test.html"><button class="button_block lang" key="button_blocks_test">ПРАЙCЦІ ТЭСТ</button></a>
                     </div>
                 </div>
                 <div class="news_block  div_blocks animate__animated animate__fadeInRightBig wow">
-                    <div class="text_block">
+                    <div class="text_block lang" key="blocks_archive">
                         Наведайце архіў
                     </div>
-                    <div class="definiton_news_block definiton_block">
+                    <div class="definiton_news_block definiton_block lang" key="defenition_blocks_archive">
                         Архіў з газетамі, фатаграфіямі і франтавымі лістамі ваенных гадоў!
                     </div>
                     <div class="button_blocks">
-                        <a href="pages/archive.html"><button class="button_block">НАВЕДАЦЬ АРХІЎ</button></a>
+                        <a href="pages/archive.html"><button class="button_block lang" key="button_blocks_archive">НАВЕДАЦЬ АРХІЎ</button></a>
                     </div>
                 </div>
             </div>
             <!-- Беларусь памятае -->
             <div class="belarus_remember">
-                <div class="title_belarus_remember animate__animated animate__fadeInRightBig wow">
+                <div class="title_belarus_remember animate__animated animate__fadeInRightBig wow lang" key="title_belarus_remember">
                     БЕЛАРУСЬ ПАМЯТАЕ
                 </div>
-                <div class="text_belarus_remember animate__animated animate__fadeInRightBig wow">
+                <div class="text_belarus_remember animate__animated animate__fadeInRightBig wow lang" key="defenition_belarus_remember">
                     Хто не памятае гісторыі сваёй краіны — той не мае будучыні. Больш за 75 гадоў прайшло, Беларусь памятае і шануе подзвіг тых, хто
                     загінуў і жывых, вядомых і безыменных беларусаў — салдат Вялікай Айчыннай, партызан і падпольшчыкаў. Беларусь памятае
                     мільёны грамадзян, сагнаных у фашысцкае рабства, закатаваных у канцлагерах і гета, памятае тых, хто каваў Перамогу ў
@@ -180,7 +182,7 @@
                         fill="#BE0B20" />
                 </svg>
             
-                <div class="title_about animate__animated animate__fadeInRightBig wow">ГАРАДЫ-ГЕРОІ!</div>
+                <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="heroes_title">ГАРАДЫ-ГЕРОІ!</div>
             
                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -193,7 +195,7 @@
 
                         <figure class="places_card places_card_size_sm animate__animated animate__fadeInRightBig wow">
                             <img src="img/brest.jpg" alt="Брест" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title1">
                                 Брэст
                             </figcaption>
                             <a href="heroes-city/brest.html" class="places_card-link"></a>
@@ -201,7 +203,7 @@
 
                         <figure class="places_card places_card_size_sm animate__animated animate__fadeInUpBig wow">
                             <img src="img/керчь.jpg" alt="Керчь" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title2">
                                 Керч
                             </figcaption>
                             <a href="heroes-city/kerch.html" class="places_card-link"></a>
@@ -209,7 +211,7 @@
 
                         <figure class="places_card places_card_size_sm animate__animated animate__fadeInRightBig wow">
                             <img src="img/kiev_fullhd.jpg" alt="Киев" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title3">
                                 Кіеў
                             </figcaption>
                             <a href="heroes-city/kiev.html" class="places_card-link"></a>
@@ -217,7 +219,7 @@
                         
                         <figure class="places_card places_card_size_bg animate__animated animate__fadeInBottomLeft wow">
                             <img src="img/севастополь.jpg" alt="Севастополь" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title4">
                                 Севастопаль
                             </figcaption>
                             <a href="heroes-city/sevastopol.html" class="places_card-link"></a>
@@ -225,7 +227,7 @@
                         
                         <figure class="places_card places_card_size_bg animate__animated animate__fadeInBottomRight wow">
                             <img src="img/смоленск.jpg" alt="Смоленск" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title5">
                                 Смаленск
                             </figcaption>
                             <a href="heroes-city/smolensk.html" class="places_card-link"></a>
@@ -233,7 +235,7 @@
 
                         <figure class="places_card places_card_size_sm animate__animated animate__fadeInDownBig wow">
                             <img src="img/ленинград.jpg" alt="Ленинград" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title6">
                                 Ленінград
                             </figcaption>
                             <a href="heroes-city/leningrad.html" class="places_card-link"></a>
@@ -241,7 +243,7 @@
                         
                         <figure class="places_card places_card_size_sm animate__animated animate__fadeInRightBig wow">
                             <img src="img/минск.jpg" alt="Минск" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title7">
                                 Мінск
                             </figcaption>
                             <a href="heroes-city/minsk.html" class="places_card-link"></a>
@@ -249,7 +251,7 @@
                         
                         <figure class="places_card places_card_size_sm animate__animated animate__jackInTheBox wow">
                             <img src="img/москва.jpeg" alt="Москва" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title8">
                                 Масква
                             </figcaption>
                             <a href="heroes-city/moscow.html" class="places_card-link"></a>
@@ -257,7 +259,7 @@
 
                         <figure class="places_card places_card_size_bg animate__animated animate__fadeInDownBig wow">
                             <img src="img/одесса.jpg" alt="Одесса" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title9">
                                 Адэса
                             </figcaption>
                             <a href="heroes-city/odessa.html" class="places_card-link"></a>
@@ -265,7 +267,7 @@
                         
                         <figure class="places_card places_card_size_bg animate__animated animate__jackInTheBox wow">
                             <img src="img/тула.jpg" alt="Сталинград" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title10">
                                 Тула
                             </figcaption>
                             <a href="heroes-city/tula.html" class="places_card-link"></a>
@@ -273,7 +275,7 @@
 
                         <figure class="places_card places_card_size_sm animate__animated animate__fadeInLeftBig wow">
                             <img src="img/мурманск.jpg" alt="Мурманск" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title11">
                                 Мурманск
                             </figcaption>
                             <a href="heroes-city/murmansk.html" class="places_card-link"></a>
@@ -281,7 +283,7 @@
                         
                         <figure class="places_card places_card_size_sm animate__animated animate__slideInUp wow">
                             <img src="img/новороссийск.jpg" alt="Новороссийск" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title12">
                                 Наварасійск
                             </figcaption>
                             <a href="heroes-city/novorossiysk.html" class="places_card-link"></a>
@@ -289,7 +291,7 @@
                         
                         <figure class="places_card places_card_size_sm animate__animated animate__jackInTheBox wow">
                             <img src="img/сталиград.jpg" alt="Сталинград" class="places_card-pic places_card-pic_size-sm">
-                            <figcaption class="places_card-title">
+                            <figcaption class="places_card-title lang" key="hero_title13">
                                 Сталінград
                             </figcaption>
                             <a href="heroes-city/stalingrad.html" class="places_card-link"></a>
@@ -306,20 +308,20 @@
                     <i class='bx bxs-star'></i>
                 </div>
                 <div class="menu_footer">
-                    <div class="footer_first_child">Змест сайта:</div>
-                    <a href="main.html"><div class="menu_footer_list">Галоўная</div></a>
-                    <a href="pages/museum.html">Музей</a>
-                    <a href="pages/archive.html">Архіў</a>
-                    <a href="pages/test.html">Тэст</a>
+                    <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
+                    <a href="main.html"><div class="menu_footer_list lang" key="main_footer">Галоўная</div></a>
+                    <a href="pages/museum.html" class="lang" key="museum_footer">Музей</a>
+                    <a href="pages/archive.html" class="lang" key="archive_footer">Архіў</a>
+                    <a href="pages/test.html" class="lang" key="test_footer">Тэст</a>
                 </div>
-                <div class="menu_footer">
-                    <div class="footer_first_child">Мова:</div>
-                    <a href="#">English</a>
-                    <a href="#">Русский</a>
-                    <a href="#">Беларуская мова</a>
+                <div class="menu_footer lang">
+                    <div class="footer_first_child lang" key="language_footer">Мова:</div>
+                    <a href="#" class="lang">English</a>
+                    <a href="#" class="lang">Русский</a>
+                    <a href="#" class="lang">Беларуская мова</a>
                 </div>
-                <div class="email_footer">
-                    <div class="footer_first_child">Пошта:</div>
+                <div class="email_footer lang">
+                    <div class="footer_first_child lang" key="email">Пошта:</div>
                     <a href="mailto:korsynilya77@gmail.com" class="email_link"><div class="email_footer_list">korsynilya77@gmail.com</div></a>
                 </div>
             </div>
