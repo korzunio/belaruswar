@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belaruswar — Газеты</title>
+    <title class="lang" key="title_newspaper">Belaruswar — Газеты</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="newspapers.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
@@ -20,6 +20,8 @@
         rel="stylesheet">
     <!-- Подключение библиотеки с Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла jquery.min.js -->
+    <script src="../jquery.min.js"></script>
     <!-- Подключение файла wow.js -->
     <script src="../wow.min.js"></script>
     <script>
@@ -40,38 +42,37 @@
             </div>
             <ul class="nav_list">
                 <li>
-                    <i class='bx bx-search'
-                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
-                    <input type="text" placeholder="Пошук...">
-                    <span class="tooltip">Пошук</span>
+                    <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip lang" key="search">Пошук</span>
                 </li>
                 <li>
-                    <a href="../main.html">
+                    <a href="../main.html" class="lang">
                         <i class='bx bxs-star'></i>
-                        <span class="links_name">Галоўная</span>
+                        <span class="links_name lang" key="main_href">Галоўная</span>
                     </a>
-                    <span class="tooltip">Галоўная</span>
+                    <span class="tooltip lang" key="main_href">Галоўная</span>
                 </li>
                 <li>
-                    <a href="museum.html">
+                    <a href="museum.html" class="lang">
                         <i class='bx bxs-landmark'></i>
-                        <span class="links_name">Музей</span>
+                        <span class="links_name lang" key="museum">Музей</span>
                     </a>
-                    <span class="tooltip">Музей</span>
+                    <span class="tooltip lang" key="museum">Музей</span>
                 </li>
                 <li>
-                    <a href="archive.html">
+                    <a href="archive.html" class="lang">
                         <i class='bx bx-archive'></i>
-                        <span class="links_name">Архіў</span>
+                        <span class="links_name lang" key="archive">Архіў</span>
                     </a>
-                    <span class="tooltip">Архіў</span>
+                    <span class="tooltip lang" key="archive">Архіў</span>
                 </li>
                 <li>
-                    <a href="test.html">
+                    <a href="test.html" class="lang">
                         <i class='bx bx-question-mark'></i>
-                        <span class="links_name">Тэст</span>
+                        <span class="links_name lang" key="test">Тэст</span>
                     </a>
-                    <span class="tooltip">Тэст</span>
+                    <span class="tooltip lang" key="test">Тэст</span>
                 </li>
                 <!-- <li>
                         <a href="pages/news.html">
@@ -83,15 +84,15 @@
                 <li>
                     <a href="news.html">
                         <i class='bx bxs-news'></i>
-                        <span class="links_name">Навіны</span>
+                        <span class="links_name lang" key="news">Навіны</span>
                     </a>
-                    <span class="tooltip">Навіны</span>
+                    <span class="tooltip lang" key="news">Навіны</span>
                 </li>
                 <li class="language"></li>
                 <ul class="sub-menu">
-                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
-                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
-                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                    <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
+                    <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
+                    <li><a href="newspapers.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
                 </ul>
                 </li>
             </ul>
@@ -99,10 +100,10 @@
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
             <div class="promo_museum">
-                <div class="title_promo_museum">
+                <div class="title_promo_museum lang" key="title_promo_newspapers">
                     Газеты
                 </div>
-                <div class="definition_promo_museum">
+                <div class="definition_promo_museum lang" key="defenition_promo_newspapers">
                     Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
                     месцы старажытных паселішчаў і самыя сучасныя
                     мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
@@ -111,10 +112,10 @@
             </div>
             <div class="newspapers">
                 <div class="newspaper_first newspaper_variant" onclick="newspaper1()">
-                    <div class="title_newspaper_variant">
+                    <div class="title_newspaper_variant lang">
                         «Бальшавік»
                     </div>
-                    <div class="defenition_newspaper_variant animate__animated animate__fadeInUp">
+                    <div class="defenition_newspaper_variant animate__animated animate__fadeInUp lang" key="defenition_newspaper1">
                         «Бальшавік» - тэарэтычны і палітычны часопіс. Выходзіў з 1924 года, раз у два тыдні. У часопісе асвятляліся пытанні
                         марксісцка-ленінскай тэорыі, гісторыі міжнароднага камуністычнага руху і будаўніцтва камуністычнага грамадства ў СССР.
                         Друкаваліся артыкулы па філасофіі, эканоміцы, літаратуры і мастацтву. У лістападзе 1952 года часопіс перайменаваны ў
@@ -122,10 +123,10 @@
                     </div>
                 </div>
                 <div class="newspaper_second newspaper_variant">
-                    <div class="title_newspaper_variant">
+                    <div class="title_newspaper_variant lang">
                         «Вайна і рабочы клас» 
                     </div>
-                    <div class="defenition_newspaper_variant animate__animated animate__fadeInUp">
+                    <div class="defenition_newspaper_variant animate__animated animate__fadeInUp lang" key="defenition_newspaper2">
                         <!-- «Вайна і рабочы клас» выдаваўся ў Маскве з 1943 па 1945 гады два разы на месяц. Ён асвятляў пытанні знешняй палітыкі
                         СССР і замежных дзяржаў, актуальныя падзеі міжнароднага жыцця. У ім прымалі ўдзел навукоўцы, пісьменнікі, журналісты,
                         кіраўнікі прафсаюзнага руху ў іншыя грамадскія дзеячы. Пасля заканчэння вайны часопіс быў перайменаваны ў «Новы час», і
@@ -140,22 +141,22 @@
                     <i class='bx bxs-star'></i>
                 </div>
                 <div class="menu_footer">
-                    <div class="footer_first_child">Змест сайта:</div>
-                    <a href="../main.html">
-                        <div class="menu_footer_list">Галоўная</div>
+                    <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
+                    <a href="main.html">
+                        <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
                     </a>
-                    <a href="museum.html">Музей</a>
-                    <a href="archive.html">Архіў</a>
-                    <a href="test.html">Тэст</a>
+                    <a href="pages/museum.html" class="lang" key="museum_footer">Музей</a>
+                    <a href="pages/archive.html" class="lang" key="archive_footer">Архіў</a>
+                    <a href="pages/test.html" class="lang" key="test_footer">Тэст</a>
                 </div>
-                <div class="menu_footer">
-                    <div class="footer_first_child">Мова:</div>
-                    <a href="#">English</a>
-                    <a href="#">Русский</a>
-                    <a href="#">Беларуская мова</a>
+                <div class="menu_footer lang">
+                    <div class="footer_first_child lang" key="language_footer">Мова:</div>
+                    <a href="#" class="lang">English</a>
+                    <a href="#" class="lang">Русский</a>
+                    <a href="#" class="lang">Беларуская мова</a>
                 </div>
-                <div class="email_footer">
-                    <div class="footer_first_child">Пошта:</div>
+                <div class="email_footer lang">
+                    <div class="footer_first_child lang" key="email">Пошта:</div>
                     <a href="mailto:korsynilya77@gmail.com" class="email_link">
                         <div class="email_footer_list">korsynilya77@gmail.com</div>
                     </a>
