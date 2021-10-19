@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belaruswar — Музей</title>
+    <title class="lang" key="title_museum">Belaruswar — Музей</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="museum.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
@@ -16,10 +16,11 @@
     <!-- Шріфт Comfortaa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Подключение библиотеки с Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Подключение файла jquery.min.js -->
+    <script src="../jquery.min.js"></script>
     <!-- Подключение файла wow.js -->
     <script src="../wow.min.js"></script>
     <script>
@@ -50,45 +51,45 @@
                     <span class="tooltip">Галоўная</span>
                 </li>
                 <li>
-                    <a href="museum.html">
+                    <a href="pages/museum.html" class="lang">
                         <i class='bx bxs-landmark'></i>
-                        <span class="links_name">Музей</span>
+                        <span class="links_name lang" key="museum">Музей</span>
                     </a>
-                    <span class="tooltip">Музей</span>
+                    <span class="tooltip lang" key="museum">Музей</span>
                 </li>
                 <li>
-                    <a href="archive.html">
+                    <a href="pages/archive.html" class="lang">
                         <i class='bx bx-archive'></i>
-                        <span class="links_name">Архіў</span>
+                        <span class="links_name lang" key="archive">Архіў</span>
                     </a>
-                    <span class="tooltip">Архіў</span>
+                    <span class="tooltip lang" key="archive">Архіў</span>
                 </li>
                 <li>
-                    <a href="test.html">
+                    <a href="pages/test.html" class="lang">
                         <i class='bx bx-question-mark'></i>
-                        <span class="links_name">Тэст</span>
+                        <span class="links_name lang" key="test">Тэст</span>
                     </a>
-                    <span class="tooltip">Тэст</span>
+                    <span class="tooltip lang" key="test">Тэст</span>
                 </li>
                 <!-- <li>
-                    <a href="pages/news.html">
-                        <i class='bx bx-book-bookmark'></i>
-                        <span class="links_name">Гісторыя</span>
-                    </a>
-                    <span class="tooltip">Гісторыя</span>
-                </li> -->
+                        <a href="pages/news.html">
+                            <i class='bx bx-book-bookmark'></i>
+                            <span class="links_name">Гісторыя</span>
+                        </a>
+                        <span class="tooltip">Гісторыя</span>
+                    </li> -->
                 <li>
-                    <a href="news.html">
+                    <a href="pages/news.html">
                         <i class='bx bxs-news'></i>
-                        <span class="links_name">Навіны</span>
+                        <span class="links_name lang" key="news">Навіны</span>
                     </a>
-                    <span class="tooltip">Навіны</span>
+                    <span class="tooltip lang" key="news">Навіны</span>
                 </li>
                 <li class="language"></li>
                 <ul class="sub-menu">
-                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
-                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
-                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                    <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
+                    <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
+                    <li><a href="museum.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
                 </ul>
                 </li>
             </ul>
@@ -96,21 +97,21 @@
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
             <div class="promo_museum">
-                <div class="title_promo_museum">
+                <div class="title_promo_museum lang" key="title_promo_mueseum">
                     Музей
                 </div>
-                <div class="definition_promo_museum animate__animated animate__fadeInRightBig">
-                        Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
-                        месцы старажытных паселішчаў і самыя сучасныя
-                        мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
-                        мастацтвам.
+                <div class="definition_promo_museum animate__animated animate__fadeInRightBig lang" key="defenition_promo_museum">
+                    Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
+                    месцы старажытных паселішчаў і самыя сучасныя
+                    мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
+                    мастацтвам.
                 </div>
             </div>
             <div class="about_museum">
-                <div class="title_about animate__animated animate__fadeInRightBig wow">
+                <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="about_museum_title">
                     Аб пакоі баявой славы
                 </div>
-                <div class="text_about_museum animate__animated animate__fadeInRightBig wow">
+                <div class="text_about_museum animate__animated animate__fadeInRightBig wow lang" key="about_museum_defenition">
                     40 гадоў таму, 21 лютага 1980 года ў СШ № 54 (цяпер гімназія № 7) г. Мінска была адкрыта пакой баявой славы, у якой
                     навучэнцамі і педагогамі быў сабраны вялікі матэрыял пра юных абаронцах Айчыны. Піянеры і школьнікі праводзілі вялікую
                     работу па патрыятычнаму выхаванню, па ўвекавечанні памяці пра людзей, якія прынеслі на нашу беларускую зямлю
@@ -123,14 +124,14 @@
                 </div>
             </div>
             <div class="facts_museum">
-                <div class="title_about animate__animated animate__fadeInRightBig wow">
+                <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="title_facts_museum">
                     У Пакоі баявой славы праводзяцца:
                 </div>
                 <ul class="list_facts_museum animate__animated animate__fadeInRightBig wow">
-                    <li class="animate__animated animate__fadeInRightBig wow">урокі мужнасці, на якія запрашаюцца былыя юныя ўдзельнікі вайны, беларускія Арляты</li>
-                    <li class="animate__animated animate__fadeInUpBig wow">урокі гісторыі, звязаныя з перыядам Вялікай Айчыннай вайны</li>
-                    <li class="animate__animated animate__fadeInRightBig wow">сустрэчы з ветэранамі Вялікай Айчыннай вайны</li>
-                    <li class="animate__animated animate__fadeInUpBig wow">класныя гадзіны, прысвечаныя юным патрыётам Беларусі, на якіх дэманструюцца фільмы пра гераізм дзяцей рэспублікі</li>
+                    <li class="animate__animated animate__fadeInRightBig wow lang" key="first_fact_museum">урокі мужнасці, на якія запрашаюцца былыя юныя ўдзельнікі вайны, беларускія Арляты</li>
+                    <li class="animate__animated animate__fadeInUpBig wow lang" key="second_fact_museum">урокі гісторыі, звязаныя з перыядам Вялікай Айчыннай вайны</li>
+                    <li class="animate__animated animate__fadeInRightBig wow lang" key="third_fact_museum">сустрэчы з ветэранамі Вялікай Айчыннай вайны</li>
+                    <li class="animate__animated animate__fadeInUpBig wow lang" key="four_fact_museum">класныя гадзіны, прысвечаныя юным патрыётам Беларусі, на якіх дэманструюцца фільмы пра гераізм дзяцей рэспублікі</li>
                 </ul>
             </div>
             <div class="places" id="locations">
@@ -186,7 +187,7 @@
                 </div>
             </div>
             <div class="final_about">
-                <div class="text_about_museum about_museum_second animate__animated animate__fadeInRightBig wow">
+                <div class="text_about_museum about_museum_second animate__animated animate__fadeInRightBig wow lang" key="final_text_museum">
                     Пакой баявой славы «Юныя абаронцы Айчыны» увесь час папаўняецца новымі экспанатамі, дакументамі, кнігамі аб юных
                     абаронцах Радзімы.
                     Пакой баявой славы наведваюць школьнікі Партызанскага раёна і іншых раёнаў г. Мінска.
@@ -201,10 +202,10 @@
             </div>
             <div class="block_link_remember">
                 <div class="link_block" onclick="remember()">
-                    <div class="title_link_block">
+                    <div class="title_link_block lang" key="we_remember_museum">
                         МЫ ПАМЯТАЕМ
                     </div>
-                    <div class="defenition_link_block animate__animated animate__fadeInUp">
+                    <div class="defenition_link_block animate__animated animate__fadeInUp lang" key="defenition_remember_museum">
                         Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
                         месцы старажытных паселішчаў і самыя сучасныя
                         мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
@@ -218,22 +219,22 @@
                     <i class='bx bxs-star'></i>
                 </div>
                 <div class="menu_footer">
-                    <div class="footer_first_child">Змест сайта:</div>
-                    <a href="../main.html">
-                        <div class="menu_footer_list">Галоўная</div>
+                    <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
+                    <a href="main.html">
+                        <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
                     </a>
-                    <a href="museum.html">Музей</a>
-                    <a href="archive.html">Архіў</a>
-                    <a href="test.html">Тэст</a>
+                    <a href="pages/museum.html" class="lang" key="museum_footer">Музей</a>
+                    <a href="pages/archive.html" class="lang" key="archive_footer">Архіў</a>
+                    <a href="pages/test.html" class="lang" key="test_footer">Тэст</a>
                 </div>
-                <div class="menu_footer">
-                    <div class="footer_first_child">Мова:</div>
-                    <a href="#">English</a>
-                    <a href="#">Русский</a>
-                    <a href="#">Беларуская мова</a>
+                <div class="menu_footer lang">
+                    <div class="footer_first_child lang" key="language_footer">Мова:</div>
+                    <a href="#" class="lang">English</a>
+                    <a href="#" class="lang">Русский</a>
+                    <a href="#" class="lang">Беларуская мова</a>
                 </div>
-                <div class="email_footer">
-                    <div class="footer_first_child">Пошта:</div>
+                <div class="email_footer lang">
+                    <div class="footer_first_child lang" key="email">Пошта:</div>
                     <a href="mailto:korsynilya77@gmail.com" class="email_link">
                         <div class="email_footer_list">korsynilya77@gmail.com</div>
                     </a>
