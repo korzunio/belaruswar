@@ -71,6 +71,7 @@
   align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 50px;
+  padding-top: 100px;
 }
 .menu_footer {
   display: flex;
