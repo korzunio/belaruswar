@@ -72,7 +72,7 @@
 /* Факты музея */
 .facts_museum {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-    url("../img/фотомузей2.jpg");
+    url("../img/фотомузей2.JPG");
   background-size: cover;
   background-attachment: fixed;
   color: white;
