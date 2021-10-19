@@ -239,7 +239,10 @@ i.bxs-star {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  height: 450px;
+  padding: 30px 0 30px 0;
+}
+.project {
+  color: #be0b20;
 }
 .paragraph_about {
   padding-left: 40px;
@@ -247,8 +250,12 @@ i.bxs-star {
   font-size: 22px;
   line-height: 32px;
 }
+.paragraph_about p:not(:last-child) {
+  padding-bottom: 20px;
+}
 .title_about {
   font-size: 45px;
+  padding-bottom: 15px;
 }
 .title_about_with_stars {
   display: flex;
