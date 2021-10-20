@@ -3,7 +3,7 @@
     url("../img/письма.jpg");
   height: 100vh;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-attachment: fixed;
   color: white;
   display: flex;
