@@ -145,7 +145,7 @@
 }
 .link_block {
   width: 90%;
-  height: 500px;
+  height: 400px;
   padding: 0 45px 0 45px;
   display: flex;
   justify-content: space-around;
@@ -246,9 +246,6 @@
   }
   .title_about {
     font-size: 30px;
-  }
-  .defenition_link_block {
-    display: block;
   }
 }
 @media screen and (max-width: 750px) {
