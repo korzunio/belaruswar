@@ -25,7 +25,7 @@
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
-  margin-left: 80px;
+  padding: 0 0 0 80px;
   font-weight: bold;
 }
 @keyframes back {
@@ -35,7 +35,7 @@
 }
 .definition_promo_museum {
   width: 70%;
-  margin-left: 80px;
+  padding: 0 0 0 80px;
   font-size: 22px;
   line-height: 32px;
 }
@@ -69,9 +69,8 @@
   background-color: black;
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
-  padding-bottom: 50px;
-  padding-top: 100px;
+  justify-content: space-between;
+  padding: 0 40px 50px 40px;
 }
 .menu_footer {
   display: flex;
@@ -101,4 +100,62 @@
 }
 .footer_first_child {
   font-weight: bold;
+}
+.logo_footer_name_active {
+  padding-top: 60px;
+  font-weight: bold;
+  display: none;
+  border-bottom: 2px solid #be0b20;
+}
+
+/* Адаптация сайта */
+@media screen and (max-width: 1280px) {
+  .title_promo_museum {
+    font-size: 100px;
+  }
+  .definition_promo_museum {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .title_promo_museum {
+    padding: 0 0 0 40px;
+  }
+  .definition_promo_museum {
+    padding: 0 0 0 40px;
+    width: 90%;
+  }
+  .newspapers {
+    flex-direction: column;
+  }
+  .newspaper_variant {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer .block_footer {
+    padding-top: 30px;
+  }
+  .logo_footer {
+    display: none;
+  }
+  .logo_footer_name_active {
+    display: block;
+  }
+}
+@media screen and (max-width: 750px) {
+  .title_promo_museum {
+    font-size: 50px;
+    padding: 0 0 0 20px;
+  }
+  .definition_promo_museum {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title_promo_museum {
+    font-size: 25px;
+  }
 }
