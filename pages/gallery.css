@@ -38,6 +38,7 @@
   height: 283px;
   object-fit: cover;
 }
+
 .places {
   background-color: rgb(0, 0, 0);
   background-size: cover;
@@ -70,7 +71,7 @@
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
-  margin-left: 80px;
+  padding: 0 0 0 80px;
   font-weight: bold;
 }
 @keyframes back {
@@ -80,7 +81,7 @@
 }
 .definition_promo_gallery {
   width: 70%;
-  margin-left: 80px;
+  padding: 0 0 0 80px;
   font-size: 22px;
   line-height: 32px;
 }
@@ -91,8 +92,8 @@
   background-color: black;
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
-  padding-bottom: 50px;
+  justify-content: space-between;
+  padding: 0 40px 50px 40px;
 }
 .menu_footer {
   display: flex;
@@ -124,11 +125,62 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 960px) {
-  .places_card_size_lg {
-    grid-column: span 6;
+/* Адаптация сайта */
+@media screen and (max-width: 1480px) {
+  .title_promo_gallery {
+    font-size: 100px;
+  }
+  .places_card_size_sm {
+    grid-column: span 3;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .title_promo_gallery {
+    font-size: 70px;
+    padding: 0 0 0 40px;
+  }
+  .definition_promo_gallery {
+    font-size: 20px;
+    padding: 0 0 0 40px;
+    width: 90%;
   }
   .places_card_size_sm {
     grid-column: span 6;
+  }
+  .places_card_size_bg {
+    grid-column: span 6;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer .block_footer {
+    padding-top: 30px;
+  }
+  .logo_footer {
+    display: none;
+  }
+  .logo_footer_name_active {
+    display: block;
+  }
+}
+@media screen and (max-width: 760px) {
+  #web-page.expanded {
+    --nav-panel-width: 220px;
+  }
+  .title_promo_gallery {
+    padding: 0 0 0 20px;
+    font-size: 50px;
+  }
+  .definition_promo_gallery {
+    padding: 0 0 0 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .defenition_promo_gallery {
+    font-size: 16px;
+  }
+  .title_promo_gallery {
+    font-size: 30px;
   }
 }
