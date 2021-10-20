@@ -247,6 +247,9 @@
   .title_about {
     font-size: 30px;
   }
+  .definition_link_block {
+    display: none;
+  }
 }
 @media screen and (max-width: 750px) {
   .places_card_size_sm {
