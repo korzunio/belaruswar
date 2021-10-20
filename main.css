@@ -213,7 +213,7 @@ i.bxs-star {
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
-  margin-left: 80px;
+  padding: 0 0 0 80px;
   font-weight: bold;
 }
 @keyframes back {
@@ -223,7 +223,7 @@ i.bxs-star {
 }
 .definition_promo_main {
   width: 70%;
-  margin-left: 80px;
+  padding: 0 0 0 80px;
   font-size: 25px;
   line-height: 35px;
 }
@@ -239,14 +239,12 @@ i.bxs-star {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 30px 0 30px 0;
+  padding: 30px 40px 30px 40px;
 }
 .project {
   color: #be0b20;
 }
 .paragraph_about {
-  padding-left: 40px;
-  padding-right: 40px;
   font-size: 22px;
   line-height: 32px;
 }
@@ -266,7 +264,6 @@ i.bxs-star {
 /* Блоки */
 .div_blocks {
   height: 300px;
-  width: 700px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -303,29 +300,6 @@ i.bxs-star {
 .button_block:hover {
   color: #be0b20;
   background-color: white;
-}
-
-/* Беларусь помнит */
-.belarus_remember {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  color: white;
-  height: 550px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)),
-    url("img/background11.jpg");
-  background-size: cover;
-  background-position: center top;
-}
-.text_belarus_remember {
-  width: 90%;
-  margin-left: 80px;
-  font-size: 22px;
-  line-height: 32px;
-}
-.title_belarus_remember {
-  font-size: 45px;
-  margin-left: 80px;
 }
 
 /* Города герои */
@@ -435,10 +409,96 @@ i.bxs-star {
 .footer_first_child {
   font-weight: bold;
 }
-
+.logo_footer_name_active {
+  padding-top: 60px;
+  font-weight: bold;
+  display: none;
+  margin: 0 auto;
+  border-bottom: 2px solid #be0b20;
+}
 /* Адаптация сайта */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1280px) {
+  .title_promo_main {
+    font-size: 100px;
+  }
+  .defenition_promo_main {
+    font-size: 26px;
+  }
+  .places_card_size_sm {
+    grid-column: span 3;
+  }
+  .definition_promo_main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .title_promo_main {
+    font-size: 70px;
+  }
+  .title_about {
+    font-size: 30px;
+  }
+  .svg_element {
+    display: none;
+  }
+  .text_about {
+    font-size: 18px;
+  }
+  .definition_promo_main {
+    font-size: 20px;
+  }
+  .div_blocks {
+    width: 90%;
+    padding: 0 50px 0 50px;
+  }
   .places_card_size_sm {
     grid-column: span 6;
+  }
+  .places_card_size_bg {
+    grid-column: span 6;
+  }
+  .blocks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .definiton_block {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer .block_footer {
+    padding-top: 30px;
+  }
+  .logo_footer {
+    display: none;
+  }
+  .logo_footer_name_active {
+    display: block;
+  }
+}
+@media screen and (max-width: 760px) {
+  #web-page.expanded {
+    --nav-panel-width: 220px;
+  }
+  .title_promo_main {
+    padding: 0 0 0 20px;
+    font-size: 50px;
+  }
+  .definition_promo_main {
+    padding: 0 0 0 20px;
+  }
+  .blocks {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .text_about {
+    padding: 40px 20px 40px 20px;
+  }
+  .title_about {
+    font-weight: bold;
   }
 }
