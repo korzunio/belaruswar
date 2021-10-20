@@ -377,8 +377,8 @@ i.bxs-star {
   background-color: black;
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
-  padding-bottom: 50px;
+  justify-content: space-between;
+  padding: 0 40px 50px 40px;
 }
 .menu_footer {
   display: flex;
@@ -424,16 +424,14 @@ i.bxs-star {
   }
   .defenition_promo_main {
     font-size: 26px;
+    width: 90%;
   }
   .places_card_size_sm {
     grid-column: span 3;
   }
-  .definition_promo_main {
-    width: 90%;
-  }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1000px) {
   .title_promo_main {
     font-size: 70px;
   }

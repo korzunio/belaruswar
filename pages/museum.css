@@ -26,7 +26,7 @@
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
-  margin-left: 80px;
+  padding: 0 0 0 80px;
   font-weight: bold;
 }
 @keyframes back {
@@ -36,8 +36,8 @@
 }
 .definition_promo_museum {
   width: 70%;
-  margin-left: 80px;
-  font-size: 22px;
+  padding: 0 0 0 80px;
+  font-size: 25px;
   line-height: 32px;
 }
 
@@ -45,20 +45,19 @@
 .about_museum {
   background-color: black;
   color: white;
-  height: 500px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding-bottom: 80px;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .title_about {
   font-size: 45px;
-  margin: 0 auto;
+  text-align: center;
   padding-bottom: 15px;
 }
 .text_about_museum {
-  width: 90%;
+  padding: 0 40px 0 40px;
   margin: 0 auto;
   font-size: 22px;
   line-height: 32px;
@@ -79,10 +78,11 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .list_facts_museum {
-  width: 90%;
+  padding: 0 40px 0 40px;
   margin: 0 auto;
   font-size: 22px;
   line-height: 32px;
@@ -96,6 +96,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
+  padding-top: 50px;
 }
 .places_card_size_sm {
   grid-column: span 2;
@@ -128,13 +129,11 @@
 .places {
   background-color: rgb(0, 0, 0);
   background-size: cover;
-  padding-top: 50px;
 }
 
 /* Текст финальный */
 .final_about {
   background-color: black;
-  padding-bottom: 50px;
 }
 
 /* Ссылка на remember */
@@ -189,8 +188,8 @@
   background-color: black;
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
-  padding-bottom: 50px;
+  justify-content: space-between;
+  padding: 0 40px 50px 40px;
 }
 .menu_footer {
   display: flex;
@@ -220,4 +219,57 @@
 }
 .footer_first_child {
   font-weight: bold;
+}
+
+/* Адаптация сайта */
+@media screen and (max-width: 1280px) {
+  .title_promo_museum {
+    font-size: 100px;
+  }
+  .definition_promo_museum {
+    font-size: 26px;
+  }
+  .places_card_size_sm {
+    grid-column: span 3;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .logo_footer {
+    display: none;
+  }
+  .title_promo_museum {
+    padding: 0 0 0 40px;
+  }
+  .definition_promo_museum {
+    padding: 0 0 0 40px;
+    width: 90%;
+  }
+  .title_about {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .places_card_size_sm {
+    grid-column: span 6;
+  }
+  .title_promo_museum {
+    font-size: 50px;
+    padding: 0 0 0 20px;
+  }
+  .definition_promo_museum {
+    padding: 0 0 0 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .text_about_museum {
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+  }
+  .list_facts_museum {
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+  }
+  .title_promo_main {
+    font-size: 25px;
+  }
 }
