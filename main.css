@@ -416,6 +416,7 @@ i.bxs-star {
   margin: 0 auto;
   border-bottom: 2px solid #be0b20;
 }
+
 /* Адаптация сайта */
 @media screen and (max-width: 1280px) {
   .title_promo_main {
@@ -509,5 +510,9 @@ i.bxs-star {
   }
   .title_promo_main {
     font-size: 40px;
+  }
+  .places_card-title {
+    font-size: 20px;
+    left: 15px;
   }
 }
