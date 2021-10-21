@@ -297,9 +297,6 @@ i.bxs-star:first-child {
 }
 
 @media (max-width: 1250px) {
-  .info_war {
-    flex-direction: column;
-  }
   .child_info_war {
     padding: 0 40px 50px 40px;
   }
