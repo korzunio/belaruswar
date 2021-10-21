@@ -35,7 +35,6 @@
   justify-content: space-around;
   color: white;
   background-color: black;
-  align-items: center;
 }
 .marker_info_war {
   background-color: #be0b20;
@@ -92,5 +91,14 @@
   }
   .about_city_second img {
     height: 600px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .info_war {
+    flex-direction: column;
+  }
+  .child_info_war {
+    padding: 0 0 0 80px;
   }
 }
