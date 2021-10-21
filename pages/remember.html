@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belaruswar — Музей</title>
+    <title class="lang" key="title_remember">Belaruswar — Мы памятаем</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="remember.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
@@ -22,91 +22,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Подключение файла wow.js -->
     <script src="../wow.min.js"></script>
+    <!-- Подключение файла jquery.min.js -->
+    <script src="../jquery.min.js"></script>
     <script>
         new WOW().init();
     </script>
 </head>
-
 <body>
     <div id="web-page">
-        <div class="sidebar">
-            <div class="logo-content">
-                <div class="logo">
-                    <i class='bx bxs-star'></i>
-                    <div class="logo_name">belaruswar</div>
-                </div>
-                <i class='bx bx-menu' id="btn"
-                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
-            </div>
-            <ul class="nav_list">
-                <li>
-                    <i class='bx bx-search'
-                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
-                    <input type="text" placeholder="Пошук...">
-                    <span class="tooltip">Пошук</span>
-                </li>
-                <li>
-                    <a href="../main.html" class="lang">
-                        <i class='bx bxs-star'></i>
-                        <span class="links_name lang" key="main_href">Галоўная</span>
-                    </a>
-                    <span class="tooltip lang" key="main_href">Галоўная</span>
-                </li>
-                <li>
-                    <a museum.html" class="lang">
-                        <i class='bx bxs-landmark'></i>
-                        <span class="links_name lang" key="museum">Пакой славы</span>
-                    </a>
-                    <span class="tooltip lang" key="museum">Пакой славы</span>
-                </li>
-                <li>
-                    <a href="archive.html">
-                        <i class='bx bx-archive'></i>
-                        <span class="links_name">Архіў</span>
-                    </a>
-                    <span class="tooltip">Архіў</span>
-                </li>
-                <li>
-                    <a href="test.html">
-                        <i class='bx bx-question-mark'></i>
-                        <span class="links_name">Тэст</span>
-                    </a>
-                    <span class="tooltip">Тэст</span>
-                </li>
-                <!-- <li>
-                    <a href="pages/news.html">
-                        <i class='bx bx-book-bookmark'></i>
-                        <span class="links_name">Гісторыя</span>
-                    </a>
-                    <span class="tooltip">Гісторыя</span>
-                </li> -->
-                <li>
-                    <a href="news.html">
-                        <i class='bx bxs-news'></i>
-                        <span class="links_name">Навіны</span>
-                    </a>
-                    <span class="tooltip">Навіны</span>
-                </li>
-                <li class="language"></li>
-                <ul class="sub-menu">
-                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
-                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
-                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
-                </ul>
-                </li>
-            </ul>
-        </div>
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
             <div class="promo_museum">
-                <div class="title_promo_museum">
+                <div class="title_promo_museum lang" key="we_remember_museum">
                     Мы памятаем
                 </div>
-                <div class="definition_promo_museum animate__animated animate__fadeInRightBig">
-                    Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
-                    месцы старажытных паселішчаў і самыя сучасныя
-                    мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
-                    мастацтвам.
+                <div class="definition_promo_museum animate__animated animate__fadeInRightBig lang" key="defenition_remember_museum">
+                    Шлях да Перамогі быў доўгім і цяжкім - 1418 дзён і начэй гэтай жудаснай вайны. На долю савецкага народа выпалі такія
+                    неверагодныя выпрабаванні, пакуты, ўзрушэнні. Чым можна вымераць доўгі шлях да Перамогі? Горам, днямі, бітвамі,
+                    пакутамі, мужнасцю, самаадданасцю? ... Усе гэтыя ваенныя падзеі ўвайшлі ў нашу памяць, у нашыя сэрцы, у жыццё пакалення
+                    XXI стагоддзя.
                 </div>
             </div>
             <div class="places" id="locations">
@@ -207,31 +141,96 @@
                 </div>
             </div>
             <div class="footer">
-                <div class="logo_footer">
+                <div class="logo_footer block_footer">
                     <div class="logo_footer_name footer_first_child">belaruswar</div>
-                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star kio'></i>
                 </div>
-                <div class="menu_footer">
+                <div class="menu_footer block_footer">
                     <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-                    <a href="main.html">
+                    <a href="../main.html">
                         <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
                     </a>
-                    <a href="museum.html" class="lang" key="museum_footer">Музей</a>
+                    <a href="museum.html" class="lang" key="museum_footer">Пакой славы</a>
                     <a href="archive.html" class="lang" key="archive_footer">Архіў</a>
                     <a href="test.html" class="lang" key="test_footer">Тэст</a>
                 </div>
-                <div class="menu_footer lang">
+                <div class="menu_footer block_footer lang">
                     <div class="footer_first_child lang" key="language_footer">Мова:</div>
                     <a id="en" class="translate">English</a>
                     <a id="ru" class="translate">Русский</a>
-                    <a href="remember.html" class="translate">Беларуская мова</a>
+                    <a href="main.html" class="lang">Беларуская мова</a>
                 </div>
-                <div class="email_footer lang">
+                <div class="email_footer block_footer lang">
                     <div class="footer_first_child lang" key="email">Пошта:</div>
                     <a href="mailto:korsynilya77@gmail.com" class="email_link">
                         <div class="email_footer_list">korsynilya77@gmail.com</div>
                     </a>
                 </div>
+                <div class="logo_footer_name_active">belaruswar - 2021</div>
+            </div>
+            <div class="sidebar">
+                <div class="logo-content">
+                    <div class="logo">
+                        <i class='bx bxs-star'></i>
+                        <div class="logo_name">belaruswar</div>
+                    </div>
+                    <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                </div>
+                <ul class="nav_list">
+                    <li>
+                        <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                        <input type="text" placeholder="Пошук...">
+                        <span class="tooltip">Пошук</span>
+                    </li>
+                    <li>
+                        <a href="../main.html" class="lang">
+                            <i class='bx bxs-star'></i>
+                            <span class="links_name lang" key="main_href">Галоўная</span>
+                        </a>
+                        <span class="tooltip lang" key="main_href">Галоўная</span>
+                    </li>
+                    <li>
+                        <a museum.html" class="lang">
+                            <i class='bx bxs-landmark'></i>
+                            <span class="links_name lang" key="museum">Пакой славы</span>
+                        </a>
+                        <span class="tooltip lang" key="museum">Пакой славы</span>
+                    </li>
+                    <li>
+                        <a href="archive.html">
+                            <i class='bx bx-archive'></i>
+                            <span class="links_name">Архіў</span>
+                        </a>
+                        <span class="tooltip">Архіў</span>
+                    </li>
+                    <li>
+                        <a href="test.html">
+                            <i class='bx bx-question-mark'></i>
+                            <span class="links_name">Тэст</span>
+                        </a>
+                        <span class="tooltip">Тэст</span>
+                    </li>
+                    <!-- <li>
+                                <a href="pages/news.html">
+                                    <i class='bx bx-book-bookmark'></i>
+                                    <span class="links_name">Гісторыя</span>
+                                </a>
+                                <span class="tooltip">Гісторыя</span>
+                            </li> -->
+                    <li>
+                        <a href="news.html">
+                            <i class='bx bxs-news'></i>
+                            <span class="links_name lang" key="news">Навіны</span>
+                        </a>
+                        <span class="tooltip lang" key="news">Навіны</span>
+                    </li>
+                    <li class="language"></li>
+                    <ul class="sub-menu">
+                        <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
+                        <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
+                        <li><a href="remember.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                    </ul>
+                </ul>
             </div>
         </div>
     </div>
