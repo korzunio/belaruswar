@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Подключение файла wow.js -->
     <script src="../wow.min.js"></script>
+    <!-- Подключение файла jquery.min.js -->
+    <script src="../jquery.min.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -72,53 +74,48 @@
                 <li>
                     <a href="news.html">
                         <i class='bx bxs-news'></i>
-                        <span class="links_name">Навіны</span>
+                        <span class="links_name lang" key="news">Навіны</span>
                     </a>
-                    <span class="tooltip">Навіны</span>
+                    <span class="tooltip lang" key="news">Навіны</span>
                 </li>
                 <li class="language"></li>
                 <ul class="sub-menu">
-                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
-                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
-                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                    <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
+                    <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
+                    <li><a href="test.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
                 </ul>
-                </li>
             </ul>
         </div>
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
             <div class="promo_test">
-                <div class="title_promo_test">
+                <div class="title_promo_test lang" key="test_promo_title">
                     Тэст
                 </div>
-                <div class="definition_promo_test animate__animated animate__fadeInRightBig">
-                        Гісторыя Вялікай Айчыннай вайны, як і гісторыя ў цэлым, складаецца з фактаў. У гэтым раздзеле сайта можна праверыць свае
-                        веды, адказаўшы на пытанні гістарычнага тэсту. На сайце будуць з'яўляцца новыя тэсты на розныя тэмы - ад побыту салдат
-                        да хронікі апошніх месяцаў вайны.
+                <div class="definition_promo_test animate__animated animate__fadeInRightBig lang" key="test_promo_definition">
+                    Гісторыя Вялікай Айчыннай вайны, як і гісторыя ў цэлым, складаецца з фактаў. У гэтым раздзеле сайта можна праверыць свае
+                    веды, адказаўшы на пытанні гістарычнага тэсту. На сайце будуць з'яўляцца новыя тэсты на розныя тэмы - ад побыту салдат
+                    да хронікі апошніх месяцаў вайны.
                 </div>
             </div>
             <!-- Выбор теста -->
             <div class="tests_variants">
                 <div class="test_first test_variant" onclick="test()">
-                    <div class="title_test_variant">
+                    <div class="title_test_variant lang" key="title_test_variant1">
                         ТЭСТ "ВАЙНА"
                     </div>
-                    <div class="defenition_test_variant animate__animated animate__fadeInUp">
-                        Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
-                        месцы старажытных паселішчаў і самыя сучасныя
-                        мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
-                        мастацтвам.
+                    <div class="defenition_test_variant animate__animated animate__fadeInUp lang" key="definition_test_variant1">
+                        Гісторыя Вялікай Айчыннай вайны, як і гісторыя ў цэлым, складаецца з фактаў. У гэтым раздзеле сайта можна праверыць свае
+                        веды, адказаўшы на пытанні гістарычнага тэсту. На сайце будуць з'яўляцца новыя тэсты на розныя тэмы - ад побыту салдат
+                        да хронікі апошніх месяцаў вайны.
                     </div>
                 </div>
                 <div class="test_second test_variant" onclick="test2()">
-                    <div class="title_test_variant">
+                    <div class="title_test_variant lang" key="title_test_variant2">
                         ТЭСТ "ВАЕННЫЯ ФІЛЬМЫ"
                     </div>
-                    <div class="defenition_test_variant animate__animated animate__fadeInUp">
-                        Каб ведаць Беларусь, трэба па ёй вандраваць. Бачыць яе гарады, мястэчкі, вялікія і малыя вёскі,
-                        месцы старажытных паселішчаў і самыя сучасныя
-                        мікрараёны. Знаёміцца з архітэктурай розных эпох і стыляў, прадметамі побыту і народным
-                        мастацтвам.
+                    <div class="defenition_test_variant animate__animated animate__fadeInUp lang" key="definition_test_variant2">
+                        Героі гэтых фільмаў выхавалі не адно пакаленне нашых суайчыннікаў прыкладам сваіх высакародных паводзін.
                     </div>
                 </div>
             </div>
@@ -129,7 +126,7 @@
                 </div>
                 <div class="menu_footer block_footer">
                     <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-                    <a href="main.html">
+                    <a href="../main.html">
                         <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
                     </a>
                     <a href="museum.html" class="lang" key="museum_footer">Пакой славы</a>
@@ -140,7 +137,7 @@
                     <div class="footer_first_child lang" key="language_footer">Мова:</div>
                     <a id="en" class="translate">English</a>
                     <a id="ru" class="translate">Русский</a>
-                    <a href="main.html" class="lang">Беларуская мова</a>
+                    <a href="test.html" class="lang">Беларуская мова</a>
                 </div>
                 <div class="email_footer block_footer lang">
                     <div class="footer_first_child lang" key="email">Пошта:</div>
