@@ -26,7 +26,7 @@ const btnTryAgain = document.getElementById('btn-try-again');
 
 const questions = [
   {
-    question: 'Загад нумар 227 "Ні кроку назад" быў аддадзены Язэпам Сталіным у ходзе:',
+    question: 'Загад нумар 227 "Ні кроку назад" быў аддадзены Іосіфым Сталіным у ходзе:',
     options: [
       'Бітвы на Курскай дузе',
       'Бітвы за Маскву',

@@ -233,7 +233,7 @@ i.bxs-star {
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
-  margin-left: 80px;
+  padding: 0 0 0 80px;
   font-weight: bold;
 }
 @keyframes back {
@@ -243,7 +243,7 @@ i.bxs-star {
 }
 .definition_promo_test {
   width: 70%;
-  margin-left: 80px;
+  padding: 0 0 0 80px;
   font-size: 22px;
   line-height: 35px;
 }
@@ -251,7 +251,6 @@ i.bxs-star {
 /* Тест */
 .quiz-container {
   width: 95%;
-  height: 100vh;
   background-color: #ffffff;
   display: block;
   margin: auto;
@@ -263,8 +262,11 @@ i.bxs-star {
 .quiz-title-container {
   display: flex;
   flex-direction: column;
-  height: 120px;
+  padding: 0 0 20px 0;
   justify-content: space-around;
+}
+.quiz-title-container h2 {
+  padding: 0 0 20px 0;
 }
 .question-number h3 {
   color: #be0b20;
@@ -422,9 +424,8 @@ i.bxs-star {
   background-color: black;
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  justify-content: space-between;
+  padding: 50px 40px 50px 40px;
 }
 .menu_footer {
   display: flex;
@@ -454,4 +455,82 @@ i.bxs-star {
 }
 .footer_first_child {
   font-weight: bold;
+}
+.logo_footer_name_active {
+  padding-top: 60px;
+  font-weight: bold;
+  display: none;
+  border-bottom: 2px solid #be0b20;
+}
+
+/* Адаптация сайта */
+@media screen and (max-width: 1280px) {
+  .title_promo_test {
+    font-size: 100px;
+  }
+  .definition_promo_test {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .logo_footer {
+    display: none;
+  }
+  .title_promo_test {
+    padding: 0 0 0 40px;
+  }
+  .definition_promo_test {
+    padding: 0 0 0 40px;
+    width: 90%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer .block_footer {
+    padding-top: 30px;
+  }
+  .logo_footer {
+    display: none;
+  }
+  .logo_footer_name_active {
+    display: block;
+  }
+  .tests_variants {
+    flex-direction: column;
+  }
+  .test_variant {
+    width: 100%;
+  }
+  .test_variant:last-child {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .button {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  .title_promo_test {
+    font-size: 50px;
+    padding: 0 0 0 20px;
+  }
+  .definition_promo_test {
+    padding: 0 0 0 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .text_about_test {
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+  }
+  .title_promo_test {
+    font-size: 25px;
+  }
+  .title_test_variant {
+    font-size: 30px;
+  }
+  .definition_promo_test {
+    display: none;
+  }
 }
