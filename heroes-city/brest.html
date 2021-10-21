@@ -33,65 +33,57 @@
                     <i class='bx bxs-star'></i>
                     <div class="logo_name">belaruswar</div>
                 </div>
-                <i class='bx bx-menu' id="btn"
-                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
             </div>
             <ul class="nav_list">
                 <li>
-                    <i class='bx bx-search'
-                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
-                    <input type="text" placeholder="Пошук...">
-                    <span class="tooltip">Пошук</span>
+                    <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <input type="text" placeholder="Search ...">
+                    <span class="tooltip lang" key="search">Пошук</span>
                 </li>
                 <li>
-                    <a href="../main.html">
-                        <i class='bx bxs-star'></i>
-                        <span class="links_name">Галоўная</span>
-                    </a>
-                    <span class="tooltip">Галоўная</span>
-                </li>
-                <li>
-                    <a href="pages/museum.html">
+                    <a href="../pages/museum.html" class="lang">
                         <i class='bx bxs-landmark'></i>
-                        <span class="links_name">Музей</span>
+                        <span class="links_name lang" key="museum">Пакой славы</span>
                     </a>
-                    <span class="tooltip">Музей</span>
+                    <span class="tooltip lang" key="museum">Пакой славы</span>
                 </li>
                 <li>
-                    <a href="pages/archive.html">
+                    <a href="../pages/archive.html" class="lang">
                         <i class='bx bx-archive'></i>
-                        <span class="links_name">Архіў</span>
+                        <span class="links_name lang" key="archive">Архіў</span>
                     </a>
-                    <span class="tooltip">Архіў</span>
+                    <span class="tooltip lang" key="archive">Архіў</span>
                 </li>
                 <li>
-                    <a href="pages/test.html">
+                    <a href="../pages/test.html" class="lang">
                         <i class='bx bx-question-mark'></i>
-                        <span class="links_name">Тэст</span>
+                        <span class="links_name lang" key="test">Тэст</span>
                     </a>
-                    <span class="tooltip">Тэст</span>
+                    <span class="tooltip lang" key="test">Тэст</span>
                 </li>
                 <!-- <li>
-                        <a href="pages/news.html">
-                            <i class='bx bx-book-bookmark'></i>
-                            <span class="links_name">Гісторыя</span>
-                        </a>
-                        <span class="tooltip">Гісторыя</span>
-                    </li> -->
+                                                            <a href="pages/news.html">
+                                                                <i class='bx bx-book-bookmark'></i>
+                                                                <span class="links_name">Гісторыя</span>
+                                                            </a>
+                                                            <span class="tooltip">Гісторыя</span>
+                                                        </li> -->
                 <li>
-                    <a href="pages/news.html">
+                    <a href="../pages/news.html">
                         <i class='bx bxs-news'></i>
-                        <span class="links_name">Навіны</span>
+                        <span class="links_name lang" key="news">Навіны</span>
                     </a>
-                    <span class="tooltip">Навіны</span>
+                    <span class="tooltip lang" key="news">Навіны</span>
                 </li>
-                <li class="language"></li>
-                <ul class="sub-menu">
-                    <li><a href="#">ENG</a><span class="tooltip">English</span></li>
-                    <li><a href="#">RU</a><span class="tooltip">Русский</span></li>
-                    <li><a href="#">BY</a><span class="tooltip bel">Беларуская мова</span></li>
-                </ul>
-                </li>
+                <!-- <li class="language"></li>
+                                <ul class="sub-menu">
+                                    <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
+                                    <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
+                                    <li><a href="main.html" id="by" class="translate">BY</a><span class="tooltip bel">Беларуская мова</span>
+                                    </li>
+                                </ul>
+                                </li> -->
             </ul>
         </div>
         <div class="content" id="webpage_content">
@@ -153,12 +145,12 @@
                 </div>
                 <div class="menu_footer block_footer">
                     <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-                    <a href="main.html">
+                    <a href="../main.html">
                         <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
                     </a>
-                    <a href="pages/museum.html" class="lang" key="museum_footer">Музей</a>
-                    <a href="pages/archive.html" class="lang" key="archive_footer">Архіў</a>
-                    <a href="pages/test.html" class="lang" key="test_footer">Тэст</a>
+                    <a href="../pages/museum.html" class="lang" key="museum_footer">Пакой славы</a>
+                    <a href="../pages/archive.html" class="lang" key="archive_footer">Архіў</a>
+                    <a href="../pages/test.html" class="lang" key="test_footer">Тэст</a>
                 </div>
                 <div class="menu_footer block_footer lang">
                     <div class="footer_first_child lang" key="language_footer">Мова:</div>

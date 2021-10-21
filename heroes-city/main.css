@@ -89,7 +89,7 @@ body {
 .sidebar ul {
   margin-top: 20px;
 }
-i.bxs-star:first-child {
+i.bxs-star {
   color: #be0b20;
 }
 .sidebar ul li {
@@ -213,7 +213,7 @@ i.bxs-star:first-child {
   align-self: flex-start;
   width: 60%;
   justify-content: space-around;
-  height: 450px;
+  height: 750px;
 }
 .title_cover {
   font-size: 100px;
