@@ -231,7 +231,15 @@ i.bxs-star {
   --animate-duration: 3s;
   /*  --animate-delay: 0.9s; - Такис способом тоже можно */
 }
-
+.definition_promo_main_second {
+  animation: back 20s linear infinite;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 1px #be0b20;
+  background: url("img/back.png");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+}
 /* О сайте */
 .text_about {
   background-image: url("img/background_about.jpg");
