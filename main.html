@@ -30,15 +30,17 @@
     <div id="web-page">
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
-            <div class="promo_main">
-                <div class="title_promo_main lang" key="main_title_promo">
+            <!-- Обложка (CSS "Обложка") -->
+            <div class="promo">
+                <div class="title_promo lang" key="main_title_promo">
                     Вечны агонь нашай памяці ...
                 </div>
-                <div class="definition_promo_main animate__animated animate__fadeInRightBig lang"  key="promo_main_text">
+                <div class="text_promo animate__animated animate__fadeInRightBig lang"  key="promo_main_text">
                     Перамога ў Вялікай Айчыннай вайне — гераічны подзвіг народа. Дзень Перамогі мы адзначаем як галоўнае свята краіны.
                     Вечная памяць загінуўшым у баях! Слава пераможцам!
                 </div>
             </div>
+            <!-- О сайте (CSS "Текст") -->
             <div class="text_about">
                 <div class="title_about_with_stars animate__animated animate__fadeInRightBig wow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
@@ -75,31 +77,32 @@
                     </p>
                 </div>
             </div>
-            <div class="blocks">
-                <div class="test_block  div_blocks animate__animated animate__fadeInRightBig wow">
-                    <div class="text_block lang" key="blocks_test">
+            <!-- Кликабельные блоки (CSS "Клик") -->
+            <div class="click_blocks">
+                <div class="click_block animate__animated animate__fadeInRightBig wow">
+                    <div class="title_click_block lang" key="blocks_test">
                         Прайдзіце тэст
                     </div>
-                    <div class="definiton_test_block definiton_block lang" key="defenition_blocks_test">
+                    <div class="definiton_click_block lang" key="defenition_blocks_test">
                         Каб даведацца, наколькі добра вы ведаеце Вялікую Айчынную Вайну, выканайце тэст!
                     </div>
-                    <div class="button_blocks">
-                        <a href="pages/test.html"><button class="button_block lang" key="button_blocks_test">ПРАЙCЦІ ТЭСТ</button></a>
+                    <div>
+                        <a href="pages/test.html"><button class="button_click_block lang" key="button_blocks_test">ПРАЙCЦІ ТЭСТ</button></a>
                     </div>
                 </div>
-                <div class="news_block  div_blocks animate__animated animate__fadeInRightBig wow">
-                    <div class="text_block lang" key="blocks_archive">
+                <div class="click_block animate__animated animate__fadeInRightBig wow">
+                    <div class="title_click_block lang" key="blocks_archive">
                         Наведайце архіў
                     </div>
-                    <div class="definiton_news_block definiton_block lang" key="defenition_blocks_archive">
+                    <div class="definiton_click_block lang" key="defenition_blocks_archive">
                         Архіў з газетамі, фатаграфіямі і франтавымі лістамі ваенных гадоў!
                     </div>
-                    <div class="button_blocks">
-                        <a href="pages/archive.html"><button class="button_block lang" key="button_blocks_archive">НАВЕДАЦЬ АРХІЎ</button></a>
+                    <div>
+                        <a href="pages/archive.html"><button class="button_click_block lang" key="button_blocks_archive">НАВЕДАЦЬ АРХІЎ</button></a>
                     </div>
                 </div>
             </div>
-            <!-- Беларусь памятае -->
+            <!-- Беларусь памятае (Блок "Текст") -->
             <div class="text_about">
                 <div class="title_about_with_stars animate__animated animate__fadeInRightBig wow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
@@ -129,7 +132,7 @@
                     </p>
                 </div>
             </div>
-            <!-- Города герои -->
+            <!-- Города герои (Заголовок) -->
             <div class="title_about_with_stars title_places animate__animated animate__fadeInRightBig wow">
                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -137,7 +140,7 @@
                         fill="#BE0B20" />
                 </svg>
             
-                <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="heroes_title">ГАРАДЫ-ГЕРОІ!</div>
+                <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="heroes_title">Гарады-героі!</div>
             
                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -145,13 +148,14 @@
                         fill="#BE0B20" />
                 </svg>
             </div>
+            <!-- Города герои (Галерея) -->
             <section class="places" id="locations">
                     <div class="places_cards">
 
                         <figure class="places_card places_card_size_sm animate__animated  animate__slideInRight wow">
                             <img src="img/brest.jpg" alt="Брест" class="places_card-pic places_card-pic_size-sm">
                             <figcaption class="places_card-title lang" key="hero_title1">
-                                Брэсцкая крэпасць
+                                Брэст
                             </figcaption>
                             <a href="heroes-city/brest.html" class="places_card-link" target="_blank"></a>
                         </figure>
@@ -252,11 +256,9 @@
                             <a href="heroes-city/stalingrad.html" class="places_card-link" target="_blank"></a>
                         </figure>
 
-                        <!-- <audio autoplay="autoplay">
-                            <source src="война-начало.mp3">
-                        </audio>  -->
                     </div> 
             </section>
+            <!-- Блок "Подвал" -->
             <div class="footer">
                 <div class="logo_footer block_footer">
                     <div class="logo_footer_name footer_first_child">belaruswar</div>
@@ -279,8 +281,8 @@
                     <div class="footer_first_child lang" key="email">Пошта:</div>
                     <a href="mailto:korsynilya77@gmail.com" class="email_link"><div class="email_footer_list">korsynilya77@gmail.com</div></a>
                 </div>
-                <div class="logo_footer_name_active">belaruswar - 2021</div>
             </div>
+            <!-- Меню -->
             <div class="sidebar">
                 <div class="logo-content">
                     <div class="logo">

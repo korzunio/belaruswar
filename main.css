@@ -19,7 +19,6 @@
 body {
   position: relative;
   min-height: 100vh;
-  width: 100%;
   font-family: "Comfortaa", cursive;
   overflow-x: hidden;
 }
@@ -197,15 +196,15 @@ i.bxs-star {
   flex: 2;
 }
 
-/* Обложка сайта */
-.promo_main {
+/* Блок "Обложка" */
+.promo {
   height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.title_promo_main {
+.title_promo {
   font-size: 150px;
   color: transparent;
   -webkit-text-stroke: 1px white;
@@ -221,7 +220,7 @@ i.bxs-star {
     background-position: 2000px 0;
   }
 }
-.definition_promo_main {
+.text_promo {
   width: 70%;
   padding: 0 0 0 80px;
   font-size: 25px;
@@ -232,7 +231,7 @@ i.bxs-star {
   /*  --animate-delay: 0.9s; - Такис способом тоже можно */
 }
 
-/* О сайте */
+/* Блок "Текст" */
 .text_about {
   background-image: url("img/background_about.jpg");
   background-size: cover;
@@ -241,19 +240,15 @@ i.bxs-star {
   flex-direction: column;
   padding: 30px 40px 30px 40px;
 }
-.project {
-  color: #be0b20;
-}
 .paragraph_about {
   font-size: 22px;
   line-height: 32px;
 }
+.paragraph_about p:first-child {
+  margin-top: 20px;
+}
 .paragraph_about p:not(:last-child) {
   padding-bottom: 20px;
-}
-.title_about {
-  font-size: 45px;
-  padding-bottom: 15px;
 }
 .title_about_with_stars {
   display: flex;
@@ -261,34 +256,42 @@ i.bxs-star {
   justify-content: space-around;
 }
 
-/* Блоки */
-.div_blocks {
-  height: 300px;
+/* Заголовок (.title_about) */
+.title_about {
+  font-size: 45px;
+}
+
+/* Блок "Клик" */
+.click_blocks {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.click_block div {
+  padding-top: 40px;
+}
+.click_block div:last-child {
+  padding-bottom: 40px;
+}
+.click_block {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   width: 35%;
   color: white;
 }
-.blocks {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
-  background-image: url("img/background.jpg");
-  background-position: bottom bottom;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.text_block {
+.title_click_block {
   font-size: 30px;
   font-weight: bold;
 }
-.definiton_block {
-  opacity: 0.7;
+.definiton_click_block {
+  opacity: 0.6;
   line-height: 27px;
+  font-size: 18px;
 }
-.button_block {
+.button_click_block {
   background-color: #be0b20;
   color: white;
   border: none;
@@ -297,20 +300,20 @@ i.bxs-star {
   font-size: 14px;
   transition: 0.5s all ease;
 }
-.button_block:hover {
+.button_click_block:hover {
   color: #be0b20;
   background-color: white;
+  cursor: pointer;
 }
 
-/* Города герои */
+/* Блок "Галерея" */
 .title_places {
   color: white;
   background-color: black;
-  padding: 50px 0 50px 0;
+  padding: 30px 0 30px 0;
 }
 .places {
   background-color: black;
-  padding-bottom: 50px;
 }
 .places_cards {
   display: grid;
@@ -334,7 +337,6 @@ i.bxs-star {
 .places_card-pic {
   width: 100%;
   transition: 0.15s;
-  /*Свойство object-fit сжимает картинки без потери качества и с фокусировкой на главном предмете. ОЧЕНЬ НУЖНАЯ ВЕЩЬ*/
 }
 .places_card {
   position: relative;
@@ -371,14 +373,14 @@ i.bxs-star {
   object-fit: cover;
 }
 
-/* Footer */
+/* Блок "Подвал" */
 .footer {
   color: white;
   background-color: black;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 40px 50px 40px;
+  padding: 70px 40px 50px 40px;
 }
 .menu_footer {
   display: flex;
@@ -408,12 +410,6 @@ i.bxs-star {
 }
 .footer_first_child {
   font-weight: bold;
-}
-.logo_footer_name_active {
-  padding-top: 60px;
-  font-weight: bold;
-  display: none;
-  border-bottom: 2px solid #be0b20;
 }
 
 /* Адаптация сайта */
