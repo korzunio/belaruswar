@@ -205,7 +205,7 @@ i.bxs-star {
   justify-content: space-around;
 }
 .title_promo {
-  font-size: 150px;
+  font-size: 170px;
   color: transparent;
   -webkit-text-stroke: 1px white;
   background: url("img/back.png");
@@ -226,8 +226,8 @@ i.bxs-star {
   font-size: 25px;
   line-height: 35px;
 }
-.animate__animated.definition_promo_main {
-  --animate-duration: 3s;
+.animate__animated.text_promo {
+  --animate-duration: 2.5s;
   /*  --animate-delay: 0.9s; - Такис способом тоже можно */
 }
 
@@ -268,6 +268,7 @@ i.bxs-star {
   background-image: url("img/background.jpg");
   background-size: cover;
   background-attachment: fixed;
+  padding: 0 80px 0 80px;
 }
 .click_block div {
   padding-top: 40px;
@@ -279,7 +280,6 @@ i.bxs-star {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  width: 35%;
   color: white;
 }
 .title_click_block {
@@ -290,6 +290,7 @@ i.bxs-star {
   opacity: 0.6;
   line-height: 27px;
   font-size: 18px;
+  width: 80%;
 }
 .button_click_block {
   background-color: #be0b20;
