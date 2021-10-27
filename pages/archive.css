@@ -47,7 +47,6 @@
   background-color: black;
   color: white;
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 .link_block {
   width: 30%;
@@ -58,6 +57,17 @@
   justify-content: space-around;
   flex-direction: column;
   overflow: hidden;
+}
+.link_block_second {
+  width: 45%;
+  height: 500px;
+  background-size: cover;
+  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 50px;
 }
 .title_link_block {
   font-weight: bold;
@@ -72,6 +82,13 @@
   display: block;
 }
 .link_block:hover .title_link_block {
+  border-bottom: 3px solid #be0b20;
+  transition: 0.5s all ease;
+}
+.link_block_second:hover .defenition_link_block {
+  display: block;
+}
+.link_block_second:hover .title_link_block {
   border-bottom: 3px solid #be0b20;
   transition: 0.5s all ease;
 }
@@ -90,6 +107,28 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url("../img/письма.jpg");
   background-size: cover;
+}
+.link_parads {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../img/парады.jpg");
+  background-size: cover;
+}
+.link_radio {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../img/радио.jpg");
+  background-size: cover;
+}
+.link_parads:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/парады.jpg");
+  background-size: cover;
+  cursor: pointer;
+}
+.link_radio:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/радио.jpg");
+  background-size: cover;
+  cursor: pointer;
 }
 .link_newspapers:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
