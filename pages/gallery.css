@@ -93,7 +93,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 40px 50px 40px;
+  padding: 50px 40px 50px 40px;
 }
 .menu_footer {
   display: flex;
