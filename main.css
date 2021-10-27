@@ -223,14 +223,6 @@ i.bxs-star {
 }
 
 /* Блок "Текст" */
-.text_about {
-  background-image: url("img/background_about.jpg");
-  background-size: cover;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 30px 40px 30px 40px;
-}
 .paragraph_about {
   font-size: 22px;
   line-height: 32px;
@@ -247,7 +239,7 @@ i.bxs-star {
   justify-content: space-around;
 }
 
-/* Блок "Текст(музей) */
+/* Блок "Текст (музей) */
 .text_museum {
   background-color: black;
   color: white;
