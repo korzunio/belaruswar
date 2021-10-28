@@ -138,12 +138,6 @@
 .footer_first_child {
   font-weight: bold;
 }
-.logo_footer_name_active {
-  padding-top: 60px;
-  font-weight: bold;
-  display: none;
-  border-bottom: 2px solid #be0b20;
-}
 
 /* Адаптация сайта */
 @media screen and (max-width: 1280px) {

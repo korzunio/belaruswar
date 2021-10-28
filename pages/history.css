@@ -201,8 +201,8 @@ i.bxs-star:first-child {
 
 /* Обложка */
 .promo_test {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url("../img/тест.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("../img/битвы.jpeg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -249,7 +249,7 @@ i.bxs-star:first-child {
   justify-content: space-around;
   color: white;
   padding-top: 50px;
-  padding-bottom: 50px;
+  background: black;
 }
 .test_variant {
   width: 45%;
@@ -278,21 +278,23 @@ i.bxs-star:first-child {
 }
 .test_first {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/background3.jpg");
+    url("../img/солдаты.jpg");
+  background-position: center center;
 }
 .test_second {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/background-archive.jpg");
+    url("../img/битвы.jpeg");
   background-size: cover;
 }
 .test_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/background3.jpg");
+    url("../img/солдаты.jpg");
   cursor: pointer;
+  background-position: center left;
 }
 .test_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/background-archive.jpg");
+    url("../img/битвы.jpeg");
   background-size: cover;
   cursor: pointer;
 }

@@ -85,7 +85,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 9%;
+}
+.logo_footer_name {
+  padding-right: 10px;
 }
 .menu_footer a,
 .email_footer_list {
@@ -100,12 +102,6 @@
 }
 .footer_first_child {
   font-weight: bold;
-}
-.logo_footer_name_active {
-  padding-top: 60px;
-  font-weight: bold;
-  display: none;
-  border-bottom: 2px solid #be0b20;
 }
 
 /* Адаптация сайта */
