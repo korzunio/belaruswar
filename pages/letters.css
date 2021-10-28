@@ -51,7 +51,10 @@
   align-items: center;
   color: white;
   background-color: black;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
+}
+.letter_block_second {
+  flex-direction: row-reverse;
 }
 .image_letter_block img {
   width: 400px;
@@ -72,6 +75,30 @@
   opacity: 0.5;
 }
 
+/* Текст почты */
+.email_block {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("../img/background.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-size: 20px;
+  padding: 35px 0 35px 0;
+  background-attachment: fixed;
+}
+.text_email_block {
+  width: 50%;
+}
+.image_email_block a i {
+  font-size: 35px;
+  color: white;
+  transition: 0.5s;
+}
+.image_email_block a i:hover {
+  color: #be0b20;
+}
 /* Footer */
 .footer {
   color: white;
@@ -79,7 +106,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 40px 50px 40px;
+  padding: 50px 40px 50px 40px;
 }
 .menu_footer {
   display: flex;
