@@ -14,7 +14,7 @@ var CitiesSlider = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
 
-    _this.IMAGE_PARTS = 4;
+    // _this.IMAGE_PARTS = 4;
 
     _this.changeTO = null;
     _this.AUTOCHANGE_TIME = 4000;

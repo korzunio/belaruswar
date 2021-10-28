@@ -6,15 +6,13 @@
   padding: 0;
 }
 
-body {
-  background: #000;
-}
-
 .slider {
   overflow: hidden;
   position: relative;
-  height: 100vh;
+  height: 80vh;
   color: #fff;
+  background: #000;
+  width: 100%;
 }
 .slider__top-heading {
   z-index: 12;
@@ -220,7 +218,8 @@ body {
 }
 .slider__slide-part {
   position: relative;
-  width: 25%;
+  width: 100%;
+  /* width: 25% */
   height: 100%;
 }
 .slider__slide-part-inner {
