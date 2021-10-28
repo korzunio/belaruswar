@@ -15,6 +15,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #520911;
 }
+.hash_red {
+  color: #be0b20;
+}
 
 body {
   position: relative;
@@ -312,6 +315,7 @@ i.bxs-star {
   text-align: center;
   padding-top: 50px;
 }
+
 /* Блок "Факты" */
 .facts {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
