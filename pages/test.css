@@ -249,7 +249,7 @@ i.bxs-star:first-child {
   justify-content: space-around;
   color: white;
   padding-top: 50px;
-  padding-bottom: 50px;
+  background: black;
 }
 .test_variant {
   width: 45%;
