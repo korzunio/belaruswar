@@ -227,7 +227,7 @@ i.bxs-star {
   font-size: 22px;
   line-height: 32px;
 }
-.paragraph_about p:first-child {
+.text_about .paragraph_about p:first-child {
   margin-top: 20px;
 }
 .paragraph_about p:not(:last-child) {
@@ -256,7 +256,6 @@ i.bxs-star {
 }
 
 /* Блок "Ссылка" */
-
 .link_block {
   width: 100%;
   height: 400px;
@@ -300,9 +299,8 @@ i.bxs-star {
 .youtube {
   background-color: black;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 50px;
 }
-
 /* Блок "Факты" */
 .facts {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -327,7 +325,9 @@ i.bxs-star {
 .places_museum {
   padding-top: 30px;
 }
-
+.places_card_main {
+  padding-bottom: 50px;
+}
 /* Блок "Клик" */
 .click_blocks {
   display: flex;
@@ -387,7 +387,6 @@ i.bxs-star {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
-  padding-bottom: 50px;
 }
 .places_card-link {
   position: absolute;
@@ -449,7 +448,7 @@ i.bxs-star {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 70px 40px 50px 40px;
+  padding: 50px 40px 50px 40px;
 }
 .menu_footer {
   display: flex;
