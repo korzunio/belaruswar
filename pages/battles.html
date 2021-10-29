@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="lang" key="title_history">Belaruswar — Гісторыя</title>
-    <link rel="stylesheet" href="history.css">
+    <title class="lang" key="title_battles">Belaruswar — Бітвы</title>
+    <link rel="stylesheet" href="battles.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -93,7 +93,7 @@
                 <ul class="sub-menu">
                     <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
                     <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
-                    <li><a href="history.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                    <li><a href="battles.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
                 </ul>
                 </li>
             </ul>
@@ -101,30 +101,35 @@
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
             <div class="promo_test">
-                <div class="title_promo_test lang" key="history_promo_title">
-                    Гісторыя
+                <div class="title_promo_test lang" key="battles_promo_title">
+                    Бітвы
                 </div>
-                <div class="definition_promo_test animate__animated animate__fadeInRightBig lang" key="history_promo_definition">
-                    Гісторыя — у гэтым раздзеле сайта вы можаце даведацца шмат новага пра ўдзельнікаў вайны, а таксама пра самыя значныя
-                    бітвы. Каб праверыць свае веды, вы можаце прайсці тэст у наступным раздзеле сайта.
+                <div class="definition_promo_test animate__animated animate__fadeInRightBig lang" key="definition_history_variant2">
+                    Найважнейшыя бітвы ў гісторыі Вялікай Айчыннай Вайны!
                 </div>
             </div>
             <!-- Выбор теста -->
             <div class="tests_variants">
                 <div class="test_first test_variant" onclick="test()">
-                    <div class="title_test_variant lang" key="title_history_variant1">
-                        САЛДАТЫ
+                    <div class="title_test_variant lang" key="title_battle_variant1">
+                        АБАРОНА БРЕСЦКАЙ КРЭПАСЦІ
                     </div>
-                    <div class="defenition_test_variant animate__animated animate__fadeInUp lang" key="definition_history_variant1">
-                        Салдаты, якія атрымалі ўзнагароды за абарону Радзімы!
+                    <div class="defenition_test_variant animate__animated animate__fadeInUp lang" key="definition_battle_variant1">
+                        Штурм крэпасці, гарады Брэста і захоп мастоў праз Заходні Буг і Мухавец быў даручаны 45-й пяхотнай дывізіі (45-я пд)
+                        вермахта генерал-маёра Фрыца Шліпера (каля 15 тысяч чалавек) з часткамі ўзмацнення. Для вядзення артпадрыхтоўкі на
+                        працягу першых пяці хвілін дывізіі надаваліся мартырныя дывізіёны 31-й і 34-й пяхотных дывізій 12-га армейскага корпуса
+                        4-й арміі.
                     </div>
                 </div>
                 <div class="test_second test_variant" onclick="test2()">
-                    <div class="title_test_variant lang" key="title_history_variant2">
-                        БІТВЫ
+                    <div class="title_test_variant lang" key="title_battle_variant2">
+                        ВЫЗВАЛЕННЕ МІНСКА
                     </div>
-                    <div class="defenition_test_variant animate__animated animate__fadeInUp lang" key="definition_history_variant2">
-                        Найважнейшыя бітвы ў гісторыі Вялікай Айчыннай Вайны!
+                    <div class="defenition_test_variant animate__animated animate__fadeInUp lang" key="definition_battle_variant2">
+                        Мінская аперацыя пачалася 29 чэрвеня, калі войскі 3-га Беларускага і 1-га Беларускіх франтоў у збежным напрамку нанеслі
+                        ўдар па праціўніку. Далей сумесна з войскамі 2-га Беларускага фронту было завершана акружэнне Мінска. Важкую дапамогу
+                        войскам аказалі беларускія партызаны, якія ладзілі засады на шляхах адступлення нямецкіх сіл, грамілі штабы, знішчалі
+                        масты і пераправы.
                     </div>
                 </div>
             </div>
@@ -146,7 +151,7 @@
                     <div class="footer_first_child lang" key="language_footer">Мова:</div>
                     <a id="en" class="translate">English</a>
                     <a id="ru" class="translate">Русский</a>
-                    <a href="history.html" class="lang">Беларуская мова</a>
+                    <a href="battles.html" class="lang">Беларуская мова</a>
                 </div>
                 <div class="email_footer block_footer lang">
                     <div class="footer_first_child lang" key="email">Пошта:</div>
@@ -162,7 +167,7 @@
             window.open("test-first.html");
         }
         function test2() {
-            window.open("battles.html");
+            window.open("test-second.html");
         }
     </script>
 </body>

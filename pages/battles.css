@@ -202,7 +202,7 @@ i.bxs-star:first-child {
 /* Обложка */
 .promo_test {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url("../img/история.jpeg");
+    url("../img/битвы.jpeg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -277,24 +277,24 @@ i.bxs-star:first-child {
   transition: 0.5s all ease;
 }
 .test_first {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/солдаты.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/брест.jpg");
   background-position: center center;
 }
 .test_second {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/битвы.jpeg");
+    url("../img/минск-свобода.jpg");
   background-size: cover;
 }
 .test_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/солдаты.jpg");
+    url("../img/брест.jpg");
   cursor: pointer;
-  background-position: center left;
+  background-position: center center;
 }
 .test_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/битвы.jpeg");
+    url("../img/минск-свобода.jpg");
   background-size: cover;
   cursor: pointer;
 }
