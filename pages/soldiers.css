@@ -201,8 +201,8 @@ i.bxs-star:first-child {
 
 /* Обложка */
 .promo_test {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url("../img/история.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url("../img/тест.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -278,23 +278,21 @@ i.bxs-star:first-child {
 }
 .test_first {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/солдаты.jpg");
-  background-position: center center;
+    url("../img/background3.jpg");
 }
 .test_second {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/битвы.jpeg");
+    url("../img/background-archive.jpg");
   background-size: cover;
 }
 .test_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/солдаты.jpg");
+    url("../img/background3.jpg");
   cursor: pointer;
-  background-position: center center;
 }
 .test_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/битвы.jpeg");
+    url("../img/background-archive.jpg");
   background-size: cover;
   cursor: pointer;
 }
