@@ -317,17 +317,18 @@ i.bxs-star {
 }
 
 /* Блок "Факты" */
-.facts {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("img/фотомузей2.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  color: white;
+.medal_facts {
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  align-items: center;
+  padding: 0 40px 0 40px;
+}
+.list_facts_medal {
+  padding: 0 80px 0 0;
+  font-size: 22px;
+  line-height: 32px;
+}
+.list_facts_medal li {
+  padding-top: 20px;
 }
 .list_facts {
   padding: 0 80px 0 80px;
@@ -337,12 +338,7 @@ i.bxs-star {
 .list_facts li {
   padding-top: 20px;
 }
-.places_museum {
-  padding-top: 30px;
-}
-.places_card_main {
-  padding-bottom: 50px;
-}
+
 /* Блок "Клик" */
 .click_blocks {
   display: flex;
