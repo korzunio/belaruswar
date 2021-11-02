@@ -342,7 +342,7 @@ i.bxs-star {
 /* Блок "Клик" */
 .click_blocks {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-image: url("img/background.jpg");
   background-size: cover;
   background-attachment: fixed;
