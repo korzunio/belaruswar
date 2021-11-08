@@ -14,7 +14,7 @@
   background: #be0b20;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #9b0b1c;
+  background: #520911;
 }
 :root {
   --nav-panel-width: 78px;
@@ -167,6 +167,9 @@ i.bxs-star {
   opacity: 0;
   pointer-events: none;
   display: block;
+}
+.hash_red {
+  color: #be0b20;
 }
 .sidebar ul li .bel {
   width: 180px;
