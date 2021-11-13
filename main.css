@@ -516,7 +516,7 @@ i.bxs-star {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 50px 40px 50px 40px;
+  padding: 50px 40px 30px 40px;
 }
 .menu_footer {
   display: flex;
@@ -549,7 +549,13 @@ i.bxs-star {
 .footer_first_child {
   font-weight: bold;
 }
-
+.after_footer {
+  background-color: black;
+  color: rgb(117, 117, 117);
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
 /* Адаптация сайта */
 @media screen and (max-width: 1280px) {
   .title_promo_main {
