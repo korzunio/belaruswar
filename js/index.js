@@ -102,8 +102,8 @@ var CitiesSlider = function (_React$Component) {
                 })
               ),
               React.createElement(
-                'button',
-                { className: 'slider__slide-readmore' },
+                'a',
+                { className: 'slider__slide-readmore', href: 'https://www.google.com'},
                 'ПЕРЕЙТИ'
               )
             ),

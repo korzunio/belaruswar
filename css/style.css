@@ -169,6 +169,9 @@
   transition-delay: 0.93333s;
 }
 .slider__slide-readmore {
+  padding: 20px 0 20px 0;
+  text-decoration: none;
+  text-align: center;
   font-size: 14px;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
@@ -183,7 +186,6 @@
   color: white;
   border: none;
   width: 200px;
-  height: 45px;
 }
 .slider__slide.s--active .slider__slide-readmore {
   -webkit-transition-delay: 0.65s;
