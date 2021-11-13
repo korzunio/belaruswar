@@ -22,7 +22,6 @@
 body {
   position: relative;
   min-height: 100vh;
-  width: 100%;
   font-family: "Comfortaa", cursive;
   overflow-x: hidden;
 }
@@ -180,8 +179,8 @@ i.bxs-star {
 .content {
   height: 100%;
   transition: all 0.5s ease;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("img/background8.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("img/background2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -217,8 +216,26 @@ i.bxs-star {
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
-  padding: 0 0 0 80px;
+  padding: 0 0 0 30px;
   font-weight: bold;
+}
+.social_promo {
+  padding: 0 0 0 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+.social_promo i {
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 10px;
+  transition: 0.5s;
+}
+.social_promo i:hover {
+  color: rgb(36, 36, 36);
+  background: white;
 }
 @keyframes back {
   100% {
@@ -227,12 +244,12 @@ i.bxs-star {
 }
 .text_promo {
   width: 70%;
-  padding: 0 0 0 80px;
+  padding: 0 0 0 40px;
   font-size: 25px;
   line-height: 35px;
 }
 .animate__animated.text_promo {
-  --animate-duration: 2.5s;
+  --animate-duration: 2s;
   /*  --animate-delay: 0.9s; - Такис способом тоже можно */
 }
 
@@ -346,7 +363,7 @@ i.bxs-star {
   background-image: url("img/background.jpg");
   background-size: cover;
   background-attachment: fixed;
-  padding: 0 80px 0 80px;
+  padding: 0 40px 0 40px;
 }
 .click_block div {
   padding-top: 40px;

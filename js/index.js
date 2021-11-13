@@ -136,7 +136,7 @@ var CitiesSlider = function (_React$Component) {
 var slides = [{
   city: 'Paris',
   country: 'France',
-  img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg'
+  img: '../img/brest.jpg',
 }, {
   city: 'Singapore',
   img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg'
