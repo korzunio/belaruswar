@@ -36,6 +36,7 @@ body {
   background-color: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
   border-right: 1px solid rgb(36, 36, 36);
+  z-index: 800000000000000000000000000000000;
 }
 .sidebar .logo-content .logo {
   color: #fff;
@@ -196,10 +197,9 @@ i.bxs-star {
 }
 #webpage_content {
   min-height: 100vh;
-  margin-left: var(--nav-panel-width);
+  margin-left: 78px;
   flex: 2;
 }
-
 /* Блок "Обложка" */
 .promo {
   height: 100vh;
