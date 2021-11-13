@@ -200,6 +200,7 @@ i.bxs-star {
   margin-left: 78px;
   flex: 2;
 }
+
 /* Блок "Обложка" */
 .promo {
   height: 100vh;
@@ -330,7 +331,7 @@ i.bxs-star {
 .youtube {
   background-color: black;
   text-align: center;
-  padding-top: 50px;
+  padding: 50px 40px 0 40px;
 }
 
 /* Блок "Факты" */
@@ -485,13 +486,23 @@ i.bxs-star {
   align-items: center;
   justify-content: space-between;
 }
+.second_book_museum {
+  flex-direction: row-reverse;
+}
 .child_book:first-child {
   padding-bottom: 50px;
 }
-
 .text_book {
   width: 75%;
 }
+/* Блок "Наши дети" */
+.our_children {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 40px 40px 0 40px;
+}
+
 /* Блок "Подвал" */
 .footer {
   color: white;
@@ -554,9 +565,6 @@ i.bxs-star {
   .title_about {
     font-size: 30px;
   }
-  .svg_element {
-    display: none;
-  }
   .text_about {
     font-size: 18px;
   }
@@ -585,9 +593,6 @@ i.bxs-star {
   }
   .footer .block_footer {
     padding-top: 30px;
-  }
-  .logo_footer {
-    display: none;
   }
   .logo_footer_name_active {
     display: block;
