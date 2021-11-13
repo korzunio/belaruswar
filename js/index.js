@@ -70,7 +70,7 @@ var CitiesSlider = function (_React$Component) {
       React.createElement(
         'p',
         { className: 'slider__top-heading' },
-        'belaruswar'
+        'heroes city'
       ),
       React.createElement(
         'div',
@@ -134,24 +134,57 @@ var CitiesSlider = function (_React$Component) {
 }(React.Component);
 
 var slides = [{
-  city: 'Paris',
-  country: 'France',
+  city: 'Brest',
+  country: 'Belarus',
   img: '../img/brest.jpg',
 }, {
-  city: 'Singapore',
-  img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg'
+  city: 'Kerch',
+  country: 'Russia',
+  img: '../img/керчь.jpg'
 }, {
-  city: 'Prague',
-  country: 'Czech Republic',
-  img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg'
+  city: 'Kiev',
+  country: 'Ukraine',
+  img: '../img/kiev_fullhd.jpg'
 }, {
-  city: 'Amsterdam',
-  country: 'Netherlands',
-  img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg'
+  city: 'Sevastopol',
+  country: 'Russia',
+  img: '../img/севастополь.jpg'
 }, {
   city: 'Moscow',
   country: 'Russia',
-  img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg'
+  img: '../img/москва.jpeg'
+}, {
+  city: 'Minsk',
+  country: 'Belarus',
+  img: '../img/минск.jpg'
+}, {
+  city: 'Smolensk',
+  country: 'Russia',
+  img: '../img/смоленск.jpg'
+}, {
+  city: 'Leningrad',
+  country: 'Russia',
+  img: '../img/ленинград.jpg'
+}, {
+  city: 'Odessa',
+  country: 'Ukraine',
+  img: '../img/одесса.jpg'
+}, {
+  city: 'Tula',
+  country: 'Russia',
+  img: '../img/тула.jpg'
+}, {
+  city: 'Murmansk',
+  country: 'Russia',
+  img: '../img/мурманск.jpg'
+}, {
+  city: 'Novorossiysk',
+  country: 'Russia',
+  img: '../img/новороссийск.jpg'
+}, {
+  city: 'Stalingrad',
+  country: 'Russia',
+  img: '../img/сталиград.jpg'
 }];
 
 ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app'));
