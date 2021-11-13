@@ -136,55 +136,55 @@ var CitiesSlider = function (_React$Component) {
 var slides = [{
   city: 'Brest',
   country: 'Belarus',
-  img: '../img/brest.jpg',
+  img: './img/brest.jpg'
 }, {
   city: 'Kerch',
   country: 'Russia',
-  img: '../img/керчь.jpg'
+  img: './img/керчь.jpg'
 }, {
   city: 'Kiev',
   country: 'Ukraine',
-  img: '../img/kiev_fullhd.jpg'
+  img: './img/kiev_fullhd.jpg'
 }, {
   city: 'Sevastopol',
   country: 'Russia',
-  img: '../img/севастополь.jpg'
+  img: './img/севастополь.jpg'
 }, {
   city: 'Moscow',
   country: 'Russia',
-  img: '../img/москва.jpeg'
+  img: './img/москва.jpeg'
 }, {
   city: 'Minsk',
   country: 'Belarus',
-  img: '../img/минск.jpg'
+  img: './img/минск.jpg'
 }, {
   city: 'Smolensk',
   country: 'Russia',
-  img: '../img/смоленск.jpg'
+  img: './img/смоленск.jpg'
 }, {
   city: 'Leningrad',
   country: 'Russia',
-  img: '../img/ленинград.jpg'
+  img: './img/ленинград.jpg'
 }, {
   city: 'Odessa',
   country: 'Ukraine',
-  img: '../img/одесса.jpg'
+  img: './img/одесса.jpg'
 }, {
   city: 'Tula',
   country: 'Russia',
-  img: '../img/тула.jpg'
+  img: './img/тула.jpg'
 }, {
   city: 'Murmansk',
   country: 'Russia',
-  img: '../img/мурманск.jpg'
+  img: './img/мурманск.jpg'
 }, {
   city: 'Novorossiysk',
   country: 'Russia',
-  img: '../img/новороссийск.jpg'
+  img: './img/новороссийск.jpg'
 }, {
   city: 'Stalingrad',
   country: 'Russia',
-  img: '../img/сталиград.jpg'
+  img: './img/сталиград.jpg'
 }];
 
 ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app'));
