@@ -360,7 +360,6 @@ i.bxs-star {
 .click_blocks {
   display: flex;
   justify-content: space-between;
-  background-image: url("img/background.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding: 0 40px 0 40px;
@@ -469,6 +468,30 @@ i.bxs-star {
   object-fit: cover;
 }
 
+/* Блок "Книга" (Музей) */
+.book_museum {
+  padding: 50px 40px 50px 40px;
+  justify-content: space-between;
+  display: flex;
+  background: black;
+  color: white;
+  font-size: 22px;
+  line-height: 32px;
+  align-items: center;
+  flex-direction: column;
+}
+.child_book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.child_book:first-child {
+  padding-bottom: 50px;
+}
+
+.text_book {
+  width: 75%;
+}
 /* Блок "Подвал" */
 .footer {
   color: white;
