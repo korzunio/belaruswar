@@ -486,15 +486,21 @@ i.bxs-star {
   align-items: center;
   justify-content: space-between;
 }
-.second_book_museum {
-  flex-direction: row-reverse;
-}
 .child_book:first-child {
   padding-bottom: 50px;
 }
-.text_book {
+.definition_book {
   width: 75%;
+  padding-top: 30px;
 }
+.title_book_museum {
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 3px solid #be0b20;
+  width: 40%;
+  padding-bottom: 30px;
+}
+
 /* Блок "Наши дети" */
 .our_children {
   display: flex;
