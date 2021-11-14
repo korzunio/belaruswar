@@ -516,7 +516,7 @@ i.bxs-star {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 50px 40px 30px 40px;
+  padding: 50px 40px 20px 40px;
 }
 .menu_footer {
   display: flex;
@@ -531,9 +531,7 @@ i.bxs-star {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.logo_footer_name {
-  padding-right: 10px;
+  width: 9%;
 }
 .menu_footer a,
 .email_footer_list {
@@ -551,11 +549,15 @@ i.bxs-star {
 }
 .after_footer {
   background-color: black;
-  color: rgb(117, 117, 117);
   display: flex;
   justify-content: space-around;
   padding-bottom: 20px;
 }
+.after_footer a {
+  color: white;
+  opacity: 0.5;
+}
+
 /* Адаптация сайта */
 @media screen and (max-width: 1280px) {
   .title_promo_main {
