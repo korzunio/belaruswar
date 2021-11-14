@@ -536,8 +536,8 @@ i.bxs-star {
   color: white;
   border: none;
   width: 100%;
-  height: 45px;
-  font-size: 14px;
+  height: 55px;
+  font-size: 17px;
   transition: 0.5s all ease;
 }
 .button_interesting_fact:hover {
@@ -553,7 +553,7 @@ i.bxs-star {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 50px 40px 20px 40px;
+  padding: 50px 40px 30px 40px;
 }
 .menu_footer {
   display: flex;
@@ -577,6 +577,9 @@ i.bxs-star {
   color: white;
   transition: 0.5s;
 }
+.links_footer a:last-child {
+  text-decoration: underline;
+}
 .menu_footer a:hover,
 .email_footer_list:hover {
   opacity: 1;
@@ -587,12 +590,14 @@ i.bxs-star {
 .after_footer {
   background-color: black;
   display: flex;
-  justify-content: space-around;
-  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
 }
 .after_footer a {
   color: white;
   opacity: 0.5;
+  padding-bottom: 5px;
 }
 
 /* Адаптация сайта */
