@@ -46,6 +46,9 @@
   width: 100%;
   padding: 50px 40px 0 40px;
 }
+.links_blocks_archive_second {
+  padding-bottom: 50px;
+}
 .link_block {
   width: 30%;
   height: 500px;
