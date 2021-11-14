@@ -159,6 +159,9 @@
   line-height: 30px;
   padding: 10px 40px 0 0;
 }
+.text_interesting_fact {
+  width: 70%;
+}
 .definition_interesting_fact {
   padding: 30px 0 30px 0;
 }
