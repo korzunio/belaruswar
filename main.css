@@ -405,7 +405,7 @@ i.bxs-star {
 /* gallery.html */
 .promo_gallery {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../img/фотограф.jpg");
+    url("img/фотограф.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -419,7 +419,7 @@ i.bxs-star {
   font-size: 120px;
   color: transparent;
   -webkit-text-stroke: 1px white;
-  background: url("../img/back.png");
+  background: url("img/back.png");
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
