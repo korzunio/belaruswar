@@ -11,12 +11,8 @@
   justify-content: space-around;
   font-family: "Comfortaa", cursive;
 }
-.animate__animated.first_paragraph {
+.animate__animated.definition_promo_museum {
   --animate-duration: 2s;
-}
-.animate__animated.second_paragraph {
-  --animate-duration: 2.5s;
-  /*  --animate-delay: 0.9s; - Такис способом тоже можно */
 }
 .title_promo_museum {
   font-size: 160px;
