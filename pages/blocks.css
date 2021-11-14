@@ -1,0 +1,206 @@
+/* Обложка */
+.animate__animated.definition_promo_blocks {
+  --animate-duration: 2s;
+}
+.title_promo_blocks {
+  font-size: 120px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  background: url("../img/back.png");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  padding: 0 0 0 40px;
+  font-weight: bold;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+.definition_promo_blocks {
+  padding: 0 0 0 40px;
+  font-size: 22px;
+  line-height: 35px;
+  width: 70%;
+}
+
+/* Выбор блока */
+.blocks_variants {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 40px 0 40px;
+  color: white;
+  background: black;
+}
+.block_variant {
+  width: 48%;
+  height: 500px;
+  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+}
+.title_block_variant {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.defenition_block_variant {
+  display: none;
+  font-size: 20px;
+}
+.block_variant:hover .defenition_block_variant {
+  display: block;
+}
+.block_variant:hover .title_block_variant {
+  border-bottom: 3px solid #be0b20;
+  transition: 0.5s all ease;
+}
+
+/* Битвы */
+.battle_first {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/брест.jpg");
+  background-position: center center;
+}
+.battle_second {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../img/минск-свобода.jpg");
+  background-size: cover;
+}
+.battle_third {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../img/хатынь.jfif");
+  background-size: cover;
+}
+.battle_fourth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/москва.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.battle_first:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/брест.jpg");
+  cursor: pointer;
+  background-position: center center;
+}
+.battle_second:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/минск-свобода.jpg");
+  background-size: cover;
+  cursor: pointer;
+}
+.battle_third:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/хатынь.jfif");
+  background-size: cover;
+}
+.battle_fourth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/москва.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Тесты */
+.test_first {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../img/background3.jpg");
+}
+.test_second {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../img/background-archive.jpg");
+  background-size: cover;
+}
+.test_first:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/background3.jpg");
+  cursor: pointer;
+}
+.test_second:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/background-archive.jpg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Истории */
+.history_first {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../img/солдаты.jpg");
+  background-position: center center;
+}
+.history_second {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../img/битвы.jpeg");
+  background-size: cover;
+}
+.history_first:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/солдаты.jpg");
+  cursor: pointer;
+  background-position: center center;
+}
+.history_second:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/битвы.jpeg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 50px 40px 30px 40px;
+}
+.menu_footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.menu_footer a:not(:first-child),
+.email_footer_list {
+  margin-top: 10px;
+}
+.logo_footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 9%;
+}
+.menu_footer a,
+.email_footer_list {
+  opacity: 0.5;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.links_footer a:last-child {
+  text-decoration: underline;
+}
+.menu_footer a:hover,
+.email_footer_list:hover {
+  opacity: 1;
+}
+.footer_first_child {
+  font-weight: bold;
+}
+.after_footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.after_footer a {
+  color: white;
+  opacity: 0.5;
+  padding-bottom: 5px;
+}

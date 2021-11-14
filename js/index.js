@@ -70,7 +70,7 @@ var CitiesSlider = function (_React$Component) {
       React.createElement(
         'p',
         { className: 'slider__top-heading' },
-        'heroes city'
+        'гарады героі'
       ),
       React.createElement(
         'div',
@@ -104,7 +104,7 @@ var CitiesSlider = function (_React$Component) {
               React.createElement(
                 'a',
                 { className: 'slider__slide-readmore', href: 'https://www.google.com'},
-                'ПЕРЕЙТИ'
+                'перайсці'
               )
             ),
             React.createElement(
@@ -134,56 +134,56 @@ var CitiesSlider = function (_React$Component) {
 }(React.Component);
 
 var slides = [{
-  city: 'Brest',
-  country: 'Belarus',
+  city: 'брэст',
+  country: 'беларусь',
   img: './img/брест-вар.jpg'
 }, {
-  city: 'Kerch',
-  country: 'Russia',
+  city: 'керч',
+  country: 'расія',
   img: './img/керчь-вар.jpeg'
 }, {
-  city: 'Kiev',
-  country: 'Ukraine',
+  city: 'кіеў',
+  country: 'украіна',
   img: './img/киев-вар.jpg'
 }, {
-  city: 'Sevastopol',
-  country: 'Russia',
+  city: 'севастопаль',
+  country: 'расія',
   img: './img/севастополь-вар.jpg'
 }, {
-  city: 'Moscow',
-  country: 'Russia',
+  city: 'масква',
+  country: 'расія',
   img: './img/москва-вар.jpg'
 }, {
-  city: 'Minsk',
-  country: 'Belarus',
+  city: 'мінск',
+  country: 'беларусь',
   img: './img/минск-вар.jpg'
 }, {
-  city: 'Smolensk',
-  country: 'Russia',
+  city: 'смаленск',
+  country: 'расія',
   img: './img/смоленск-вар.jpg'
 }, {
-  city: 'Leningrad',
-  country: 'Russia',
+  city: 'ленінград',
+  country: 'расія',
   img: './img/ленинград-вар.jpeg'
 }, {
-  city: 'Odessa',
-  country: 'Ukraine',
+  city: 'адэса',
+  country: 'украіна',
   img: './img/одесса-вар.jpg'
 }, {
-  city: 'Tula',
-  country: 'Russia',
+  city: 'тула',
+  country: 'расія',
   img: './img/тула-вар.jpg'
 }, {
-  city: 'Murmansk',
-  country: 'Russia',
+  city: 'мурманск',
+  country: 'расія',
   img: './img/мурманск-вар.jpg'
 }, {
-  city: 'Novorossiysk',
-  country: 'Russia',
+  city: 'новарасійск',
+  country: 'расія',
   img: './img/новороссийск-вар.jpg'
 }, {
-  city: 'Stalingrad',
-  country: 'Russia',
+  city: 'сталінград',
+  country: 'расія',
   img: './img/сталинград-вар.jpg'
 }];
 

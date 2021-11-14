@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="lang" key="title_tests">Belaruswar — Тэсты</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="blocks.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -27,7 +27,6 @@
         new WOW().init();
     </script>
 </head>
-
 <body>
     <div id="web-page">
         <div class="sidebar">
@@ -92,78 +91,105 @@
                     <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
                     <li><a href="test.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
                 </ul>
-                </li>
             </ul>
         </div>
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
             <div class="promo_test">
-                <div class="title_promo_test lang" key="test_promo_title">
+                <div class="title_promo_blocks lang" key="test_promo_title">
                     Тэст
                 </div>
-                <div class="definition_promo_test animate__animated animate__fadeInRightBig lang" key="test_promo_definition">
+                <div class="definition_promo_blocks animate__animated animate__fadeInRightBig lang" key="test_promo_definition">
                     Гісторыя Вялікай Айчыннай вайны, як і гісторыя ў цэлым, складаецца з фактаў. У гэтым раздзеле сайта можна праверыць свае
                     веды, адказаўшы на пытанні гістарычнага тэсту. На сайце будуць з'яўляцца новыя тэсты на розныя тэмы - ад побыту салдат
                     да хронікі апошніх месяцаў вайны.
                 </div>
             </div>
             <!-- Выбор теста -->
-            <div class="tests_variants">
-                <div class="test_first test_variant" onclick="test()">
-                    <div class="title_test_variant lang" key="title_test_variant1">
+            <div class="blocks_variants">
+                <div class="test_first block_first block_variant" onclick="test()">
+                    <div class="title_block_variant lang" key="title_test_variant1">
                         ТЭСТ "ВАЙНА"
                     </div>
-                    <div class="defenition_test_variant animate__animated animate__fadeInUp lang" key="definition_test_variant1">
+                    <div class="defenition_block_variant animate__animated animate__fadeInUp lang" key="definition_test_variant1">
                         Гісторыя Вялікай Айчыннай вайны, як і гісторыя ў цэлым, складаецца з фактаў. У гэтым раздзеле сайта можна праверыць свае
                         веды, адказаўшы на пытанні гістарычнага тэсту. На сайце будуць з'яўляцца новыя тэсты на розныя тэмы - ад побыту салдат
                         да хронікі апошніх месяцаў вайны.
                     </div>
                 </div>
-                <div class="test_second test_variant" onclick="test2()">
-                    <div class="title_test_variant lang" key="title_test_variant2">
+                <div class="test_second block_second block_variant" onclick="test2()">
+                    <div class="title_block_variant lang" key="title_test_variant2">
                         ТЭСТ "ВАЕННЫЯ ФІЛЬМЫ"
                     </div>
-                    <div class="defenition_test_variant animate__animated animate__fadeInUp lang" key="definition_test_variant2">
+                    <div class="defenition_block_variant animate__animated animate__fadeInUp lang" key="definition_test_variant2">
                         Героі гэтых фільмаў выхавалі не адно пакаленне нашых суайчыннікаў прыкладам сваіх высакародных паводзін.
                     </div>
                 </div>
             </div>
+            <!-- Footer -->
             <div class="footer">
                 <div class="logo_footer block_footer">
                     <div class="logo_footer_name footer_first_child">belaruswar</div>
                     <i class='bx bxs-star kio'></i>
                 </div>
-                <div class="menu_footer block_footer">
+                <div class="menu_footer links_footer block_footer">
                     <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-                    <a href="../main.html">
+                    <a href="battles.html">
                         <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
                     </a>
                     <a href="museum.html" class="lang" key="museum_footer">Пакой славы</a>
                     <a href="archive.html" class="lang" key="archive_footer">Архіў</a>
                     <a href="test.html" class="lang" key="test_footer">Тэст</a>
+                    <a href="history.html" class="lang" key="history_footer">Гісторыя</a>
+                    <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
                 </div>
                 <div class="menu_footer block_footer lang">
                     <div class="footer_first_child lang" key="language_footer">Мова:</div>
                     <a id="en" class="translate">English</a>
                     <a id="ru" class="translate">Русский</a>
-                    <a href="test.html" class="lang">Беларуская мова</a>
+                    <a href="battles.html" class="lang">Беларуская мова</a>
+                </div>
+                <div class="menu_footer social_footer block_footer" lang>
+                    <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
+                    <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
+                    <a href="https://t.me/belaruswar">Telegram</a>
+                    <a href="https://vk.com/public208818660">VK</a>
                 </div>
                 <div class="email_footer block_footer lang">
                     <div class="footer_first_child lang" key="email">Пошта:</div>
-                    <a href="mailto:korsynilya77@gmail.com" class="email_link">
-                        <div class="email_footer_list">korsynilya77@gmail.com</div>
+                    <a href="mailto:belaruswar@mail.ru" class="email_link">
+                        <div class="email_footer_list">belaruswar@mail.ru</div>
                     </a>
                 </div>
+            </div>
+            <div class="after_footer">
+                <a class="belaruswar_footer lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
+                <a>Korzun Ilya 2021</a>
             </div>
         </div>
     </div>
     <script>
         function test() {
-                window.open("test-first.html");
+            window.open("test-first.html");
         }
         function test2() {
             window.open("test-second.html");
         }
     </script>
+    <style>
+        .promo_test {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+                url("../img/тест.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-family: "Comfortaa", cursive;
+        }
+    </style>
 </body>
 </html>

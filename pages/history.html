@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="lang" key="title_history">Belaruswar — Гісторыя</title>
-    <link rel="stylesheet" href="history.css">
+    <link rel="stylesheet" href="blocks.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -16,8 +16,7 @@
     <!-- Шріфт Comfortaa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Подключение библиотеки с Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Подключение файла wow.js -->
@@ -28,7 +27,6 @@
         new WOW().init();
     </script>
 </head>
-
 <body>
     <div id="web-page">
         <div class="sidebar">
@@ -95,65 +93,77 @@
                     <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
                     <li><a href="history.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
                 </ul>
-                </li>
             </ul>
         </div>
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
-            <div class="promo_test">
-                <div class="title_promo_test lang" key="history_promo_title">
+            <div class="promo_history">
+                <div class="title_promo_blocks lang" key="history_promo_title">
                     Гісторыя
                 </div>
-                <div class="definition_promo_test animate__animated animate__fadeInRightBig lang" key="history_promo_definition">
+                <div class="definition_promo_blocks animate__animated animate__fadeInRightBig lang" key="history_promo_definition">
                     Гісторыя — у гэтым раздзеле сайта вы можаце даведацца шмат новага пра ўдзельнікаў вайны, а таксама пра самыя значныя
                     бітвы. Каб праверыць свае веды, вы можаце прайсці тэст у наступным раздзеле сайта.
                 </div>
             </div>
-            <!-- Выбор теста -->
-            <div class="tests_variants">
-                <div class="test_first test_variant" onclick="test()">
-                    <div class="title_test_variant lang" key="title_history_variant1">
+            <!-- Выбор истории -->
+            <div class="blocks_variants">
+                <div class="history_first block_first block_variant" onclick="test()">
+                    <div class="title_block_variant lang" key="title_history_variant1">
                         САЛДАТЫ
                     </div>
-                    <div class="defenition_test_variant animate__animated animate__fadeInUp lang" key="definition_history_variant1">
+                    <div class="defenition_block_variant animate__animated animate__fadeInUp lang" key="definition_history_variant1">
                         Салдаты, якія атрымалі ўзнагароды за абарону Радзімы!
                     </div>
                 </div>
-                <div class="test_second test_variant" onclick="test2()">
-                    <div class="title_test_variant lang" key="title_history_variant2">
+                <div class="history_second block_variant block_variant" onclick="test2()">
+                    <div class="title_block_variant lang" key="title_history_variant2">
                         БІТВЫ
                     </div>
-                    <div class="defenition_test_variant animate__animated animate__fadeInUp lang" key="definition_history_variant2">
+                    <div class="defenition_block_variant animate__animated animate__fadeInUp lang" key="definition_history_variant2">
                         Найважнейшыя бітвы ў гісторыі Вялікай Айчыннай Вайны!
                     </div>
                 </div>
             </div>
+            <!-- Footer -->
             <div class="footer">
                 <div class="logo_footer block_footer">
                     <div class="logo_footer_name footer_first_child">belaruswar</div>
                     <i class='bx bxs-star kio'></i>
                 </div>
-                <div class="menu_footer block_footer">
+                <div class="menu_footer links_footer block_footer">
                     <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-                    <a href="../main.html">
+                    <a href="battles.html">
                         <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
                     </a>
                     <a href="museum.html" class="lang" key="museum_footer">Пакой славы</a>
                     <a href="archive.html" class="lang" key="archive_footer">Архіў</a>
                     <a href="test.html" class="lang" key="test_footer">Тэст</a>
+                    <a href="history.html" class="lang" key="history_footer">Гісторыя</a>
+                    <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
                 </div>
                 <div class="menu_footer block_footer lang">
                     <div class="footer_first_child lang" key="language_footer">Мова:</div>
                     <a id="en" class="translate">English</a>
                     <a id="ru" class="translate">Русский</a>
-                    <a href="history.html" class="lang">Беларуская мова</a>
+                    <a href="battles.html" class="lang">Беларуская мова</a>
+                </div>
+                <div class="menu_footer social_footer block_footer" lang>
+                    <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
+                    <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
+                    <a href="https://t.me/belaruswar">Telegram</a>
+                    <a href="https://vk.com/public208818660">VK</a>
                 </div>
                 <div class="email_footer block_footer lang">
                     <div class="footer_first_child lang" key="email">Пошта:</div>
-                    <a href="mailto:korsynilya77@gmail.com" class="email_link">
-                        <div class="email_footer_list">korsynilya77@gmail.com</div>
+                    <a href="mailto:belaruswar@mail.ru" class="email_link">
+                        <div class="email_footer_list">belaruswar@mail.ru</div>
                     </a>
                 </div>
+            </div>
+            <div class="after_footer">
+                <a class="belaruswar_footer lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
+                <a>Korzun Ilya 2021</a>
             </div>
         </div>
     </div>
@@ -165,5 +175,19 @@
             window.open("battles.html");
         }
     </script>
+    <style>
+        .promo_history {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+                url("../img/история.jpeg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    </style>
 </body>
 </html>
