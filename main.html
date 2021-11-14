@@ -112,14 +112,14 @@
             <!-- Кликабельные блоки (CSS "Клик") -->
             <div class="click_blocks">
                 <div class="click_block animate__animated animate__fadeInRightBig wow">
-                    <div class="title_click_block lang" key="blocks_test">
-                        Прайдзіце тэст
+                    <div class="title_click_block lang" key="blocks_medals">
+                        Наведайце медалі
                     </div>
-                    <div class="definiton_click_block lang" key="defenition_blocks_test">
-                        Каб даведацца, наколькі добра вы ведаеце Вялікую Айчынную Вайну, выканайце тэст!
+                    <div class="definiton_click_block lang" key="defenition_blocks_medals">
+                        Каб даведацца, якія узнагароды былі у Вялікую Айчыную Вайну, наведайце медалі!
                     </div>
                     <div>
-                        <a href="pages/test.html"><button class="button_click_block lang" key="button_blocks_test">ПРАЙCЦІ ТЭСТ</button></a>
+                        <a href="pages/medals.html"><button class="button_click_block lang" key="button_blocks_medal">НАВЕДАЦЬ МЕДАЛІ</button></a>
                     </div>
                 </div>
                 <div class="click_block animate__animated animate__fadeInRightBig wow">
@@ -266,6 +266,26 @@
             </section> -->
             <!-- Топ Кликов -->
             <div id="app"></div>
+            <!-- Интересный факт -->
+            <div class="interesting_fact">
+                <img src="/img/левитан.png">
+                <div class="text_interesting_fact">
+                    <div class="title_interesting_fact lang" key="title_inter_fact">
+                        А вы ведалі што ...
+                    </div>
+                    <div class="definition_interesting_fact lang" key="definition_inter_fact">
+                        Гітлер асабіста аддаў загад як толькі будзе ўзятая Масква, першым павесіць Юрыя Левітана. Левітан быў ворагам №1 для
+                        Гітлера. І за яго галаву было абяцана ўзнагарода па адных крыніцах 100 000 марак, па іншых - 200 000. Па тых часах
+                        парадаксальная сума.
+                    </div>
+                    <div class="definition_interesting_fact lang" key="definition_second_inter_fact">
+                        Даведайцеся шмат новага пры праходжанні тэста!
+                    </div>
+                    <button class="button_interesting_fact lang" onclick="test()" key="button_blocks_test">
+                        ПРАЙСЦІ ТЭСТ
+                    </button>
+                </div>
+            </div>
             <!-- Блок "Подвал" -->
             <div class="footer">
                 <div class="logo_footer block_footer">
@@ -289,10 +309,10 @@
                     <a href="main.html" class="lang">Беларуская мова</a>
                 </div>
                 <div class="menu_footer social_footer block_footer" lang>
-                    <div class="footer_first_child lang" key="menu_footer">Сацыялкі:</div>
-                    <a href="https://www.instagram.com/belaruswar_official/" class="lang" key="museum_footer">Instagram</a>
-                    <a href="https://t.me/belaruswar" class="lang" key="archive_footer">Telegram</a>
-                    <a href="https://vk.com/public208818660" class="lang" key="test_footer">VK</a>
+                    <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
+                    <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
+                    <a href="https://t.me/belaruswar">Telegram</a>
+                    <a href="https://vk.com/public208818660">VK</a>
                 </div>
                 <div class="email_footer block_footer lang">
                     <div class="footer_first_child lang" key="email">Пошта:</div>
@@ -303,8 +323,8 @@
             </div>
             <div class="after_footer">
                 <a>Korzun Ilya 2021</a>
-                <a class="belaruswar_footer">Вечная памяць загінуўшым у баях!</a>
-                <a href="#" class="other_footer">Дадаткова</a>
+                <a class="belaruswar_footer lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
+                <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
             </div>
             <!-- Меню -->
             <div class="sidebar">
@@ -394,6 +414,12 @@
     <!-- Пасхалка -->
     <script>
         console.log("Instagram: korzun_ilya")
+    </script>
+    <!-- Левитан - тест -->
+    <script>
+        function test() {
+            window.open("./pages/test.html");
+        }
     </script>
     <!-- Подключение файла jquery.min.js -->
     <script src="jquery.min.js"></script>
