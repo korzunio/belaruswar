@@ -180,7 +180,7 @@ i.bxs-star {
 .content {
   height: 100%;
   transition: all 0.5s ease;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)),
     url("img/background2.jpg");
   background-attachment: fixed;
   background-position: center;
