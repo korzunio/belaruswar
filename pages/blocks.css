@@ -81,6 +81,16 @@
   background-position: center center;
   background-size: cover;
 }
+.battle_fifth {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/багратион.jpg");
+  background-size: cover;
+}
+.battle_sixth {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../img/курская\ битва.jpg");
+  background-size: cover;
+}
 .battle_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/брест.jpg");
@@ -102,6 +112,16 @@
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/москва.jpg");
   background-position: center center;
+  background-size: cover;
+}
+.battle_fifth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/багратион.jpg");
+  background-size: cover;
+}
+.battle_sixth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/курская\ битва.jpg");
   background-size: cover;
 }
 
@@ -149,6 +169,29 @@
     url("../img/битвы.jpeg");
   background-size: cover;
   cursor: pointer;
+}
+
+/* Газеты */
+.newspaper_first {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/большевик.jpg");
+  background-size: cover;
+}
+.newspaper_second {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/война\ и\ рабочий\ класс.jpg");
+  background-size: cover;
+}
+.newspaper_first:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/большевик.jpg");
+  cursor: pointer;
+  background-size: cover;
+}
+.newspaper_second:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/война\ и\ рабочий\ класс.jpg");
+  background-size: cover;
 }
 
 /* Footer */
