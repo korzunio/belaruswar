@@ -198,19 +198,6 @@ i.bxs-star {
 }
 
 /* Обложка */
-.promo_test {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url("../img/background-archive.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-family: "Comfortaa", cursive;
-}
 .animate__animated.definition_promo_test {
   --animate-duration: 2s;
 }
