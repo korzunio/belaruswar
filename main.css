@@ -517,9 +517,9 @@ i.bxs-star {
 /* Блок "Поздравления" */
 .our_children {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: black;
-  padding: 40px 40px 0 40px;
+  padding-top: 50px;
 }
 
 /* Блок "Интересный факт" */
