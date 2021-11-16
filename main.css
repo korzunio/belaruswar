@@ -183,7 +183,6 @@ i.bxs-star {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)),
     url("img/background2.jpg");
   background-attachment: fixed;
-  background-position: center;
   background-size: cover;
 }
 :root {
@@ -252,6 +251,17 @@ i.bxs-star {
 .animate__animated.text_promo {
   --animate-duration: 2s;
   /*  --animate-delay: 0.9s; - Такис способом тоже можно */
+}
+.title_pages_promo {
+  font-size: 120px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  background: url("img/back.png");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  padding: 0 0 0 30px;
+  font-weight: bold;
 }
 
 /* Блок "Текст" */
@@ -560,6 +570,31 @@ i.bxs-star {
   color: #be0b20;
   background: white;
   cursor: pointer;
+}
+
+/* Газеты */
+.menu_number {
+  color: white;
+  background-color: black;
+}
+.year {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  align-items: center;
+  padding-top: 70px;
+}
+.links_year li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.links_year a {
+  color: #be0b20;
+  transition: 0.5s;
+  padding-bottom: 10px;
+}
+.links_year a:hover {
+  color: #520911;
 }
 
 /* Footer */

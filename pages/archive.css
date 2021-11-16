@@ -1,3 +1,4 @@
+/* Обложка */
 .promo_archive {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url("../img/table-mess.png");
@@ -12,32 +13,8 @@
   justify-content: space-around;
   font-family: "Comfortaa", cursive;
 }
-.animate__animated.definition_promo_archive {
-  --animate-duration: 2s;
-  /*  --animate-delay: 0.9s; - Такис способом тоже можно */
-}
-.title_promo_archive {
-  font-size: 160px;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
-  background: url("../img/back.png");
-  -webkit-background-clip: text;
-  background-position: 0 0;
-  animation: back 20s linear infinite;
-  padding: 0 0 0 80px;
-  font-weight: bold;
-}
-@keyframes back {
-  100% {
-    background-position: 2000px 0;
-  }
-}
-.definition_promo_archive {
-  width: 70%;
-  padding: 0 0 0 80px;
-  font-size: 22px;
-  line-height: 35px;
-}
+
+/* Разделы архива */
 .links_blocks_archive {
   display: flex;
   justify-content: space-between;
