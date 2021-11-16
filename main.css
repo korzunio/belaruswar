@@ -36,7 +36,7 @@ body {
   background-color: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
   border-right: 1px solid rgb(36, 36, 36);
-  z-index: 800000000000000000000000000000000;
+  z-index: 800;
 }
 .sidebar .logo-content .logo {
   color: #fff;
@@ -46,6 +46,10 @@ body {
   pointer-events: none;
   transition: all 0.5s ease;
   font-size: 30px;
+}
+.logo i {
+  font-size: 20px;
+  padding-left: 5px;
 }
 .logo-content {
   display: flex;
