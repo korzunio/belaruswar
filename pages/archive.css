@@ -52,6 +52,7 @@
 .defenition_link_block {
   display: none;
   font-size: 20px;
+  line-height: 25px;
 }
 .link_block:hover .defenition_link_block {
   display: block;

@@ -576,31 +576,6 @@ i.bxs-star {
   cursor: pointer;
 }
 
-/* Газеты */
-.menu_number {
-  color: white;
-  background-color: black;
-}
-.year {
-  display: flex;
-  justify-content: space-around;
-  font-size: 30px;
-  align-items: center;
-  padding-top: 70px;
-}
-.links_year li {
-  list-style-type: none;
-  margin-bottom: 20px;
-}
-.links_year a {
-  color: #be0b20;
-  transition: 0.5s;
-  padding-bottom: 10px;
-}
-.links_year a:hover {
-  color: #520911;
-}
-
 /* Footer */
 .footer {
   color: white;

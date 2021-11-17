@@ -23,11 +23,13 @@
 .defenition_block_variant {
   display: none;
   font-size: 20px;
+  line-height: 25px;
 }
 .block_variant:hover .defenition_block_variant {
   display: block;
 }
 .block_variant:hover .title_block_variant {
+  padding-bottom: 10px;
   border-bottom: 3px solid #be0b20;
   transition: 0.5s all ease;
 }
@@ -147,22 +149,133 @@
 /* Газеты */
 .newspaper_first {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/большевик.jpg");
+    url("../img/газета-известия.jfif");
   background-size: cover;
 }
 .newspaper_second {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/война\ и\ рабочий\ класс.jpg");
+    url("../img/газета-вм.jfif");
+  background-size: cover;
+}
+.newspaper_third {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/газета-кп.jfif");
+  background-size: cover;
+}
+.newspaper_fourth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/газета-кз.jfif");
+  background-size: cover;
+}
+.newspaper_fifth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/газета-кв.jfif");
+  background-size: cover;
+}
+.newspaper_sixth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/газета-кф.jfif");
+  background-size: cover;
+}
+.newspaper_seventh {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/газета-ли.jfif");
+  background-size: cover;
+}
+.newspaper_eighth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/газета-лг.jfif");
+  background-size: cover;
+}
+.newspaper_ninth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/газета-мб.jfif");
+  background-size: cover;
+}
+.newspaper_tenth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/газета-правда.jfif");
+  background-size: cover;
+}
+.newspaper_eleventh {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/газета-си.jfif");
+  background-size: cover;
+}
+.newspaper_twelfth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/газета-бел.jpg");
   background-size: cover;
 }
 .newspaper_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/большевик.jpg");
+    url("../img/газета-известия.jfif");
   cursor: pointer;
   background-size: cover;
 }
 .newspaper_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/война\ и\ рабочий\ класс.jpg");
+    url("../img/газета-вм.jfif");
   background-size: cover;
+  cursor: pointer;
+}
+.newspaper_third:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/газета-кп.jfif");
+  background-size: cover;
+  cursor: pointer;
+}
+.newspaper_fourth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/газета-кз.jfif");
+  background-size: cover;
+  cursor: pointer;
+}
+.newspaper_fifth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/газета-кв.jfif");
+  background-size: cover;
+  cursor: pointer;
+}
+.newspaper_sixth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/газета-кф.jfif");
+  background-size: cover;
+  cursor: pointer;
+}
+.newspaper_seventh:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/газета-ли.jfif");
+  background-size: cover;
+  cursor: pointer;
+}
+.newspaper_eighth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/газета-лг.jfif");
+  background-size: cover;
+  cursor: pointer;
+}
+.newspaper_ninth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/газета-мб.jfif");
+  background-size: cover;
+  cursor: pointer;
+}
+.newspaper_tenth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/газета-правда.jfif");
+  background-size: cover;
+  cursor: pointer;
+}
+.newspaper_eleventh:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/газета-си.jfif");
+  background-size: cover;
+  cursor: pointer;
+}
+.newspaper_twelfth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/газета-бел.jpg");
+  background-size: cover;
+  cursor: pointer;
 }
