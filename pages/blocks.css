@@ -82,22 +82,26 @@
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/хатынь.jfif");
   background-size: cover;
+  cursor: pointer;
 }
 .battle_fourth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/москва.jpg");
   background-position: center center;
   background-size: cover;
+  cursor: pointer;
 }
 .battle_fifth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/багратион.jpg");
   background-size: cover;
+  cursor: pointer;
 }
 .battle_sixth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/курская\ битва.jpg");
   background-size: cover;
+  cursor: pointer;
 }
 
 /* Тесты */
