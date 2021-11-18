@@ -33,7 +33,9 @@
   border-bottom: 3px solid #be0b20;
   transition: 0.5s all ease;
 }
-
+.block_variant:hover {
+  cursor: pointer;
+}
 /* Битвы */
 .battle_first {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -66,44 +68,77 @@
     url("../img/курская\ битва.jpg");
   background-size: cover;
 }
+.battle_seventh {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/искра.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.battle_eigth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/сталинград.jpeg");
+  background-size: cover;
+}
+.battle_ninth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/ржевская битва.jpeg");
+}
+.battle_tenth {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/гомель.jpg");
+  background-size: cover;
+}
 .battle_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/брест.jpg");
-  cursor: pointer;
   background-position: center center;
 }
 .battle_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/минск-свобода.jpg");
   background-size: cover;
-  cursor: pointer;
 }
 .battle_third:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/хатынь.jfif");
   background-size: cover;
-  cursor: pointer;
 }
 .battle_fourth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/москва.jpg");
   background-position: center center;
   background-size: cover;
-  cursor: pointer;
 }
 .battle_fifth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/багратион.jpg");
   background-size: cover;
-  cursor: pointer;
 }
 .battle_sixth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/курская\ битва.jpg");
   background-size: cover;
-  cursor: pointer;
 }
-
+.battle_seventh:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/искра.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.battle_eigth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/сталинград.jpeg");
+  background-size: cover;
+}
+.battle_ninth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/ржевская битва.jpeg");
+}
+.battle_tenth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/гомель.jpg");
+  background-size: cover;
+}
 /* Тесты */
 .test_first {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
@@ -117,13 +152,11 @@
 .test_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/background3.jpg");
-  cursor: pointer;
 }
 .test_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/background-archive.jpg");
   background-size: cover;
-  cursor: pointer;
 }
 
 /* Истории */
@@ -140,14 +173,12 @@
 .history_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/солдаты.jpg");
-  cursor: pointer;
   background-position: center center;
 }
 .history_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/битвы.jpeg");
   background-size: cover;
-  cursor: pointer;
 }
 
 /* Газеты */
@@ -214,72 +245,60 @@
 .newspaper_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-известия.jfif");
-  cursor: pointer;
   background-size: cover;
 }
 .newspaper_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-вм.jfif");
   background-size: cover;
-  cursor: pointer;
 }
 .newspaper_third:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-кп.jfif");
   background-size: cover;
-  cursor: pointer;
 }
 .newspaper_fourth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-кз.jfif");
   background-size: cover;
-  cursor: pointer;
 }
 .newspaper_fifth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-кв.jfif");
   background-size: cover;
-  cursor: pointer;
 }
 .newspaper_sixth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-кф.jfif");
   background-size: cover;
-  cursor: pointer;
 }
 .newspaper_seventh:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-ли.jfif");
   background-size: cover;
-  cursor: pointer;
 }
 .newspaper_eighth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-лг.jfif");
   background-size: cover;
-  cursor: pointer;
 }
 .newspaper_ninth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-мб.jfif");
   background-size: cover;
-  cursor: pointer;
 }
 .newspaper_tenth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-правда.jfif");
   background-size: cover;
-  cursor: pointer;
 }
 .newspaper_eleventh:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-си.jfif");
   background-size: cover;
-  cursor: pointer;
 }
 .newspaper_twelfth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-бел.jpg");
   background-size: cover;
-  cursor: pointer;
 }
