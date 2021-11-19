@@ -204,7 +204,7 @@
                     </div>
                 </div>
             </div>
-            <div class="blocks_variants">
+            <div class="blocks_variants blocks_variant_battles">
                 <div class="battle_ninth block_variant" onclick="battle9()">
                     <div class="title_block_variant lang" key="title_battle_variant9">
                         РЖЕЎСКАЯ БІТВА
@@ -225,6 +225,21 @@
                         шырынёй 100 кіламетраў, прасунуліся ўглыб на 130 кіламетраў. Раніцай 26 лістапада 1943 года пасля разлютаваных начных
                         баёў быў вызвалены горад Гомель.
                     </div>
+                </div>
+            </div>
+            <!-- Интересный факт -->
+            <div class="interesting_fact interesting_fact_battles">
+                <img src="../img/сталин.png" class="animate__animated animate__fadeInLeftBig wow ">
+                <div class="text_interesting_fact">
+                    <div class="title_interesting_fact title_test_battles lang" key="title_test_battles">
+                        Прайдзіце тэст "Бітвы", каб праверыць свае веды!
+                    </div>
+                    <div class="definition_interesting_fact lang" key="definition_second_inter_fact">
+                        Даведайцеся шмат новага пры праходжанні тэста!
+                    </div>
+                    <button class="button_interesting_fact lang" onclick="testbattle()" key="button_blocks_test">
+                        ПРАЙСЦІ ТЭСТ
+                    </button>
                 </div>
             </div>
             <!-- Footer -->
@@ -282,6 +297,12 @@
             flex-direction: column;
             justify-content: space-around;
         }
+        .title_test_battles {
+            width: 100%;
+        }
+        .blocks_variant_battles {
+            padding-bottom: 50px;
+        }
     </style>
     <script>
         function battle1() {
@@ -313,6 +334,9 @@
         }
         function battle10() {
             window.open("https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE-%D0%A0%D0%B5%D1%87%D0%B8%D1%86%D0%BA%D0%B0%D1%8F_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F")
+        }
+        function testbattle() {
+            window.open("../tests/test-third.html");
         }
     </script>
 </body>
