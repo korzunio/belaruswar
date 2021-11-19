@@ -156,6 +156,11 @@
     url("../img/битвы.jpeg");
   background-size: cover;
 }
+.test_fourth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../img/тест-литература.jpg");
+  background-size: cover;
+}
 .test_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/background3.jpg");
@@ -168,6 +173,11 @@
 .test_third:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/битвы.jpeg");
+  background-size: cover;
+}
+.test_fourth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/тест-литература.jpg");
   background-size: cover;
 }
 
