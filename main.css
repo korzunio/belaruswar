@@ -567,9 +567,10 @@ i.bxs-star {
 }
 .logo_footer {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 9%;
+}
+.logo_footer i {
+  padding-left: 9px;
 }
 .menu_footer a,
 .email_footer_list {
