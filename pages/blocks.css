@@ -36,6 +36,7 @@
 .block_variant:hover {
   cursor: pointer;
 }
+
 /* Битвы */
 .battle_first {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -139,6 +140,7 @@
     url("../img/гомель.jpg");
   background-size: cover;
 }
+
 /* Тесты */
 .test_first {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
@@ -149,6 +151,11 @@
     url("../img/background-archive.jpg");
   background-size: cover;
 }
+.test_third {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)),
+    url("../img/битвы.jpeg");
+  background-size: cover;
+}
 .test_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/background3.jpg");
@@ -156,6 +163,11 @@
 .test_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/background-archive.jpg");
+  background-size: cover;
+}
+.test_third:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/битвы.jpeg");
   background-size: cover;
 }
 
