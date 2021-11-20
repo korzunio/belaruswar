@@ -103,7 +103,7 @@ var CitiesSlider = function (_React$Component) {
               ),
               React.createElement(
                 'a',
-                { className: 'slider__slide-readmore', href: '../pages/heroes-city.html'},
+                { className: 'slider__slide-readmore', href: './pages/heroes-city.html'},
                 'перайсці'
               )
             ),
