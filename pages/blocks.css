@@ -161,6 +161,11 @@
     url("../img/тест-литература.jpg");
   background-size: cover;
 }
+.test_fifth {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../img/тест-партизаны.jpg");
+  background-size: cover;
+}
 .test_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/background3.jpg");
@@ -180,7 +185,11 @@
     url("../img/тест-литература.jpg");
   background-size: cover;
 }
-
+.test_fifth:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/тест-партизаны.jpg");
+  background-size: cover;
+}
 /* Истории */
 .history_first {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),

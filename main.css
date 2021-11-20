@@ -105,7 +105,7 @@ i.bxs-star {
   white-space: nowrap;
 }
 .sidebar ul li span {
-  transform: translateX(50px);
+  transform: translateX(35px);
 }
 .sidebar ul li a:hover {
   color: black;
@@ -247,7 +247,7 @@ i.bxs-star {
   }
 }
 .text_promo {
-  width: 70%;
+  width: 80%;
   padding: 0 0 0 40px;
   font-size: 25px;
   line-height: 35px;

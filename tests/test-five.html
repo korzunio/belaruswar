@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="lang" key="title_history">Belaruswar — Гісторыя</title>
-    <link rel="stylesheet" href="blocks.css">
-    <link rel="stylesheet" href="../main.css">
+    <title>Belaruswar — Тэст "Партызны"</title>
+    <link rel="stylesheet" href="tests.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Шріфт Poppins -->
@@ -21,12 +20,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Подключение файла wow.js -->
     <script src="../wow.min.js"></script>
-    <!-- Подключение файла jquery.min.js -->
-    <script src="../jquery.min.js"></script>
     <script>
         new WOW().init();
     </script>
 </head>
+
 <body>
     <div id="web-page">
         <div class="sidebar">
@@ -35,11 +33,13 @@
                     <div class="logo_name">belaruswar</div>
                     <i class='bx bxs-star'></i>
                 </div>
-                <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                <i class='bx bx-menu' id="btn"
+                    onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
             </div>
             <ul class="nav_list">
                 <li>
-                    <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <i class='bx bx-search'
+                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
                     <input type="text" placeholder="Search ...">
                     <span class="tooltip lang" key="search">Пошук</span>
                 </li>
@@ -51,35 +51,35 @@
                     <span class="tooltip lang" key="main_href">Галоўная</span>
                 </li>
                 <li>
-                    <a href="museum.html" class="lang">
+                    <a href="../pages/museum.html" class="lang">
                         <i class='bx bxs-landmark'></i>
                         <span class="links_name lang" key="museum">Пакой славы</span>
                     </a>
                     <span class="tooltip lang" key="museum">Пакой славы</span>
                 </li>
                 <li>
-                    <a href="archive.html" class="lang">
+                    <a href="../pages/archive.html" class="lang">
                         <i class='bx bx-archive'></i>
                         <span class="links_name lang" key="archive">Архіў</span>
                     </a>
                     <span class="tooltip lang" key="archive">Архіў</span>
                 </li>
                 <li>
-                    <a href="test.html" class="lang">
+                    <a href="../pages/test.html" class="lang">
                         <i class='bx bx-question-mark'></i>
                         <span class="links_name lang" key="test">Тэст</span>
                     </a>
                     <span class="tooltip lang" key="test">Тэст</span>
                 </li>
                 <li>
-                    <a href="history.html">
+                    <a href="../pages/history.html">
                         <i class='bx bx-book-bookmark'></i>
                         <span class="links_name lang" key="history">Гісторыя</span>
                     </a>
                     <span class="tooltip lang" key="history">Гісторыя</span>
                 </li>
                 <li>
-                    <a href="medals.html">
+                    <a href="../pages/medals.html">
                         <i class='bx bxs-medal'></i>
                         <span class="links_name lang" key="medal">Узнагароды</span>
                     </a>
@@ -89,38 +89,48 @@
                 <ul class="sub-menu">
                     <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
                     <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
-                    <li><a href="history.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                    <li><a href="test-five.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
                 </ul>
             </ul>
         </div>
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
-            <div class="promo_history">
-                <div class="title_pages_promo lang" key="history_promo_title">
-                    Гісторыя
-                </div>
-                <div class="text_promo animate__animated animate__fadeInRightBig lang" key="history_promo_definition">
-                    Гісторыя — у гэтым раздзеле сайта вы можаце даведацца шмат новага пра ўдзельнікаў вайны, а таксама пра самыя значныя
-                    бітвы. Каб праверыць свае веды, вы можаце прайсці тэст у наступным раздзеле сайта.
+            <!-- Тэст -->
+            <div class="quiz-over-modal">
+                <div class="content-modal">
+                    <h1>Ваш вынік:</h1>
+                    <p>Вы адказалі на
+                        <span id="correct-answer"></span> з
+                        <span id="number-of-all-questions-2"></span> пытанняў
+                    </p>
+                    <button id="btn-try-again">ЗАКРЫЦЬ</button>
                 </div>
             </div>
-            <!-- Выбор истории -->
-            <div class="blocks_variants">
-                <div class="history_first block_variant" onclick="test()">
-                    <div class="title_block_variant lang" key="title_history_variant1">
-                        САЛДАТЫ
-                    </div>
-                    <div class="defenition_block_variant animate__animated animate__fadeInUp lang" key="definition_history_variant1">
-                        Салдаты, якія атрымалі ўзнагароды за абарону Радзімы!
-                    </div>
+            <div class="quiz-container">
+                <div class="quiz-title-container">
+                    <h2>Тэст "ПАРТЫЗАНЫ"</h2>
+                    <p>Партызанскі рух - узброеная барацьба добраахвотнікаў у складзе арганізаваных узброеных фармаванняў, якая вядзецца на
+                    тэрыторыі, акупаванай або кантраляванай супернікам.</p>
                 </div>
-                <div class="history_second block_variant" onclick="test2()">
-                    <div class="title_block_variant lang" key="title_history_variant2">
-                        БІТВЫ
-                    </div>
-                    <div class="defenition_block_variant animate__animated animate__fadeInUp lang" key="definition_battles">
-                        Найважнейшыя бітвы і аперацыі ў гісторыі Вялікай Айчыннай Вайны!
-                    </div>
+                <div class="question-number">
+                    <h3>Пытанне
+                        <span id="number-of-question"></span>
+                        з
+                        <span id="number-of-all-questions"></span>
+                    </h3>
+                </div>
+                <div id="question"></div>
+                <div class="options">
+                    <div data-id="0" class="option option1"></div>
+                    <div data-id="1" class="option option2"></div>
+                    <div data-id="2" class="option option3"></div>
+                    <div data-id="3" class="option option4"></div>
+                </div>
+                <div class="button">
+                    <button id="btn-next">Наступнае пытанне</button>
+                    <button data-id="0" class="option option5 dont-know">Не ведаю</button>
+                </div>
+                <div id="answers-tracker">
                 </div>
             </div>
             <!-- Footer -->
@@ -134,17 +144,17 @@
                     <a href="../main.html">
                         <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
                     </a>
-                    <a href="museum.html" class="lang" key="museum_footer">Пакой славы</a>
-                    <a href="archive.html" class="lang" key="archive_footer">Архіў</a>
-                    <a href="test.html" class="lang" key="test_footer">Тэст</a>
-                    <a href="history.html" class="lang" key="history_footer">Гісторыя</a>
+                    <a href="../pages/museum.html" class="lang" key="museum_footer">Пакой славы</a>
+                    <a href="../pages/archive.html" class="lang" key="archive_footer">Архіў</a>
+                    <a href="../pages/test.html" class="lang" key="test_footer">Тэст</a>
+                    <a href="../pages/history.html" class="lang" key="history_footer">Гісторыя</a>
                     <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
                 </div>
                 <div class="menu_footer block_footer lang">
                     <div class="footer_first_child lang" key="language_footer">Мова:</div>
                     <a id="en" class="translate">English</a>
                     <a id="ru" class="translate">Русский</a>
-                    <a href="battles.html" class="lang">Беларуская мова</a>
+                    <a href="test-five.html">Беларуская мова</a>
                 </div>
                 <div class="menu_footer social_footer block_footer" lang>
                     <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
@@ -165,18 +175,11 @@
             </div>
         </div>
     </div>
-    <script>
-        function test() {
-            window.open("soldiers.html");
-        }
-        function test2() {
-            window.open("battles.html");
-        }
-    </script>
+    <script src="test5.js"></script>
     <style>
-        .promo_history {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-                url("../img/история.jpeg");
+        .promo_test {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url("../img/тест-партизаны.jpg");
             height: 100vh;
             background-size: cover;
             background-position: center;
