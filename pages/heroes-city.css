@@ -1,0 +1,209 @@
+/* Обложка */
+.promo_archive {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/города-герои.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* О городах-героях */
+.about_heroes_city {
+  background: black;
+  color: white;
+  font-size: 22px;
+  line-height: 32px;
+  padding: 30px 40px 0 40px;
+}
+.about_heroes_city p:first-child {
+  padding-bottom: 30px;
+}
+
+/* Блоки */
+.links_blocks_archive {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 50px 40px 0 40px;
+}
+.link_block {
+  width: 30%;
+  height: 500px;
+  background-size: cover;
+  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid rgb(36, 36, 36);
+}
+.link_block_max {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid rgb(36, 36, 36);
+}
+.title_link_block {
+  font-weight: bold;
+  font-size: 45px;
+  border-bottom: 3px solid #be0b20;
+  padding: 5px 0 5px 0;
+}
+.defenition_link_block {
+  display: none;
+  font-size: 20px;
+  line-height: 25px;
+}
+.link_block:hover .defenition_link_block {
+  display: block;
+}
+.link_block:hover .title_link_block {
+  transition: 0.5s all ease;
+}
+
+/* Города-герои */
+.kiev {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/киев-п.png");
+  background-position: center center;
+  background-size: cover;
+}
+.minsk {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/минск-п.png");
+  background-size: cover;
+  background-position: bottom;
+}
+.stalingrad {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/сталинград-п.png");
+  background-size: cover;
+}
+.moscow {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/москва-п.png");
+  background-size: cover;
+}
+.leningrad {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/ленинград-п.png");
+  background-size: cover;
+}
+.murmansk {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/мурманск-п.png");
+  background-size: cover;
+}
+.novorossiysk {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/новороссийск-п.png");
+  background-size: cover;
+}
+.kerch {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/керчь-п.png");
+  background-size: cover;
+}
+.odessa {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/одесса-п.png");
+  background-size: cover;
+}
+.sevastopol {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/севастополь-п.png");
+  background-size: cover;
+}
+.smolensk {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/смоленск-п.png");
+  background-size: cover;
+}
+.tula {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/тула-п.png");
+  background-size: cover;
+}
+.brest {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/брест-вар.png");
+  background-size: cover;
+}
+
+/* Hovers */
+.stalingrad:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/сталинград-п.png");
+  background-size: cover;
+}
+.minsk:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/минск-п.png");
+  background-size: cover;
+  background-position: bottom;
+}
+.kiev:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/киев-п.png");
+  background-position: center center;
+  background-size: cover;
+}
+.moscow:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/москва-п.png");
+  background-size: cover;
+}
+.leningrad:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/ленинград-п.png");
+  background-size: cover;
+}
+.murmansk:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/мурманск-п.png");
+  background-size: cover;
+}
+.novorossiysk:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/новороссийск-п.png");
+  background-size: cover;
+}
+.kerch:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/керчь-п.png");
+  background-size: cover;
+}
+.odessa:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/одесса-п.png");
+  background-size: cover;
+}
+.sevastopol:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/севастополь-п.png");
+  background-size: cover;
+}
+.smolensk:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/смоленск-п.png");
+  background-size: cover;
+}
+.tula:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/тула-п.png");
+  background-size: cover;
+}
+.brest:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/брест-вар.png");
+  background-size: cover;
+}

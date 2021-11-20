@@ -11,7 +11,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-family: "Comfortaa", cursive;
 }
 
 /* Разделы архива */
@@ -123,60 +122,6 @@
     url("../img/фотограф.jpg");
   cursor: pointer;
   background-position: center center;
-}
-
-/* Блок "Подвал" */
-.footer {
-  color: white;
-  background-color: black;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 50px 40px 30px 40px;
-}
-.menu_footer {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.menu_footer a:not(:first-child),
-.email_footer_list {
-  margin-top: 10px;
-}
-.logo_footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 9%;
-}
-.menu_footer a,
-.email_footer_list {
-  opacity: 0.5;
-  text-decoration: none;
-  color: white;
-  transition: 0.5s;
-}
-.links_footer a:last-child {
-  text-decoration: underline;
-}
-.menu_footer a:hover,
-.email_footer_list:hover {
-  opacity: 1;
-}
-.footer_first_child {
-  font-weight: bold;
-}
-.after_footer {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 15px;
-}
-.after_footer a {
-  color: white;
-  opacity: 0.5;
-  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 1450px) {
