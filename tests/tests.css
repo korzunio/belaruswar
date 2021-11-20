@@ -104,9 +104,6 @@ i.bxs-star:first-child {
   border-radius: 12px;
   white-space: nowrap;
 }
-.sidebar ul li span {
-  transform: translateX(35px);
-}
 .sidebar ul li a:hover {
   color: black;
   background: white;
@@ -178,6 +175,7 @@ i.bxs-star:first-child {
 .expanded .links_name {
   display: block;
   flex: 2;
+  padding-left: 30px;
 }
 
 /* Настройка страницы сайта */
