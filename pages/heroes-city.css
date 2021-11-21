@@ -141,69 +141,82 @@
 
 /* Hovers */
 .stalingrad:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/сталинград-п.png");
   background-size: cover;
+  background-color: #be0b20;
 }
 .minsk:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/минск-п.png");
   background-size: cover;
   background-position: bottom;
+  background-color: #be0b20;
 }
 .kiev:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/киев-п.png");
   background-position: center center;
   background-size: cover;
+  background-color: #be0b20;
 }
 .moscow:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/москва-п.png");
   background-size: cover;
+  background-color: #be0b20;
 }
 .leningrad:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/ленинград-п.png");
   background-size: cover;
+  background-color: #be0b20;
 }
 .murmansk:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/мурманск-п.png");
   background-size: cover;
+  background-color: #be0b20;
 }
 .novorossiysk:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/новороссийск-п.png");
   background-size: cover;
+  background-color: #be0b20;
 }
 .kerch:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/керчь-п.png");
   background-size: cover;
+  background-color: #be0b20;
 }
 .odessa:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/одесса-п.png");
   background-size: cover;
+  background-color: #be0b20;
 }
 .sevastopol:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/севастополь-п.png");
   background-size: cover;
+  background-color: #be0b20;
 }
 .smolensk:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/смоленск-п.png");
   background-size: cover;
+  background-color: #be0b20;
 }
 .tula:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/тула-п.png");
   background-size: cover;
+  background-color: #be0b20;
 }
 .brest:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/брест-вар.png");
   background-size: cover;
+  background-color: #be0b20;
 }
