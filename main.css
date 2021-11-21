@@ -584,10 +584,11 @@ i.bxs-star {
   display: flex;
   font-size: 20px;
   line-height: 30px;
-  padding: 10px 40px 0 0;
+  padding: 0 40px 0 0;
 }
 .text_interesting_fact {
   width: 70%;
+  padding: 50px 0 0 0;
 }
 .definition_interesting_fact {
   padding: 30px 0 30px 0;
@@ -597,7 +598,7 @@ i.bxs-star {
   font-weight: bold;
   border-bottom: 3px solid #be0b20;
   width: 40%;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .button_interesting_fact {
   background: #be0b20;
@@ -682,5 +683,8 @@ i.bxs-star {
   }
   .mobile_menu_active {
     display: flex;
+  }
+  .title_inter_fact {
+    font-size: 25px;
   }
 }
