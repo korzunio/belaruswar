@@ -329,7 +329,7 @@ i.bxs-star {
   display: none;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .quiz-over-modal.active {
   display: flex;
@@ -345,6 +345,9 @@ i.bxs-star {
   max-width: 700px;
   color: #ffffff;
   text-align: center;
+}
+.quiz-over-modal .content-modal p {
+  font-size: 20px;
 }
 .quiz-over-modal .content-modal h1 {
   font-size: 36px;
