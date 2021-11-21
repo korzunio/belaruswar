@@ -290,7 +290,7 @@ i.bxs-star {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 30px 40px 30px 40px;
+  padding: 30px 40px 0 40px;
 }
 
 /* Заголовок (.title_about) */
