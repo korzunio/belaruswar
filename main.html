@@ -35,7 +35,6 @@
     </div>
 </header>
 <body>
-    <!-- Адаптивное меню -->
     <div class="mobile_menu">
         <div class="menu_footer links_footer block_footer">
             <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
@@ -67,7 +66,6 @@
             </a>
         </div>
     </div>
-    <!-- Сайт -->
     <div id="web-page">
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
@@ -97,8 +95,7 @@
                             fill="#BE0B20" />
                     </svg>
 
-                    <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="about_site_text">Аб
-                        сайце</div>
+                    <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="about_site_text">Аб сайце</div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none"
                         class="svg_element">
@@ -160,8 +157,7 @@
                         Каб даведацца, якія узнагароды былі у Вялікую Айчыную Вайну, наведайце раздзел з медалямі!
                     </div>
                     <div>
-                        <a href="pages/medals.html"><button class="button_click_block lang"
-                                key="button_click_block">ПЕРАЙСЦІ</button></a>
+                        <a href="pages/medals.html"><button class="button_click_block lang" key="button_click_block">ПЕРАЙСЦІ</button></a>
                     </div>
                 </div>
                 <div class="click_block animate__animated animate__fadeInRightBig wow">
@@ -172,8 +168,7 @@
                         Архіў з газетамі, фатаграфіямі і франтавымі лістамі ваенных гадоў!
                     </div>
                     <div>
-                        <a href="pages/archive.html"><button class="button_click_block lang"
-                                key="button_click_block">ПЕРАЙСЦІ</button></a>
+                        <a href="pages/archive.html"><button class="button_click_block lang" key="button_click_block">ПЕРАЙСЦІ</button></a>
                     </div>
                 </div>
             </div>
@@ -247,13 +242,11 @@
                         <div class="logo_name">belaruswar</div>
                         <i class='bx bxs-star'></i>
                     </div>
-                    <i class='bx bx-menu' id="btn"
-                        onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
                 </div>
                 <ul class="nav_list">
                     <li>
-                        <i class='bx bx-search'
-                            onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                        <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
                         <input type="text" placeholder="Search ...">
                         <span class="tooltip lang" key="search">Пошук</span>
                     </li>
@@ -325,16 +318,17 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js'></script>
     <script src="js/index.js"></script>
-    <!-- Пасхалка и бургер меню -->
+    <!-- Пасхалка и бургер меню-->
     <script>
-        console.log('Instagram: Korzun Ilya')
-
         var menuButton = document.querySelector('.menu_button');
-        var menu = document.querySelector('.mobile_menu');
+            var menu = document.querySelector('.mobile_menu');
 
-        menuButton.addEventListener('click', function () {
-            menu.classList.toggle('mobile_menu_active');
-        })
+            menuButton.addEventListener('click', function () {
+                menu.classList.toggle('mobile_menu_active');
+            })
+            menuButton.addEventListener('click', function () {
+                console.log('Клик по кнопке');
+            })
     </script>
     <!-- Левитан - тест -->
     <script>
