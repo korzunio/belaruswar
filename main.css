@@ -414,7 +414,26 @@ i.bxs-star {
   cursor: pointer;
 }
 
-/* Фотки галереи */
+/* Галерея */
+/* О фотоаппаратах */
+.about_photo {
+  background: black;
+  color: white;
+  font-size: 22px;
+  line-height: 32px;
+  padding: 50px 40px 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text_about_photo {
+  width: 60%;
+}
+.text_about_photo p:first-child {
+  padding-bottom: 25px;
+}
+
+/* Фотки */
 .places_card-link {
   position: absolute;
   top: 0;
