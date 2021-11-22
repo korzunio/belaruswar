@@ -39,9 +39,11 @@
   background-color: black;
   display: flex;
   align-items: flex-start;
+  width: 100%;
   justify-content: space-between;
   padding: 70px 40px 30px 40px;
   display: none;
+  position: fixed;
 }
 .mobile_menu_active {
   display: none;
