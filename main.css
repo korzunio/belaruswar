@@ -334,6 +334,19 @@ i.bxs-star {
   justify-content: space-around;
 }
 
+/* Блок о сайте */
+.text_about {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("img/table-mess.png");
+  background-color: black;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 30px 40px 30px 40px;
+}
+
 /* Блок "Текст (музей) */
 .text_museum {
   background-color: black;
@@ -748,6 +761,31 @@ i.bxs-star {
 @media screen and (max-width: 640px) {
   .title_promo {
     font-size: 70px;
+    padding: 0 20px 0 20px;
+  }
+  .mobile_header {
+    padding: 0 20px 0 20px;
+  }
+  .social_promo {
+    padding: 0 20px 0 20px;
+  }
+  .text_promo {
+    padding: 0 20px 0 20px;
+  }
+  .mobile_menu {
+    padding: 70px 20px 0 20px;
+  }
+  .text_about {
+    padding: 30px 20px 30px 20px;
+  }
+  .click_blocks {
+    padding: 0 20px 0 20px;
+  }
+  .text_interesting_fact {
+    padding: 50px 20px 50px 20px;
+  }
+  .footer {
+    padding: 50px 20px 50px 20px;
   }
 }
 @media screen and (max-width: 500px) {
