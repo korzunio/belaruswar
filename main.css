@@ -274,8 +274,9 @@ i.bxs-star {
 .social_promo {
   padding: 0 0 0 40px;
   display: flex;
-  justify-content: space-between;
-  width: 25%;
+}
+.social_promo a:not(:last-child) {
+  margin-right: 50px;
 }
 .social_promo i {
   color: white;
