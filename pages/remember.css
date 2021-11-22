@@ -16,7 +16,6 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
-  padding-bottom: 50px;
 }
 .places_card_size_sm {
   grid-column: span 2;

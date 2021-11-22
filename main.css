@@ -15,9 +15,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #520911;
 }
-.hash_red {
-  color: #be0b20;
-}
 
 /* Мобильно меню */
 .mobile_header {
@@ -44,6 +41,7 @@
   padding: 70px 40px 30px 40px;
   display: none;
   position: fixed;
+  z-index: 200;
 }
 .mobile_menu_active {
   display: none;
