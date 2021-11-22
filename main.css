@@ -672,6 +672,11 @@ i.bxs-star {
 }
 
 /* Адаптация сайта */
+@media screen and (max-width: 1415px) {
+  .title_interesting_fact {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 1300px) {
   .sidebar {
     display: none;
@@ -687,5 +692,78 @@ i.bxs-star {
   }
   .title_inter_fact {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .interesting_fact {
+    flex-direction: column;
+    padding: 0;
+  }
+  .interesting_fact img {
+    display: none;
+  }
+  .text_interesting_fact {
+    padding: 40px 50px 40px 50px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .title_promo {
+    font-size: 140px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .paragraph_about {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  .text_promo {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .title_about_with_stars div {
+    font-size: 30px;
+  }
+  .click_blocks {
+    flex-direction: column;
+  }
+  .title_promo {
+    font-size: 100px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .block_footer:not(:last-child) {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .slider__slide-heading span {
+    font-size: 40px;
+  }
+  .email_header {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .title_promo {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile_menu {
+    flex-direction: column;
+  }
+  .logo_header {
+    font-size: 20px;
+  }
+  .slider__slide-heading span {
+    font-size: 30px;
+  }
+  .slider__slide-subheading {
+    font-size: 20px;
+  }
+  .title_promo {
+    font-size: 50px;
   }
 }
