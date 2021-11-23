@@ -759,6 +759,9 @@ i.bxs-star {
   .email_header {
     display: none;
   }
+  .text_promo {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 640px) {
   .title_promo {
@@ -788,6 +791,10 @@ i.bxs-star {
   }
   .footer {
     padding: 50px 20px 50px 20px;
+  }
+  .text_about {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("img/table-mess.png");
   }
 }
 @media screen and (max-width: 500px) {
