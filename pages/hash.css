@@ -253,6 +253,7 @@ i.bxs-star {
 .accord {
   background: white;
 }
+
 /* Стили аккордеона */
 .grid {
   padding: 0 40px 0 40px;
@@ -296,12 +297,13 @@ i.bxs-star {
 
 /* Победители */
 .winers {
-  background: white;
+  background: rgba(255, 255, 255, 0.897);
   padding-bottom: 50px;
 }
 .winers_stroke {
   display: flex;
   justify-content: space-around;
+  padding-top: 30px;
 }
 .winers_stroke img {
   width: 18%;
