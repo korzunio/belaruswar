@@ -64,20 +64,28 @@
             <div class="winers">
                 <div class="title_about lang" key="winers_hash">Пераможцы:</div>
                 <div class="winers_first winers_stroke">
-                    <img src="../img/фотограф.jpg">
-                    <img src="../img/фотограф.jpg">
-                    <img src="../img/фотограф.jpg">
-                    <img src="../img/фотограф.jpg">
-                    <img src="../img/фотограф.jpg">
+                    <img src="../img/инста1.jpg" onclick="image1()">
+                    <img src="../img/инста2.jpg" onclick="image2()">
+                    <img src="../img/инста3.jpg" onclick="image3()">
+                    <img src="../img/инста4.jpg" onclick="image4()">
+                    <img src="../img/инста5.jpg" onclick="image5()">
                 </div>
                 <div class="winers_second winers_stroke">
-                    <img src="../img/фотограф.jpg">
-                    <img src="../img/фотограф.jpg">
-                    <img src="../img/фотограф.jpg">
-                    <img src="../img/фотограф.jpg">
-                    <img src="../img/фотограф.jpg">
+                    <img src="../img/инста6.jpg" onclick="image6()">
+                    <img src="../img/инста7.jpg" onclick="image7()">
+                    <img src="../img/инста8.jpg" onclick="image8()">
+                    <img src="../img/инста9.jpg" onclick="image9()">
+                    <img src="../img/инста10.jpg" onclick="image10()">
                 </div>
             </div>
+            <style>
+                .winers_stroke img{
+                    height: 200px;
+                }
+                .winers_stroke img:hover {
+                    cursor: pointer;
+                }
+            </style>
             <!-- Аккордеон -->
             <div class="accord">
                 <div class="title_about lang" key="question_hashtag">Пытанні:</div>
@@ -224,5 +232,37 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
     <script src="../js/accord.js"></script>
+    <script>
+        function image1() {
+            window.open("https://www.facebook.com/photo/?fbid=307656344694986&set=a.153094883484467");
+        }
+        function image2() {
+            window.open("https://www.facebook.com/photo/?fbid=307885634672057&set=pcb.307885864672034");
+        }
+        function image3() {
+            window.open("https://www.facebook.com/photo/?fbid=307893484671272&set=a.153094876817801");
+        }
+        function image4() {
+            window.open("https://www.facebook.com/photo/?fbid=307893254671295&set=a.153094876817801");
+        }
+        function image5() {
+            window.open("https://www.facebook.com/photo/?fbid=307655444695076&set=a.153094883484467");
+        }
+        function image6() {
+            window.open("https://www.facebook.com/photo/?fbid=307337181393569&set=a.153094876817801");
+        }
+        function image7() {
+            window.open("https://www.facebook.com/photo/?fbid=307914681335819&set=pcb.307914801335807");
+        }
+        function image8() {
+            window.open("https://www.facebook.com/photo/?fbid=307914678002486&set=pcb.307914801335807");
+        }
+        function image9() {
+            window.open("https://www.facebook.com/photo/?fbid=307913638002590&set=a.153094876817801");
+        }
+        function image10() {
+            window.open("https://www.facebook.com/hashtag/belaruswar/");
+        }
+    </script>
 </body>
 </html>
