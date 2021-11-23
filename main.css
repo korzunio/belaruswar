@@ -425,7 +425,7 @@ i.bxs-star {
   padding-top: 20px;
 }
 .list_facts {
-  padding: 0 80px 0 80px;
+  padding: 0 40px 0 40px;
   font-size: 22px;
   line-height: 32px;
 }
@@ -579,6 +579,14 @@ i.bxs-star {
   width: 50%;
   padding-bottom: 20px;
 }
+.text_about {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 30px 40px 30px 40px;
+}
 
 /* Блок "Поздравления" */
 .our_children {
@@ -689,6 +697,12 @@ i.bxs-star {
   .title_interesting_fact {
     width: 70%;
   }
+  .child_book {
+    flex-direction: column-reverse;
+  }
+  .definition_book {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1300px) {
   .sidebar {
@@ -719,16 +733,33 @@ i.bxs-star {
     padding: 40px 50px 40px 50px;
     width: 100%;
   }
+  .our_children {
+    flex-direction: column;
+    padding: 0;
+  }
+  .our_children div {
+    padding-top: 50px;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 1100px) {
   .title_promo {
     font-size: 140px;
+  }
+  .places_card_size_sm {
+    grid-column: span 6;
+  }
+  .places_card_size_bg {
+    grid-column: span 6;
   }
 }
 @media screen and (max-width: 920px) {
   .paragraph_about {
     font-size: 19px;
     line-height: 25px;
+  }
+  .text_about {
+    padding: 30px 20px 30px 20px;
   }
   .text_promo {
     font-size: 22px;
@@ -779,6 +810,9 @@ i.bxs-star {
   .text_promo {
     padding: 0 20px 0 20px;
     font-size: 20px;
+  }
+  .list_facts {
+    padding: 0 20px 0 20px;
   }
   .mobile_menu {
     padding: 70px 20px 0 20px;

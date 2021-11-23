@@ -24,8 +24,50 @@
         new WOW().init();
     </script>
 </head>
-
+<!-- Адаптивное меню -->
+<header class="mobile_header">
+    <div class="logo_header">
+        <div class="logo_header_name">belaruswar</div>
+        <i class='bx bxs-star kio'></i>
+    </div>
+    <div class="header_mobile_menu menu_button">
+        <i class='bx bx-menu'></i>
+    </div>
+</header>
 <body>
+    <!-- Адаптивное меню -->
+    <div class="mobile_menu">
+        <div class="menu_footer links_footer block_footer">
+            <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
+            <a href="../main.html">
+                <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
+            </a>
+            <a href="museum.html" class="lang" key="museum_footer">Пакой славы</a>
+            <a href="archive.html" class="lang" key="archive_footer">Архіў</a>
+            <a href="test.html" class="lang" key="test_footer">Тэст</a>
+            <a href="history.html" class="lang" key="history_footer">Гісторыя</a>
+            <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
+        </div>
+        <div class="menu_footer block_footer lang">
+            <div class="footer_first_child lang" key="language_footer">Мова:</div>
+            <a id="en" class="translate">English</a>
+            <a id="ru" class="translate">Русский</a>
+            <a id="by" class="translate">Беларуская мова</a>
+        </div>
+        <div class="menu_footer social_footer block_footer" lang>
+            <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
+            <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
+            <a href="https://t.me/belaruswar">Telegram</a>
+            <a href="https://vk.com/public208818660">VK</a>
+        </div>
+        <div class="email_footer block_footer email_header lang">
+            <div class="footer_first_child lang" key="email">Пошта:</div>
+            <a href="mailto:belaruswar@mail.ru" class="email_link">
+                <div class="email_footer_list">belaruswar@mail.ru</div>
+            </a>
+        </div>
+    </div>
+    <!-- Сайт -->
     <div id="web-page">
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
@@ -452,7 +494,16 @@
             </div>
         </div>
     </div>
+    <!-- Подключение файла для удаления анимаций -->
+    <script src="adapt.js"></script>
     <script>
+        var menuButton = document.querySelector('.menu_button');
+        var menu = document.querySelector('.mobile_menu');
+
+        menuButton.addEventListener('click', function () {
+            menu.classList.toggle('mobile_menu_active');
+        })
+
         function remember() {
             window.open("remember.html");
         }
@@ -471,14 +522,6 @@
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
-        }
-        .text_about {
-            background-color: black;
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            padding: 30px 40px 30px 40px;
         }
         .facts {
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
