@@ -35,8 +35,6 @@ if (isMobile.any()) {
     document.getElementById("click_block_first").classList.remove('animate__animated');
     document.getElementById("click_block_second").classList.remove('animate__animated');
     document.getElementById("image_fact_first").classList.remove('animate__animated');
-    document.getElementById("image_fact_second").classList.remove('animate__animated');
-    document.getElementById("defenition_promo_archive").classList.remove('animate__animated');
 } else {
     document.body.classList.add('pc');
 }

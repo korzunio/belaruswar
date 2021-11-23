@@ -763,11 +763,11 @@ i.bxs-star {
 }
 @media screen and (max-width: 640px) {
   .title_pages_promo {
-    font-size: 70px;
+    font-size: 60px;
     padding: 0 20px 0 20px;
   }
   .title_promo {
-    font-size: 70px;
+    font-size: 60px;
     padding: 0 20px 0 20px;
   }
   .mobile_header {
@@ -800,7 +800,7 @@ i.bxs-star {
       url("img/table-mess.png");
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 570px) {
   .mobile_menu {
     flex-direction: column;
   }
