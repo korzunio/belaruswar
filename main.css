@@ -258,7 +258,9 @@ i.bxs-star {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+.promo div {
+  padding-top: 100px;
 }
 .title_promo {
   font-size: 170px;
