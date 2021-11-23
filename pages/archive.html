@@ -28,6 +28,49 @@
     </script>
 </head>
 <body>
+    <!-- Адаптивное меню -->
+    <header class="mobile_header">
+        <div class="logo_header">
+            <div class="logo_header_name">belaruswar</div>
+            <i class='bx bxs-star kio'></i>
+        </div>
+        <div class="header_mobile_menu menu_button">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+    <!-- Адаптивное меню -->
+    <div class="mobile_menu">
+        <div class="menu_footer links_footer block_footer">
+            <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
+            <a href="../main.html">
+                <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
+            </a>
+            <a href="museum.html" class="lang" key="museum_footer">Пакой славы</a>
+            <a href="archive.html" class="lang" key="archive_footer">Архіў</a>
+            <a href="test.html" class="lang" key="test_footer">Тэст</a>
+            <a href="history.html" class="lang" key="history_footer">Гісторыя</a>
+            <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
+        </div>
+        <div class="menu_footer block_footer lang">
+            <div class="footer_first_child lang" key="language_footer">Мова:</div>
+            <a id="en" class="translate">English</a>
+            <a id="ru" class="translate">Русский</a>
+            <a id="by" class="translate">Беларуская мова</a>
+        </div>
+        <div class="menu_footer social_footer block_footer" lang>
+            <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
+            <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
+            <a href="https://t.me/belaruswar">Telegram</a>
+            <a href="https://vk.com/public208818660">VK</a>
+        </div>
+        <div class="email_footer block_footer email_header lang">
+            <div class="footer_first_child lang" key="email">Пошта:</div>
+            <a href="mailto:belaruswar@mail.ru" class="email_link">
+                <div class="email_footer_list">belaruswar@mail.ru</div>
+            </a>
+        </div>
+    </div>
+    <!-- Сайт -->
     <div id="web-page">
         <div class="sidebar">
             <div class="logo-content">
@@ -99,7 +142,7 @@
                 <div class="title_pages_promo lang" key="title_promo_archive">
                     Архіў
                 </div>
-                <div class="text_promo animate__animated animate__fadeInRightBig lang" key="defenition_promo_archive">
+                <div class="text_promo animate__animated animate__fadeInRightBig lang" key="defenition_promo_archive" id="defenition_promo_archive">
                     На нашым сайце ёсць архіў з газетамі, фатаграфіямі і франтавымі лістамі ваенных гадоў. Архіў пастаянна папаўняецца, каб
                     ушанаваць памяць пра ўдзельнікаў Вялікай Айчыннай Вайны!
                 </div>
@@ -155,7 +198,7 @@
             </div>
             <!-- Интересный факт -->
             <div class="interesting_fact">
-                <img src="../img/родинамать.png" class="animate__animated animate__fadeInLeftBig wow">
+                <img src="../img/родинамать.png" class="animate__animated animate__fadeInLeftBig wow" id="image_fact_second">
                 <div class="text_interesting_fact">
                     <div class="title_interesting_fact lang" key="title_inter_fact">
                         А вы ведалі што ...
@@ -235,6 +278,15 @@
         function radio() {
             window.open("https://may9.ru/history/chronicle/");
         }
+    </script>
+    <!-- Подключение файла для удаления анимаций -->
+    <script>
+    var menuButton = document.querySelector('.menu_button');
+    var menu = document.querySelector('.mobile_menu');
+
+    menuButton.addEventListener('click', function () {
+        menu.classList.toggle('mobile_menu_active');
+    })
     </script>
 </body>
 </html>

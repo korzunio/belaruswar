@@ -258,9 +258,7 @@ i.bxs-star {
   color: white;
   display: flex;
   flex-direction: column;
-}
-.promo div {
-  padding-top: 100px;
+  justify-content: space-around;
 }
 .title_promo {
   font-size: 170px;
@@ -764,6 +762,10 @@ i.bxs-star {
   }
 }
 @media screen and (max-width: 640px) {
+  .title_pages_promo {
+    font-size: 70px;
+    padding: 0 20px 0 20px;
+  }
   .title_promo {
     font-size: 70px;
     padding: 0 20px 0 20px;
@@ -776,6 +778,7 @@ i.bxs-star {
   }
   .text_promo {
     padding: 0 20px 0 20px;
+    font-size: 20px;
   }
   .mobile_menu {
     padding: 70px 20px 0 20px;
@@ -809,8 +812,5 @@ i.bxs-star {
   }
   .slider__slide-subheading {
     font-size: 20px;
-  }
-  .title_promo {
-    font-size: 50px;
   }
 }

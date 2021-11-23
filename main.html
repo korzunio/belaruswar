@@ -312,12 +312,6 @@
     <!-- Пасхалка и адаптивное меню-->
     <script>
         console.log("Instagram: korzun_ilya")
-            var menuButton = document.querySelector('.menu_button');
-            var menu = document.querySelector('.mobile_menu');
-
-            menuButton.addEventListener('click', function () {
-                menu.classList.toggle('mobile_menu_active');
-            })
     </script>
     <!-- Левитан - тест -->
     <script>
@@ -350,7 +344,14 @@
         }
     </script>
     <!-- Подключение файла для удаления анимаций -->
-    <script src="adapt.js"></script>
+    <script>
+        var menuButton = document.querySelector('.menu_button');
+        var menu = document.querySelector('.mobile_menu');
+
+        menuButton.addEventListener('click', function () {
+            menu.classList.toggle('mobile_menu_active');
+        })
+    </script>
     <!-- Подключение файла jquery.min.js -->
     <script src="jquery.min.js"></script>
 </body>
