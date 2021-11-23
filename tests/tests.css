@@ -403,7 +403,9 @@ i.bxs-star {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 9%;
+}
+.logo_footer i {
+  padding-left: 6px;
 }
 .menu_footer a,
 .email_footer_list {
