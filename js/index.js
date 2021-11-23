@@ -134,7 +134,7 @@ var CitiesSlider = function (_React$Component) {
 }(React.Component);
 
 var slides = [{
-  city: 'брэсцкая крэпасць',
+  city: 'брэсцкая_крэпасць',
   country: 'беларусь',
   img: './img/брест-вар.jpg'
 }, {
