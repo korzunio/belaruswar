@@ -282,21 +282,6 @@ i.bxs-star {
   display: flex;
   justify-content: space-between;
 }
-.dont-know {
-  padding: 10px 50px;
-  background-color: white;
-  font-size: 18px;
-  color: #be0b20;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  margin-bottom: 15px;
-  border: 1px solid #be0b20;
-}
-.dont-know:hover {
-  background: #be0b20;
-  color: white;
-}
 .button #btn-next:hover {
   background-color: white;
   color: #be0b20;
