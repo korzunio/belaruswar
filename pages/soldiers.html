@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="by">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="../main.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Шріфт Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
     <!-- Шріфт Comfortaa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,19 +17,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Подключение файла wow.js -->
     <script src="../wow.min.js"></script>
-    <!-- Подключение файла jquery.min.js -->
-    <script src="../jquery.min.js"></script>
     <script>
         new WOW().init();
     </script>
 </head>
 <body>
+    <!-- Меню для мобилок -->
+    <div class="mobile_menu">
+        <div class="menu_footer links_footer">
+            <div class="footer_menu_first_child lang" key="menu_footer">Змест:</div>
+            <a href="../main.html" class="lang" key="main_href">Галоўная</a>
+            <a href="museum.html" class="lang" key="museum_href">Музей</a>
+            <a href="archive.html" class="lang" key="archive_href">Архіў</a>
+            <a href="test.html" class="lang" key="test_href">Тэст</a>
+            <a href="history.html" class="lang" key="history_href">Гісторыя</a>
+            <a href="medals.html" class="lang" key="medals_href">Узнагароды</a>
+            <a href="#" class="lang" key="other_href">Дадаткова</a>
+        </div>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="language_footer">Мова:</div>
+            <a id="en" class="translate">English</a>
+            <a id="ru" class="translate">Русский</a>
+            <a id="by" class="translate">Беларускі</a>
+        </div>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="social_footer">Сацыялкі:</div>
+            <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
+            <a href="https://t.me/belaruswar">Telegram</a>
+            <a href="https://vk.com/public208818660">VK</a>
+        </div>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="email_footer">Пошта:</div>
+            <a href="mailto:belaruswar@mail.ru">belaruswar@mail.ru</a>
+        </div>
+    </div>
+    <!-- Сайт -->
     <div id="web-page">
+        <!-- Десктопное меню -->
         <div class="sidebar">
-            <div class="logo-content">
+            <div class="logotype">
                 <div class="logo">
                     <div class="logo_name">belaruswar</div>
-                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star logo_element'></i>
                 </div>
                 <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
             </div>
@@ -53,58 +78,58 @@
                 <li>
                     <a href="museum.html" class="lang">
                         <i class='bx bxs-landmark'></i>
-                        <span class="links_name lang" key="museum">Пакой славы</span>
+                        <span class="links_name lang" key="museum_href">Музей</span>
                     </a>
-                    <span class="tooltip lang" key="museum">Пакой славы</span>
+                    <span class="tooltip lang" key="museum_href">Музей</span>
                 </li>
                 <li>
                     <a href="archive.html" class="lang">
                         <i class='bx bx-archive'></i>
-                        <span class="links_name lang" key="archive">Архіў</span>
+                        <span class="links_name lang" key="archive_href">Архіў</span>
                     </a>
-                    <span class="tooltip lang" key="archive">Архіў</span>
+                    <span class="tooltip lang" key="archive_href">Архіў</span>
                 </li>
                 <li>
                     <a href="test.html" class="lang">
                         <i class='bx bx-question-mark'></i>
-                        <span class="links_name lang" key="test">Тэст</span>
+                        <span class="links_name lang" key="test_href">Тэст</span>
                     </a>
-                    <span class="tooltip lang" key="test">Тэст</span>
+                    <span class="tooltip lang" key="test_href">Тэст</span>
                 </li>
                 <li>
                     <a href="history.html">
                         <i class='bx bx-book-bookmark'></i>
-                        <span class="links_name lang" key="history">Гісторыя</span>
+                        <span class="links_name lang" key="history_href">Гісторыя</span>
                     </a>
-                    <span class="tooltip lang" key="history">Гісторыя</span>
+                    <span class="tooltip lang" key="history_href">Гісторыя</span>
                 </li>
                 <li>
                     <a href="medals.html">
                         <i class='bx bxs-medal'></i>
-                        <span class="links_name lang" key="medal">Узнагароды</span>
+                        <span class="links_name lang" key="medals_href">Узнагароды</span>
                     </a>
-                    <span class="tooltip lang" key="medal">Узнагароды</span>
+                    <span class="tooltip lang" key="medals_href">Узнагароды</span>
                 </li>
                 <li class="language"></li>
-                <ul class="sub-menu">
-                    <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
-                    <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
-                    <li><a id="by" class="translate">BY</a><span class="tooltip bel">Беларуская мова</span></li>
-                </ul>
+                <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
+                <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
+                <li><a id="by" class="translate">BY</a><span class="tooltip">Беларускі</span></li>
             </ul>
         </div>
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
-            <div class="promo_test">
-                <div class="title_pages_promo lang" key="soldiers_promo_title">
+            <!-- Обложка (CSS "Обложка") -->
+            <div class="promo">
+                <h1 class="title_pages_promo lang" key="soldiers_promo_title">
                     Салдаты
-                </div>
-                <div class="text_promo animate__animated animate__fadeInRightBig lang" key="soldiers_promo_definition">
+                </h1>
+                <p class="text_promo animate__animated animate__fadeInRightBig lang" key="soldiers_promo_definition">
                     Салдаты, якія атрымалі ўзнагароды за абарону Радзімы!
-                </div>
+                </p>
             </div>
+            <!-- Факты (CSS "Факты об ордене славы") -->
             <div class="facts">
-                <div class="title_about lang" key="title_facts_medal">
+                <div class="title_about title_about_first_child lang" key="title_facts_medal">
                     Аб ордэне Славы:
                 </div>
                 <div class="medal_facts">
@@ -117,7 +142,11 @@
                     <img src="../img/орден славы.png" alt="Орден Славы" height="400" class="animate__animated animate__fadeInRightBig wow">
                 </div>
             </div>
-            <div class="title_about title_about_soldiers lang" key="title_about_soldiers">Юныя ўладальнікі ордэна Славы</div>
+            <!-- Солдаты (CSS "Обладатели ордена") -->
+            <div class="title_about title_about_soldiers lang" key="title_about_soldiers">
+                Юныя ўладальнікі ордэна Славы
+            </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block letter_block_first_child">
                 <div class="animate__animated animate__fadeInLeftBig wow img">
                     <img src="../img/medal1.jpg" alt="Владимир Рубежин | Vladimir Rubezhin">
@@ -135,6 +164,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m1">
                     Там, дзе патрэбны спрыт і выкрутлівасць, пасылалі Віліка. Колькі б разоў, на працягу дня, не патрабавалася прабрацца за
@@ -166,6 +196,7 @@
                     Айчыннай вайны" II ступені і іншымі.
                 </p>
             </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block letter_block_second">
                 <div class="animate__animated animate__fadeInRightBig wow img">
                     <img src="../img/medal2.jpg" alt="Виктор Андреев | Victor Andreev">
@@ -184,6 +215,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m2">
                     А далей шлях дывізіі ляжаў на Нямеччыну. Пятнаццацігадовы Віця Андрэеў уступіў у зрынуты Берлін з ордэнам Славы, якім
@@ -214,6 +246,7 @@
                     адвагу", медалямі "За вызваленне Сталінграда", "За ўзяцце Берліна", "За Перамогу над Германіяй" і многімі іншымі.
                 </p>
             </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block">
                 <div class="animate__animated animate__fadeInLeftBig wow img">
                     <img src="../img/medal3.jpg" alt="Май Борисов | May Borisov">
@@ -232,6 +265,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m3">
                     Хлопчык апынуўся сам-насам з вайной. Ён пайшоў туды, дзе застаўся трымаць абарону бацька. Худага і абарванага хлапчука
@@ -266,6 +300,7 @@
                     "Партызану Айчыннай вайны" I ступені, "За перамогу над Германіяй" і многімі іншымі.
                 </p>
             </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block letter_block_second">
                 <div class="animate__animated animate__fadeInRightBig wow img">
                     <img src="../img/medal4.jpg" alt="Анатолий Бурчик | Anatoly Burchik">
@@ -285,6 +320,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m4">
                     Аб актыўнай сувязі з партызанскім камандаваннем стала вядома супрацоўнікам Гестапа, аднак хлапчука своечасова паспелі
@@ -311,6 +347,7 @@
                     перамогу над Германіяй" і іншымі.
                 </p>
             </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block">
                 <div class="animate__animated animate__fadeInLeftBig wow img">
                     <img src="../img/medal5.jpg" alt="Ольга Демеш | Olga Demesh">
@@ -327,6 +364,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m5">
                     З красавіка 1943 года Вольга Дземеш змагалася ў складзе 8-й партызанскай брыгады. Яна брала ўдзел у рэйкавай вайне і ў
@@ -359,6 +397,7 @@
                     іншымі.
                 </p>
             </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block letter_block_second">
                 <div class="animate__animated animate__fadeInRightBig wow img">
                     <img src="../img/medal6.jpg" alt="Леонид Кузубов | Leonid Kuzubov">
@@ -375,6 +414,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m6">
                     Праз тыдзень сустрэў маёр жыццярадаснага хлопца. У медсанбаце пашылі яму акуратны шынялёк і мундзір, знайшліся майстры,
@@ -406,6 +446,7 @@
                     Варшавы", "За ўзяцце Прагі", "За перамогу над Германіяй" і іншымі.
                 </p>
             </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block">
                 <div class="animate__animated animate__fadeInLeftBig wow img">
                     <img src="../img/medal7.jpg" alt="Петр Логинов | Peter Loginov">
@@ -424,6 +465,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m7">
                     Тыдзень дабіраўся ў родную вёску Пеця. Стаў дапамагаць маці па гаспадарцы. Былы дырэктар школы Вішнякоў часта
@@ -459,6 +501,7 @@
                     заслугі", "За адвагу", "За ўзяцце Кёнігсберга", "За Перамогу над Германіяй" і многімі іншымі.
                 </p>
             </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block letter_block_second">
                 <div class="animate__animated animate__fadeInRightBig wow img">
                     <img src="../img/medal8.jpg" alt="Михаил Москалев | Michail Moskalev">
@@ -475,6 +518,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m8">
                     Фашысты расстралялі Мішынага бацьку і спалілі жыўцом дзве сям'і сувязных партызан. Не перажыўшы гора, памерла і мама
@@ -510,6 +554,7 @@
                     скончыў індустрыяльны тэхнікум, політэхнічны інстытут.
                 </p>
             </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block">
                 <div class="animate__animated animate__fadeInLeftBig wow img">
                     <img src="../img/medal9.jpg" alt="Леонид Окунь | Leonid Okun">
@@ -528,6 +573,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m9">
                     Па даносу інфарматара на Юбілейнай плошчы павесілі ўсю сям'ю Лёні: маму, брата, двух сясцёр і швагра. Праходзячы міма
@@ -566,6 +612,7 @@
                     многімі іншымі.
                 </p>
             </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block letter_block_second">
                 <div class="animate__animated animate__fadeInRightBig wow img">
                     <img src="../img/medal10.jpg" alt="Борис Степанчук | Boris Stepanchuk">
@@ -583,6 +630,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m10">
                     З таго часу Бора неўзаметку для вартавых пранікаў да сеткі мз калючага дроту і перадаваў вязням Лупалаўскага лагера
@@ -609,6 +657,7 @@
                     Барыс Сцепанчук быў узнагароджаны медалём "За адвагу" і ордэнам Славы III ступені.
                 </p>
             </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block">
                 <div class="animate__animated animate__fadeInLeftBig wow img">
                     <img src="../img/medal11.jpg" alt="Геннадий Тюнин | Gennady Tyunin">
@@ -626,6 +675,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m11">
                     Неўзабаве прыйшлі немцы. Цяжкае ўражанне пакінулі здзекі фашыстаў над палоннымі чырвонаармейцамі. Прага помсты
@@ -671,6 +721,7 @@
                     "Партызану Айчыннай вайны" II ступені і іншымі.
                 </p>
             </div>
+            <!-- 1 часть биографии и фотография -->
             <div class="letter_block letter_block_second">
                 <div class="animate__animated animate__fadeInRightBig wow img">
                     <img src="../img/medal12.jpg" alt="Геннадий Юшкевич | Gennady Yushkevich">
@@ -687,6 +738,7 @@
                     </p>
                 </div>
             </div>
+            <!-- 2 часть биографии -->
             <div class="text_after">
                 <p class="lang animate__animated animate__fadeInRightBig wow" key="p4_m12">
                     Пасля прыходу гітлераўцаў у Мінск маці Гены, Лізавета Канстанцінаўна, з пачатку акупацыі дапамагала падпольшчыкам, і для
@@ -729,58 +781,69 @@
             </div>
             <!-- Footer -->
             <div class="footer">
-                <div class="logo_footer block_footer">
-                    <div class="logo_footer_name footer_first_child">belaruswar</div>
-                    <i class='bx bxs-star kio'></i>
+                <div class="logo_footer">
+                    <div class="logo_footer_name">belaruswar</div>
+                    <i class='bx bxs-star logo_element'></i>
                 </div>
-                <div class="menu_footer links_footer block_footer">
-                    <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-                    <a href="../main.html">
-                        <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
-                    </a>
-                    <a href="museum.html" class="lang" key="museum_footer">Пакой славы</a>
-                    <a href="archive.html" class="lang" key="archive_footer">Архіў</a>
-                    <a href="test.html" class="lang" key="test_footer">Тэст</a>
-                    <a href="history.html" class="lang" key="history_footer">Гісторыя</a>
-                    <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
+                <div class="menu_footer links_footer">
+                    <div class="footer_menu_first_child lang" key="menu_footer">Змест:</div>
+                    <a href="../main.html" class="lang" key="main_href">Галоўная</a>
+                    <a href="museum.html" class="lang" key="museum_href">Музей</a>
+                    <a href="archive.html" class="lang" key="archive_href">Архіў</a>
+                    <a href="test.html" class="lang" key="test_href">Тэст</a>
+                    <a href="history.html" class="lang" key="history_href">Гісторыя</a>
+                    <a href="medals.html" class="lang" key="medals_href">Узнагароды</a>
+                    <a href="#" class="lang" key="other_href">Дадаткова</a>
                 </div>
-                <div class="menu_footer block_footer lang">
-                    <div class="footer_first_child lang" key="language_footer">Мова:</div>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="language_footer">Мова:</div>
                     <a id="en" class="translate">English</a>
                     <a id="ru" class="translate">Русский</a>
-                    <a href="soldiers.html" class="lang">Беларуская мова</a>
+                    <a id="by" class="translate">Беларускі</a>
                 </div>
-                <div class="menu_footer social_footer block_footer" lang>
-                    <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="social_footer">Сацыялкі:</div>
                     <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
                     <a href="https://t.me/belaruswar">Telegram</a>
                     <a href="https://vk.com/public208818660">VK</a>
                 </div>
-                <div class="email_footer block_footer lang">
-                    <div class="footer_first_child lang" key="email">Пошта:</div>
-                    <a href="mailto:belaruswar@mail.ru" class="email_link">
-                        <div class="email_footer_list">belaruswar@mail.ru</div>
-                    </a>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="email_footer">Пошта:</div>
+                    <a href="mailto:belaruswar@mail.ru">belaruswar@mail.ru</a>
                 </div>
             </div>
-            <div class="after_footer">
-                <a class="belaruswar_footer lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
-                <a>Korzun Ilya 2021</a>
+            <div class="copyright_footer">
+                <a class="lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
+                <a>Korzun Ilya 2021 - 2022</a>
             </div>
         </div>
     </div>
+    <!-- Обложка -->
     <style>
-        .facts {
-            background: black;
+        .promo {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+                url("../img/солдаты.jpg");
             background-size: cover;
+            background-position: center;
             background-attachment: fixed;
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            padding-top: 50px;
-            padding-bottom: 50px;
         }
     </style>
+    <!-- Пасхалка, адаптивное меню, ссылки на разделы -->
+    <script>
+        // Пасхалка
+        console.log("Instagram: korzun_ilya")
+
+        // Адаптивное меню
+        var menuButton = document.querySelector('.menu_button');
+        var menu = document.querySelector('.mobile_menu');
+
+        menuButton.addEventListener('click', function () {
+            menu.classList.toggle('mobile_menu_active');
+        })
+    </script>
+    <!-- Подключение файла для удаления анимаций на мобилках -->
+    <script src="../js/adapt.js"></script>
+    <!-- Подключение файла jquery.min.js -->
+    <script src="../jquery.min.js"></script>
 </body>
 </html>

@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="by">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="lang" key="title_museum">Belaruswar — Пакой славы</title>
+    <title class="lang" key="title_museum">Belaruswar — Музей</title>
+    <link rel="stylesheet" href="museum.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Шріфт Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
     <!-- Шріфт Comfortaa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,502 +21,440 @@
         new WOW().init();
     </script>
 </head>
-<!-- Адаптивное меню -->
+<!-- Меню для мобилок -->
 <header class="mobile_header">
     <div class="logo_header">
         <div class="logo_header_name">belaruswar</div>
-        <i class='bx bxs-star kio'></i>
+        <i class='bx bxs-star'></i>
     </div>
     <div class="header_mobile_menu menu_button">
         <i class='bx bx-menu'></i>
     </div>
 </header>
-<body>
-    <!-- Адаптивное меню -->
-    <div class="mobile_menu">
-        <div class="menu_footer links_footer block_footer">
-            <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-            <a href="../main.html">
-                <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
-            </a>
-            <a href="museum.html" class="lang" key="museum_footer">Пакой славы</a>
-            <a href="archive.html" class="lang" key="archive_footer">Архіў</a>
-            <a href="test.html" class="lang" key="test_footer">Тэст</a>
-            <a href="history.html" class="lang" key="history_footer">Гісторыя</a>
-            <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
-        </div>
-        <div class="menu_footer block_footer lang">
-            <div class="footer_first_child lang" key="language_footer">Мова:</div>
-            <a id="en" class="translate">English</a>
-            <a id="ru" class="translate">Русский</a>
-            <a id="by" class="translate">Беларуская мова</a>
-        </div>
-        <div class="menu_footer social_footer block_footer" lang>
-            <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
-            <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
-            <a href="https://t.me/belaruswar">Telegram</a>
-            <a href="https://vk.com/public208818660">VK</a>
-        </div>
-        <div class="email_footer block_footer email_header lang">
-            <div class="footer_first_child lang" key="email">Пошта:</div>
-            <a href="mailto:belaruswar@mail.ru" class="email_link">
-                <div class="email_footer_list">belaruswar@mail.ru</div>
-            </a>
-        </div>
-    </div>
-    <!-- Сайт -->
-    <div id="web-page">
-        <!-- Блок с контентом страницы сайта -->
-        <div class="content" id="webpage_content">
-            <div class="promo">
-                <div class="title_pages_promo lang" key="title_promo_mueseum">
-                    Пакой славы
-                </div>
-                <div class="text_promo animate__animated animate__fadeInRightBig lang" key="defenition_promo_museum">
-                    Пакой баявой славы - гэта музейная экспазіцыя, прысвечаная юным абаронцам Айчыны, якая знаходзіцца ў
-                    Гімназіі №7 г. Мінска.
-                </div>
+    <body>
+        <!-- Меню для мобилок -->
+        <div class="mobile_menu">
+            <div class="menu_footer links_footer">
+                <div class="footer_menu_first_child lang" key="menu_footer">Змест:</div>
+                <a href="../main.html" class="lang" key="main_href">Галоўная</a>
+                <a href="museum.html" class="lang" key="museum_href">Музей</a>
+                <a href="archive.html" class="lang" key="archive_href">Архіў</a>
+                <a href="test.html" class="lang" key="test_href">Тэст</a>
+                <a href="history.html" class="lang" key="history_href">Гісторыя</a>
+                <a href="medals.html" class="lang" key="medals_href">Узнагароды</a>
+                <a href="#" class="lang" key="other_href">Дадаткова</a>
             </div>
-            <div class="text_about">
-                <div class="title_about_with_stars animate__animated animate__fadeInRightBig wow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none"
-                        class="svg_element">
+            <div class="menu_footer">
+                <div class="footer_menu_first_child lang" key="language_footer">Мова:</div>
+                <a id="en" class="translate">English</a>
+                <a id="ru" class="translate">Русский</a>
+                <a id="by" class="translate">Беларускі</a>
+            </div>
+            <div class="menu_footer">
+                <div class="footer_menu_first_child lang" key="social_footer">Сацыялкі:</div>
+                <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
+                <a href="https://t.me/belaruswar">Telegram</a>
+                <a href="https://vk.com/public208818660">VK</a>
+            </div>
+            <div class="menu_footer">
+                <div class="footer_menu_first_child lang" key="email_footer">Пошта:</div>
+                <a href="mailto:belaruswar@mail.ru">belaruswar@mail.ru</a>
+            </div>
+        </div>
+        <!-- Сайт -->
+        <div id="web-page">
+            <!-- Блок с контентом страницы сайта -->
+            <div class="content" id="webpage_content">
+                <!-- Обложка (CSS "Обложка") -->
+                <div class="promo">
+                    <h1 class="title_pages_promo lang" key="title_promo_mueseum">
+                        Музей
+                    </h1>
+                    <div class="text_promo animate__animated animate__fadeInRightBig lang" key="defenition_promo_museum">
+                        Пакой баявой славы - гэта музейная экспазіцыя, прысвечаная юным абаронцам Айчыны, якая знаходзіцца ў
+                        Гімназіі №7 г. Мінска.
+                    </div>
+                </div>
+                <!-- О музее (CSS "Текст")-->
+                <div class="text_about">
+                    <div class="title_with_stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z" fill="#BE0B20" />
+                        </svg>
+
+                        <div class="animate__animated animate__fadeInRightBig wow lang" key="about_museum_title">Аб музеі</div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z" fill="#BE0B20" />
+                        </svg>
+                    </div>
+                    <div class="paragraph_about animate__animated animate__fadeInRightBig wow">
+                        <p class="lang" key="paragraph_museum_first">
+                            40 гадоў таму, 21 лютага 1980 года ў СШ № 54 (цяпер гімназія № 7) г. Мінска быў адкрыты Пакой
+                            баявой славы, у якім навучэнцамі і педагогамі быў сабраны вялікі матэрыял пра юных абаронцах Айчыны. Вучні
+                            праводзілі вялікую работу па патрыятычным выхаванні, па ўвекавечанні памяці пра людзей, якія прынеслі на нашу
+                            беларускую зямлю доўгачаканую перамогу над фашысцкімі захопнікамі. Гэтая праца неаднаразова асвятлялася ў сродках
+                            масавай інфармацыі, на тэлебачанні. За поспехі ў патрыятычным выхаванні і вялікую працу Пакой баявой славы
+                            ўзнагароджваўся граматамі, вымпеламі Прэзідыума Савецкага камітэта ветэранаў вайны і іншых патрыятычных арганізацый.
+                        </p>
+                        <p class="animate__animated animate__fadeInRightBig wow lang" key="paragraph_museum_second">
+                            Пакой баявой славы «Юныя абаронцы Айчыны» ўвесь час папаўняецца новымі экспанатамі, дакументамі,
+                            кнігамі пра юных абаронцах Радзімы. Пакой баявой славы наведваюць школьнікі Партызанскага раёна і іншых раёнаў г.
+                            Мінска. На базе Пакоя баявой славы здымаюцца сюжэты для тэлевізійных праграм і перадач, а таксама фільмы
+                            пра юных абаронцах Радзімы. Пры падрыхтоўцы да раённых і гарадскіх канферэнцый навучэнцаў, звязаных
+                            з перыядам Вялікай Айчыннай вайны, навучэнцы нашай гімназіі атрымліваюць магчымасць карыстацца архіўнымі матэрыяламі Пакоя, атрымліваюць
+                            кансультацыю па розных тэмах. У сакавіку 2019 года на аснове матэрыялаў архіва Пакоя баявой славы была выдадзена
+                            кніга «Маленькія салдаты вялікай вайны», а ў чэрвені 2020 года выйшла ў свет кніга на беларускай мове «Вайна. Юнацтва. Подзвіг».
+                        </p>
+                    </div>
+                </div>
+                <!-- Фотографии из комнаты (CSS "Галерея")-->
+                <div class="places places_museum" id="locations">
+                    <div class="wrapper-full">
+                        <div class="places_cards">
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/фотомузей1.JPG"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/фотомузей1.JPG" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/фотомузей2.JPG"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/фотомузей2.JPG" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/фотомузей3.JPG"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/фотомузей3.JPG" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/фотомузей12.jpg"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/фотомузей12.jpg" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/фотомузей13.jpg"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/фотомузей13.jpg" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/фотомузей14.jpg"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/фотомузей14.jpg" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/мое.jpg"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/мое.jpg" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/фотомузей9.jpg"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/фотомузей9.jpg" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/фотомузей4.JPG"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/фотомузей4.JPG" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/фотомузей5.jpg"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/фотомузей5.jpg" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/фотомузей7.jpg"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/фотомузей7.jpg" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                            <figure class="places_card places_card_size_sm">
+                                <img src="../img/фотомузей8.jpg"
+                                    class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
+                                <a href="../img/фотомузей8.jpg" target="_blank" class="places_card-link"></a>
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Факты о музее (CSS "Факты о музее") -->
+                <div class="facts">
+                    <div class="title_facts_museum lang" key="title_facts_museum">
+                        У Пакоі баявой славы праводзяцца:
+                    </div>
+                    <ul class="list_facts">
+                        <li class="lang" key="first_fact_museum">урокі мужнасці, на якія запрашаюцца былыя юныя ўдзельнікі вайны, беларускія Арляняты</li>
+                        <li class="lang" key="second_fact_museum">класныя гадзіны, прысвечаныя юным патрыётам Беларусі, на якіх дэманструюцца фільмы пра гераізм дзяцей</li>
+                        <li class="lang" key="third_fact_museum">сустрэчы з ветэранамі Вялікай Айчыннай вайны</li>
+                        <li class="lang" key="four_fact_museum">урокі гісторыі, звязаныя з перыядам Вялікай Айчыннай вайны</li>
+                    </ul>
+                </div>
+                <!-- Книги музея (CSS "Книги музея") -->
+                <div class="books">
+                    <div class="title_with_stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z" fill="#BE0B20" />
+                        </svg>
+
+                        <div class="title_star animate__animated animate__fadeInRightBig wow lang" key="title_museum_books">Кнігі пакоя славы</div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z" fill="#BE0B20" />
+                        </svg>
+                    </div>
+                    <div class="books_museum">
+                        <div class="first_book_museum child_book">
+                            <div class="animate__animated animate__fadeInLeftBig wow">
+                                <div class="title_book_museum lang" key="title_book_museum_first">
+                                    Вайна. Юнацтва. Подзвіг
+                                </div>
+                                <p class="definition_book lang" key="definition_book-first">
+                                    У зборнік уключаны творы аб юнаках і дзяўчатах, чыё сталенне прыйшлося на жудасны ваенны
+                                    час. У кнізе дзве часткі: у першай У. В. Вавула дае хранікальна-дакументальныя звесткі аб юных
+                                    героях Беларусі, у другой увазе чытачоў прадстаўлены паэмы вядомага беларускага пісьменніка Міколы Чарняўскага,
+                                    прысвечаныя подзвігам юных змагароў за сваю Радзіму. Адрасуецца дзецям сярэдняга і старэйшага школьнага ўзросту. Унікальныя фотаматэрыялы з
+                                    архіва У. В. Вавулы робяць выданне асабліва каштоўным для ўсіх чытачоў.
+                                </з>
+                            </div>
+                            <div class="image_book-first">
+                                <img src="../img/книга1.png" class="animate__animated animate__fadeInRightBig wow">
+                            </div>
+                        </div>
+                        <div class="second_book_museum child_book">
+                            <div class="animate__animated animate__fadeInLeftBig wow">
+                                <div class="title_book_museum lang" key="title_book_museum_second">
+                                    Маленькія салдаты вялікай вайны
+                                </div>
+                                <p class="definition_book lang" key="definition_book-second">
+                                    Ілюстраванае выданне "Маленькія салдаты вялікай вайны" прысвечана памяці юных абаронцаў
+                                    Радзімы, якія ў дзіцячыя гады
+                                    перанеслі ўсе нягоды Вялікай Айчыннай вайны і па меры сваіх сіл унеслі значны ўклад у
+                                    агульную справу Перамогі над
+                                    ворагам. Матэрыял сабраны пошукавымі групамі школьнікаў у межах акцыі “Мы шукаем на зямлі
+                                    равеснікаў сляды” і з'яўляецца
+                                    прыкладам праяўлення актыўнай грамадзянскай пазіцыі, глыбокай павагі да гістарычнай спадчыны беларускага народа.
+                                </p>
+                            </div>
+                            <div class="image_book-second">
+                                <img src="../img/книга2.png" class="animate__animated animate__fadeInRightBig wow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Видео о комнате -->
+                <div class="museum_video">
+                    <iframe width="100%" height="650" src="https://www.youtube.com/embed/dp1a9HGKfLQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <!-- Поздравления детей (CSS "Поздравления") -->
+                <div class="title_with_stars title_our_children">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z"
                             fill="#BE0B20" />
                     </svg>
-
-                    <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="about_museum_title">Аб Пакоі баявой славы</div>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none"
-                        class="svg_element">
+                
+                    <div class="title_star animate__animated animate__fadeInRightBig wow lang" key="remember_our_child">Мы памятаем! Мы ганарымся!</div>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z"
                             fill="#BE0B20" />
                     </svg>
                 </div>
-                <div class="paragraph_about animate__animated animate__fadeInRightBig wow">
-                    <p class="lang" key="about_museum_defenition">
-                        40 гадоў таму, 21 лютага 1980 года ў СШ № 54 (цяпер гімназія № 7) г. Мінска быў адкрыты Пакой
-                        баявой славы, у якім
-                        навучэнцамі і педагогамі быў сабраны вялікі матэрыял пра юных абаронцах Айчыны. Вучні
-                        праводзілі вялікую
-                        работу па патрыятычным выхаванні, па ўвекавечанні памяці пра людзей, якія прынеслі на нашу
-                        беларускую зямлю
-                        доўгачаканую перамогу над фашысцкімі захопнікамі. Гэтая праца неаднаразова асвятлялася ў сродках
-                        масавай інфармацыі, на
-                        тэлебачанні. За поспехі ў патрыятычным выхаванні і вялікую працу Пакой баявой славы
-                        ўзнагароджваўся граматамі,
-                        вымпеламі Прэзідыума Савецкага камітэта ветэранаў вайны і іншых патрыятычных арганізацый.
-                    </p>
+                <!-- Поздравления -->
+                <div class="our_children">
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/BMlDAf51gdQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/g9H-aLoA6Zg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
                 </div>
-            </div>
-            <div class="facts">
-                <div class="title_about lang" key="title_facts_museum">
-                    У Пакоі баявой славы праводзяцца:
+                <div class="our_children">
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/AJ_5o96Mt6A"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/cuFdR5hrFB8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
                 </div>
-                <ul class="list_facts">
-                    <li class="lang" key="first_fact_museum">урокі
-                        мужнасці, на якія запрашаюцца былыя юныя ўдзельнікі вайны, беларускія Арляняты</li>
-                    <li class="lang" key="second_fact_museum">урокі гісторыі,
-                        звязаныя з перыядам Вялікай Айчыннай вайны</li>
-                    <li class="lang" key="third_fact_museum">сустрэчы з
-                        ветэранамі Вялікай Айчыннай вайны</li>
-                    <li class="lang" key="four_fact_museum">класныя гадзіны,
-                        прысвечаныя юным патрыётам Беларусі, на якіх дэманструюцца фільмы пра гераізм дзяцей
-                    </li>
-                </ul>
-            </div>
-            <div class="places places_museum" id="locations">
-                <div class="wrapper-full">
-                    <div class="places_cards">
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей1.JPG"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей1.JPG" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей2.JPG"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей2.JPG" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей3.JPG"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей3.JPG" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей12.jpg"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей12.jpg" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей13.jpg"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей13.jpg" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей14.jpg"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей14.jpg" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей11.jpg"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей11.jpg" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей6.JPG"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей6.JPG" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/мое.jpg"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/мое.jpg" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей10.jpg"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей10.jpg" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей9.jpg"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей9.jpg" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей4.JPG"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей4.JPG" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей5.jpg"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей5.jpg" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей7.jpg"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей7.jpg" target="_blank" class="places_card-link"></a>
-                        </figure>
-
-                        <figure class="places_card places_card_size_sm">
-                            <img src="../img/фотомузей8.jpg"
-                                class="places_card-pic places_card-pic_size-sm animate__animated animate__slideInRight wow">
-                            <a href="../img/фотомузей8.jpg" target="_blank" class="places_card-link"></a>
-                        </figure>
-
+                <div class="our_children">
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/UgQYf01CMp4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/2KKSUCAyJuw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                </div>
+                <div class="our_children">
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/NaTdDRDgR7E"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/VH_XjK1zO0U"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                </div>
+                <div class="our_children our_children_last">
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/jOgR40wxfm8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/hUjzs1m-46g"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></div>
+                </div>
+                <!-- Footer -->
+                <div class="footer">
+                    <div class="logo_footer">
+                        <div class="logo_footer_name">belaruswar</div>
+                        <i class='bx bxs-star logo_element'></i>
+                    </div>
+                    <div class="menu_footer links_footer">
+                        <div class="footer_menu_first_child lang" key="menu_footer">Змест:</div>
+                        <a href="../main.html" class="lang" key="main_href">Галоўная</a>
+                        <a href="museum.html" class="lang" key="museum_href">Музей</a>
+                        <a href="archive.html" class="lang" key="archive_href">Архіў</a>
+                        <a href="test.html" class="lang" key="test_href">Тэст</a>
+                        <a href="history.html" class="lang" key="history_href">Гісторыя</a>
+                        <a href="medals.html" class="lang" key="medals_href">Узнагароды</a>
+                        <a href="#" class="lang" key="other_href">Дадаткова</a>
+                    </div>
+                    <div class="menu_footer">
+                        <div class="footer_menu_first_child lang" key="language_footer">Мова:</div>
+                        <a id="en" class="translate">English</a>
+                        <a id="ru" class="translate">Русский</a>
+                        <a id="by" class="translate">Беларускі</a>
+                    </div>
+                    <div class="menu_footer">
+                        <div class="footer_menu_first_child lang" key="social_footer">Сацыялкі:</div>
+                        <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
+                        <a href="https://t.me/belaruswar">Telegram</a>
+                        <a href="https://vk.com/public208818660">VK</a>
+                    </div>
+                    <div class="menu_footer">
+                        <div class="footer_menu_first_child lang" key="email_footer">Пошта:</div>
+                        <a href="mailto:belaruswar@mail.ru">belaruswar@mail.ru</a>
                     </div>
                 </div>
-            </div>
-            <div class="text_museum">
-                <div class="paragraph_about animate__animated animate__fadeInRightBig wow lang" key="final_text_museum">
-                    <p>
-                        Пакой баявой славы «Юныя абаронцы Айчыны» ўвесь час папаўняецца новымі экспанатамі, дакументамі,
-                        кнігамі пра юных
-                        абаронцах Радзімы. Пакой баявой славы наведваюць школьнікі Партызанскага раёна і іншых раёнаў г.
-                        Мінска. На базе Пакоя баявой славы здымаюцца сюжэты для тэлевізійных праграм і перадач, а таксама фільмы
-                        пра юных абаронцах Радзімы. Пры падрыхтоўцы да раённых і гарадскіх канферэнцый навучэнцаў, звязаных
-                        з перыядам Вялікай Айчыннай вайны, навучэнцы
-                        нашай гімназіі атрымліваюць магчымасць карыстацца архіўнымі матэрыяламі Пакоя, атрымліваюць
-                        кансультацыю па розных тэмах. У сакавіку 2019 года на аснове матэрыялаў архіва Пакоя баявой славы была выдадзена кніга
-                        «Маленькія салдаты вялікай вайны», а ў чэрвені 2020 года выйшла ў свет кніга на беларускай мове «Вайна. Юнацтва. Подзвіг».
-                    </p>
+                <div class="copyright_footer">
+                    <a class="lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
+                    <a>Korzun Ilya 2021 - 2022</a>
                 </div>
-            </div>
-            <!-- Книги музея -->
-            <div class="title_about_with_stars title_our_children">
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none"
-                    class="svg_element">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z"
-                        fill="#BE0B20" />
-                </svg>
-
-                <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="title_museum_books">Кнігі пакоя славы</div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z"
-                        fill="#BE0B20" />
-                </svg>
-            </div>
-            <div class="book_museum">
-                <div class="first_book_museum child_book">
-                    <div class="text_book_museum animate__animated animate__fadeInLeftBig wow">
-                        <div class="title_book_museum lang" key="title_book_museum_first">
-                            Вайна. Юнацтва. Подзвіг
+                <!-- Десктопное меню -->
+                <div class="sidebar">
+                    <div class="logotype">
+                        <div class="logo">
+                            <div class="logo_name">belaruswar</div>
+                            <i class='bx bxs-star logo_element'></i>
                         </div>
-                        <div class="definition_book-first definition_book lang" key="definition_book-first">
-                            У зборнік уключаны творы аб юнаках і дзяўчатах, чыё сталенне прыйшлося на жудасны ваенны
-                            час. У кнізе дзве часткі: у першай У. В. Вавула дае хранікальна-дакументальныя звесткі аб юных
-                            героях Беларусі, у другой
-                            увазе чытачоў прадстаўлены паэмы вядомага беларускага пісьменніка Міколы Чарняўскага,
-                            прысвечаныя подзвігам юных
-                            змагароў за сваю Радзіму.
-                            Адрасуецца дзецям сярэдняга і старэйшага школьнага ўзросту. Унікальныя фотаматэрыялы з
-                            архіва У. В. Вавулы робяць выданне асабліва каштоўным для ўсіх чытачоў.
-                        </div>
+                        <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
                     </div>
-                    <div class="image_book-first">
-                        <img src="../img/книга1.png">
-                    </div>
-                </div>
-                <div class="second_book_museum child_book">
-                    <div class="text_book_museum animate__animated animate__fadeInLeftBig wow">
-                        <div class="title_book_museum lang" key="title_book_museum_second">
-                            Маленькія салдаты вялікай вайны
-                        </div>
-                        <div class="definition_book-second definition_book lang" key="definition_book-second">
-                            Ілюстраванае выданне "Маленькія салдаты вялікай вайны" прысвечана памяці юных абаронцаў
-                            Радзімы, якія ў дзіцячыя гады
-                            перанеслі ўсе нягоды Вялікай Айчыннай вайны і па меры сваіх сіл унеслі значны ўклад у
-                            агульную справу Перамогі над
-                            ворагам. Матэрыял сабраны пошукавымі групамі школьнікаў у межах акцыі “Мы шукаем на зямлі
-                            равеснікаў сляды” і з'яўляецца
-                            прыкладам праяўлення актыўнай грамадзянскай пазіцыі, глыбокай павагі да гістарычнай спадчыны
-                            беларускага народа.
-                        </div>
-                    </div>
-                    <div class="image_book-second">
-                        <img src="../img/книга2.png">
-                    </div>
-                </div>
-            </div>
-            <!-- Видео о комнате -->
-            <div class="youtube">
-                <iframe width="100%" height="615" src="https://www.youtube.com/embed/dp1a9HGKfLQ"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-            <!-- Поздравления (Мы помним! Мы гордимся!)-->
-            <div class="title_about_with_stars title_our_children">
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none"
-                    class="svg_element">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z"
-                        fill="#BE0B20" />
-                </svg>
-
-                <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="remember_our_child">Мы памятаем! Мы ганарымся!</div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none"
-                    class="svg_element">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z"
-                        fill="#BE0B20" />
-                </svg>
-            </div>
-            <div class="our_children">
-                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/BMlDAf51gdQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/g9H-aLoA6Zg"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-            </div>
-            <div class="our_children">
-                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/AJ_5o96Mt6A"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/cuFdR5hrFB8"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-            </div>
-            <div class="our_children">
-                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/UgQYf01CMp4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/2KKSUCAyJuw"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-            </div>
-            <div class="our_children">
-                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/NaTdDRDgR7E"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/VH_XjK1zO0U"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-            </div>
-            <div class="our_children">
-                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/jOgR40wxfm8"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/hUjzs1m-46g"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-            </div>
-            <!-- Footer -->
-            <div class="footer">
-                <div class="logo_footer block_footer">
-                    <div class="logo_footer_name footer_first_child">belaruswar</div>
-                    <i class='bx bxs-star kio'></i>
-                </div>
-                <div class="menu_footer links_footer block_footer">
-                    <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-                    <a href="../main.html">
-                        <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
-                    </a>
-                    <a href="museum.html" class="lang" key="museum_footer">Пакой славы</a>
-                    <a href="archive.html" class="lang" key="archive_footer">Архіў</a>
-                    <a href="test.html" class="lang" key="test_footer">Тэст</a>
-                    <a href="history.html" class="lang" key="history_footer">Гісторыя</a>
-                    <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
-                </div>
-                <div class="menu_footer block_footer lang">
-                    <div class="footer_first_child lang" key="language_footer">Мова:</div>
-                    <a id="en" class="translate">English</a>
-                    <a id="ru" class="translate">Русский</a>
-                    <a id="by" class="translate">Беларуская мова</a>
-                </div>
-                <div class="menu_footer social_footer block_footer" lang>
-                    <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
-                    <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
-                    <a href="https://t.me/belaruswar">Telegram</a>
-                    <a href="https://vk.com/public208818660">VK</a>
-                </div>
-                <div class="email_footer block_footer lang">
-                    <div class="footer_first_child lang" key="email">Пошта:</div>
-                    <a href="mailto:belaruswar@mail.ru" class="email_link">
-                        <div class="email_footer_list">belaruswar@mail.ru</div>
-                    </a>
-                </div>
-            </div>
-            <div class="after_footer">
-                <a class="belaruswar_footer lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
-                <a>Korzun Ilya 2021</a>
-            </div>
-            <div class="sidebar">
-                <div class="logo-content">
-                    <div class="logo">
-                        <div class="logo_name">belaruswar</div>
-                        <i class='bx bxs-star'></i>
-                    </div>
-                    <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
-                </div>
-                <ul class="nav_list">
-                    <li>
-                        <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
-                        <input type="text" placeholder="Search ...">
-                        <span class="tooltip lang" key="search">Пошук</span>
-                    </li>
-                    <li>
-                        <a href="../main.html" class="lang">
-                            <i class='bx bxs-star'></i>
-                            <span class="links_name lang" key="main_href">Галоўная</span>
-                        </a>
-                        <span class="tooltip lang" key="main_href">Галоўная</span>
-                    </li>
-                    <li>
-                        <a href="museum.html" class="lang">
-                            <i class='bx bxs-landmark'></i>
-                            <span class="links_name lang" key="museum">Пакой славы</span>
-                        </a>
-                        <span class="tooltip lang" key="museum">Пакой славы</span>
-                    </li>
-                    <li>
-                        <a href="archive.html" class="lang">
-                            <i class='bx bx-archive'></i>
-                            <span class="links_name lang" key="archive">Архіў</span>
-                        </a>
-                        <span class="tooltip lang" key="archive">Архіў</span>
-                    </li>
-                    <li>
-                        <a href="test.html" class="lang">
-                            <i class='bx bx-question-mark'></i>
-                            <span class="links_name lang" key="test">Тэст</span>
-                        </a>
-                        <span class="tooltip lang" key="test">Тэст</span>
-                    </li>
-                    <li>
-                        <a href="history.html">
-                            <i class='bx bx-book-bookmark'></i>
-                            <span class="links_name lang" key="history">Гісторыя</span>
-                        </a>
-                        <span class="tooltip lang" key="history">Гісторыя</span>
-                    </li>
-                    <li>
-                        <a href="medals.html">
-                            <i class='bx bxs-medal'></i>
-                            <span class="links_name lang" key="medal">Узнагароды</span>
-                        </a>
-                        <span class="tooltip lang" key="medal">Узнагароды</span>
-                    </li>
-                    <li class="language"></li>
-                    <ul class="sub-menu">
+                    <ul class="nav_list">
+                        <li>
+                            <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                            <input type="text" placeholder="Search ...">
+                            <span class="tooltip lang" key="search">Пошук</span>
+                        </li>
+                        <li>
+                            <a href="../main.html" class="lang">
+                                <i class='bx bxs-star'></i>
+                                <span class="links_name lang" key="main_href">Галоўная</span>
+                            </a>
+                            <span class="tooltip lang" key="main_href">Галоўная</span>
+                        </li>
+                        <li>
+                            <a href="museum.html" class="lang">
+                                <i class='bx bxs-landmark'></i>
+                                <span class="links_name lang" key="museum_href">Музей</span>
+                            </a>
+                            <span class="tooltip lang" key="museum_href">Музей</span>
+                        </li>
+                        <li>
+                            <a href="archive.html" class="lang">
+                                <i class='bx bx-archive'></i>
+                                <span class="links_name lang" key="archive_href">Архіў</span>
+                            </a>
+                            <span class="tooltip lang" key="archive_href">Архіў</span>
+                        </li>
+                        <li>
+                            <a href="test.html" class="lang">
+                                <i class='bx bx-question-mark'></i>
+                                <span class="links_name lang" key="test_href">Тэст</span>
+                            </a>
+                            <span class="tooltip lang" key="test_href">Тэст</span>
+                        </li>
+                        <li>
+                            <a href="history.html">
+                                <i class='bx bx-book-bookmark'></i>
+                                <span class="links_name lang" key="history_href">Гісторыя</span>
+                            </a>
+                            <span class="tooltip lang" key="history_href">Гісторыя</span>
+                        </li>
+                        <li>
+                            <a href="medals.html">
+                                <i class='bx bxs-medal'></i>
+                                <span class="links_name lang" key="medals_href">Узнагароды</span>
+                            </a>
+                            <span class="tooltip lang" key="medals_href">Узнагароды</span>
+                        </li>
+                        <li class="language"></li>
                         <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
                         <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
-                        <li><a id="by" class="translate">BY</a><span class="tooltip bel">Беларуская мова</span></li>
+                        <li><a id="by" class="translate">BY</a><span class="tooltip">Беларускі</span></li>
                     </ul>
-                </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Подключение файла для удаления анимаций -->
-    <script src="adapt.js"></script>
-    <script>
-        var menuButton = document.querySelector('.menu_button');
-        var menu = document.querySelector('.mobile_menu');
+        <style>
+            /* Обложка музея */
+            .promo {
+                background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+                    url("../img/мое_filter.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+        <!-- Пасхалка, адаптивное меню -->
+        <script>
+            // Пасхалка
+            console.log("Instagram: korzun_ilya")
 
-        menuButton.addEventListener('click', function () {
-            menu.classList.toggle('mobile_menu_active');
-        })
-    </script>
-    <style>
-        .title_our_children {
-            background: black;
-            color: white;
-            padding-top: 50px;
-        }
-        .content {
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-                url("../img/мое_filter.jpg");
-            height: 100%;
-            transition: all 0.5s ease;
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-        }
-        .facts {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-    </style>
-    <!-- Подключение файла jquery.min.js -->
-    <script src="../jquery.min.js"></script>
-</body>
+            // Адаптивное меню 
+            var menuButton = document.querySelector('.menu_button');
+            var menu = document.querySelector('.mobile_menu');
 
+            menuButton.addEventListener('click', function () {
+                menu.classList.toggle('mobile_menu_active');
+            })
+        </script>
+        <!-- Подключение файла для удаления анимаций на мобилках -->
+        <script src="../js/adapt.js"></script>
+        <!-- Подключение файла jquery.min.js -->
+        <script src="../jquery.min.js"></script>
+    </body>
 </html>

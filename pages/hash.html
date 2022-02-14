@@ -1,238 +1,314 @@
 <!DOCTYPE html>
-<html lang="by">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#belaruswar</title>
+    <title>Belaruswar — #belaruswar</title>
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="hash.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Шріфт Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
     <!-- Шріфт Comfortaa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Подключение библиотеки с Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- Подключение файла jquery.min.js -->
-    <script src="../jquery.min.js"></script>
     <!-- Подключение файла wow.js -->
     <script src="../wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
 </head>
+<!-- Меню для мобилок -->
+<header class="mobile_header">
+    <div class="logo_header">
+        <div class="logo_header_name">belaruswar</div>
+        <i class='bx bxs-star'></i>
+    </div>
+    <div class="header_mobile_menu menu_button">
+        <i class='bx bx-menu'></i>
+    </div>
+</header>
 <body>
+    <!-- Меню для мобилок -->
+    <div class="mobile_menu">
+        <div class="menu_footer links_footer">
+            <div class="footer_menu_first_child lang" key="menu_footer">Змест:</div>
+            <a href="../main.html" class="lang" key="main_href">Галоўная</a>
+            <a href="museum.html" class="lang" key="museum_href">Музей</a>
+            <a href="archive.html" class="lang" key="archive_href">Архіў</a>
+            <a href="test.html" class="lang" key="test_href">Тэст</a>
+            <a href="history.html" class="lang" key="history_href">Гісторыя</a>
+            <a href="medals.html" class="lang" key="medals_href">Узнагароды</a>
+            <a href="#" class="lang" key="other_href">Дадаткова</a>
+        </div>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="language_footer">Мова:</div>
+            <a id="en" class="translate">English</a>
+            <a id="ru" class="translate">Русский</a>
+            <a id="by" class="translate">Беларускі</a>
+        </div>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="social_footer">Сацыялкі:</div>
+            <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
+            <a href="https://t.me/belaruswar">Telegram</a>
+            <a href="https://vk.com/public208818660">VK</a>
+        </div>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="email_footer">Пошта:</div>
+            <a href="mailto:belaruswar@mail.ru">belaruswar@mail.ru</a>
+        </div>
+    </div>
+    <!-- Сайт -->
     <div id="web-page">
+        <!-- Десктопное меню -->
+        <div class="sidebar">
+            <div class="logotype">
+                <div class="logo">
+                    <div class="logo_name">belaruswar</div>
+                    <i class='bx bxs-star logo_element'></i>
+                </div>
+                <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <input type="text" placeholder="Search ...">
+                    <span class="tooltip lang" key="search">Пошук</span>
+                </li>
+                <li>
+                    <a href="../main.html" class="lang">
+                        <i class='bx bxs-star'></i>
+                        <span class="links_name lang" key="main_href">Галоўная</span>
+                    </a>
+                    <span class="tooltip lang" key="main_href">Галоўная</span>
+                </li>
+                <li>
+                    <a href="museum.html" class="lang">
+                        <i class='bx bxs-landmark'></i>
+                        <span class="links_name lang" key="museum_href">Музей</span>
+                    </a>
+                    <span class="tooltip lang" key="museum_href">Музей</span>
+                </li>
+                <li>
+                    <a href="archive.html" class="lang">
+                        <i class='bx bx-archive'></i>
+                        <span class="links_name lang" key="archive_href">Архіў</span>
+                    </a>
+                    <span class="tooltip lang" key="archive_href">Архіў</span>
+                </li>
+                <li>
+                    <a href="test.html" class="lang">
+                        <i class='bx bx-question-mark'></i>
+                        <span class="links_name lang" key="test_href">Тэст</span>
+                    </a>
+                    <span class="tooltip lang" key="test_href">Тэст</span>
+                </li>
+                <li>
+                    <a href="history.html">
+                        <i class='bx bx-book-bookmark'></i>
+                        <span class="links_name lang" key="history_href">Гісторыя</span>
+                    </a>
+                    <span class="tooltip lang" key="history_href">Гісторыя</span>
+                </li>
+                <li>
+                    <a href="medals.html">
+                        <i class='bx bxs-medal'></i>
+                        <span class="links_name lang" key="medals_href">Узнагароды</span>
+                    </a>
+                    <span class="tooltip lang" key="medals_href">Узнагароды</span>
+                </li>
+                <li class="language"></li>
+                <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
+                <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
+                <li><a id="by" class="translate">BY</a><span class="tooltip">Беларускі</span></li>
+            </ul>
+        </div>
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
             <!-- Обложка (CSS "Обложка") -->
             <div class="promo">
-                <div class="title_pages_promo">
-                    <span class="hash_main_red">#</span>belaruswar
-                </div>
-                <div class="text_promo animate__animated animate__fadeInRightBig lang" key="promo_hash_text">
+                <h1 class="title_pages_promo">
+                    <span class="hash_promo_red">#</span>belaruswar
+                </h1>
+                <p class="text_promo animate__animated animate__fadeInRightBig lang" key="promo_hash_text">
                     Наведвайце музеі, помнікі, мемарыялы, прысвечаныя Вялікай Айчыннай Вайне, адзначайце #belaruswar у сацыяльных сетках і
                     трапляйце на наш сайт!
-                </div>
+                </p>
             </div> 
-            <div class="about_hashtag">
-                <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="title_about_hashtag">
-                    Аб хэштэгу
+            <!-- Содержание страницы -->
+            <div class="hashtag">
+                <div class="about_hashtag">
+                    <div class="title_about_hashtag animate__animated animate__fadeInRightBig wow lang" key="title_about_hashtag">
+                        Аб хэштэгу
+                    </div>
+                    <div class="text_about_hashtag">
+                        <p class="animate__animated animate__fadeInRightBig wow lang" key="about_hashtag_first">Мэта нашага праекта - выхаваць у падрастаючага пакалення грамадзянскасць, патрыятызм, беражлівыя адносіны да гісторыі
+                        сваёй краіны, гонару за подзвіг сваіх дзядоў і прадзедаў. Менавіта таму мы аб'яўляем хэштэг #belaruswar у сацсетках!</p>
+                        <p class="animate__animated animate__fadeInRightBig wow lang" key="about_hashtag_second">Мэта хаштэга - павялічыць наведванне музеяў, мемарыяльных комплексаў, абеліскаў, манументаў і іншых помнікаў прысвечаных
+                        Вялікай Айчыннай Вайны.</p>
+                        <p class="animate__animated animate__fadeInRightBig wow lang" key="about_hashtag_third">Кожныя 2 тыдні мы выбіраем 10 пераможцаў па колькасці лайкаў і дадаем іх публікацыі на наш сайт. Такім чынам усе
+                        даведаюцца, што вы патрыёт сваёй краіны! (Таксама вы атрымаеце шмат лайкаў і новых падпісчыкаў)</p>
+                    </div>
                 </div>
-                <div class="text_about">
-                    <p class="animate__animated animate__fadeInRightBig wow lang" key="about_hashtag_first">Мэта нашага праекта - выхаваць у падрастаючага пакалення грамадзянскасць, патрыятызм, беражлівыя адносіны да гісторыі
-                    сваёй краіны, гонару за подзвіг сваіх дзядоў і прадзедаў. Менавіта таму мы аб'яўляем хэштэг #belaruswar у сацсетках!</p>
-                    <p class="animate__animated animate__fadeInRightBig wow lang" key="about_hashtag_second">Мэта хаштэга - павялічыць наведванне музеяў, мемарыяльных комплексаў, абеліскаў, манументаў і іншых помнікаў прысвечаных
-                    Вялікай Айчыннай Вайны.</p>
-                    <p class="animate__animated animate__fadeInRightBig wow lang" key="about_hashtag_third">Кожныя 2 тыдні мы выбіраем 10 пераможцаў па колькасці лайкаў і дадаем іх публікацыі на наш сайт. Такім чынам усе
-                    даведаюцца, што вы патрыёт сваёй краіны! (Таксама вы атрымаеце шмат лайкаў і новых падпісчыкаў)</p>
+                <div class="about_hashtag">
+                    <div class="title_about_hashtag animate__animated animate__fadeInRightBig wow lang" key="title_how_work_hashtag">Каб прыняць удзел вы павінны:</div>
+                    <div class="text_about_hashtag lang" key="list_how_work_hashtag">
+                        <p key="first_list_hashtag" class="animate__animated animate__fadeInRightBig wow lang">1. Наведаць музей, мемарыяльны комплекс, манумент ці любы іншы помнік пра Вялікую Айчынную Вайну.</p>
+                        <p key="second_list_hashtag" class="animate__animated animate__fadeInRightBig wow lang">2. Сфатаграфавацца каля памятнага месца і выкласці публікацыю ў сацыяльныя сеткі (Instagram, Facebook)</p>
+                        <p key="third_list_hashtag" class="animate__animated animate__fadeInRightBig wow lang">3. Адзначыць #belaruswar у публікацыі, каб мы змаглі вас знайсці</p>
+                    </div>
                 </div>
-            </div>
-            <div class="how_work">
-                <div class="title_about lang" key="title_how_work_hashtag">Каб прыняць удзел вы павінны:</div>
-                <div class="text_about lang" key="list_how_work_hashtag">
-                    <p key="first_list_hashtag" class="lang">1. Наведаць музей, мемарыяльны комплекс, манумент ці любы іншы помнік пра Вялікую Айчынную Вайну.</p>
-                    <p key="second_list_hashtag" class="lang">2. Сфатаграфавацца каля памятнага месца і выкласці публікацыю ў сацыяльныя сеткі (Instagram, Facebook)</p>
-                    <p key="third_list_hashtag" class="lang">3. Адзначыць #belaruswar у публікацыі, каб мы змаглі вас знайсці</p>
+                <div class="winers">
+                    <div class="title_about_hashtag animate__animated animate__fadeInRightBig wow lang" key="winers_hash">Пераможцы:</div>
+                    <div class="winners_block">
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%3Ffbid%3D307914678002486%26set%3Dpcb.307914801335807&width=500&show_text=true&height=331&appId"
+                            width="600" height="331" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%3Ffbid%3D307914681335819%26set%3Dpcb.307914801335807&width=500&show_text=true&height=327&appId"
+                            width="600" height="327" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="winners_block">
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%2F%3Ffbid%3D307885634672057%26set%3Dpcb.307885864672034&width=500&show_text=true&height=375&appId"
+                            width="600" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%3Ffbid%3D309238594536761%26set%3Dpcb.309238637870090&width=500&show_text=true&height=350&appId"
+                            width="600" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="winners_block">
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%3Ffbid%3D307893484671272%26set%3Da.153094876817801&width=500&show_text=true&height=590&appId"
+                            width="600" height="590" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%2F%3Ffbid%3D307959211331366%26set%3Da.153094876817801&width=500&show_text=true&height=498&appId"
+                            width="600" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="winners_block">
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%3Ffbid%3D307913638002590%26set%3Da.153094876817801&width=500&show_text=true&height=485&appId"
+                            width="600" height="485" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%2F%3Ffbid%3D307655444695076%26set%3Da.153094883484467&width=500&show_text=true&height=466&appId"
+                            width="600" height="466" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="winners_block">
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%2F%3Ffbid%3D307893254671295%26set%3Da.153094876817801&width=500&show_text=true&height=466&appId"
+                            width="600" height="466" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%2F%3Ffbid%3D307337181393569%26set%3Da.153094876817801&width=500&show_text=true&height=466&appId"
+                            width="600" height="466" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
                 </div>
-            </div>
-            <div class="winers">
-                <div class="title_about lang" key="winers_hash">Пераможцы:</div>
-                <div class="winers_first winers_stroke">
-                    <img src="../img/инста1.jpg" onclick="image1()">
-                    <img src="../img/инста2.jpg" onclick="image2()">
-                    <img src="../img/инста3.jpg" onclick="image3()">
-                    <img src="../img/инста4.jpg" onclick="image4()">
-                    <img src="../img/инста5.jpg" onclick="image5()">
-                </div>
-                <div class="winers_second winers_stroke">
-                    <img src="../img/инста6.jpg" onclick="image6()">
-                    <img src="../img/инста7.jpg" onclick="image7()">
-                    <img src="../img/инста8.jpg" onclick="image8()">
-                    <img src="../img/инста9.jpg" onclick="image9()">
-                    <img src="../img/инста10.jpg" onclick="image10()">
-                </div>
-            </div>
-            <style>
-                .winers_stroke img{
-                    height: 200px;
-                }
-                .winers_stroke img:hover {
-                    cursor: pointer;
-                }
-            </style>
-            <!-- Аккордеон -->
-            <div class="accord">
-                <div class="title_about lang" key="question_hashtag">Пытанні:</div>
-                <div class="grid">
-                    <div class="js-ui-accordion">
-                        <h3 key="first_h_hashtag" class="lang">Якія сацыяльные сеткі?</h3>
-                        <div>
-                            <p key="first_p_hashtag">Instagram, Facebook</p>
-                        </div>
-                
-                        <h3 key="second_h_hashtag" class="lang">Мэта?</h3>
-                        <div>
-                            <p key="second_p_hashtag" class="lang">Мэта хаштэга - павялічыць наведванне музеяў, мемарыяльных комплексаў, абеліскаў, манументаў і іншых помнікаў прысвечаных
-                            Вялікай Айчыннай Вайны.</p>
-                        </div>
-                
-                        <h3 key="third_h_hashtag" class="lang">Што рабіць?</h3>
-                        <div>
-                            <p key="third_p1_hashtag" class="lang">1. Наведаць музей, мемарыяльны комплекс, манумент ці любы іншы помнік пра Вялікую Айчынную Вайну.</p>
-                            <p key="third_p2_hashtag" class="lang">2. Сфатаграфавацца каля памятнага месца і выкласці публікацыю ў сацыяльныя сеткі (Instagram, Facebook)</p>
-                            <p key="third_p3_hashtag" class="lang">3. Адзначыць #belaruswar у публікацыі, каб мы змаглі вас знайсці</p>
-                        </div>
+                <!-- Аккордеон -->
+                <div class="accord">
+                    <div class="title_about_hashtag lang" key="question_hashtag">Пытанні:</div>
+                    <div class="grid">
+                        <div class="js-ui-accordion">
+                            <h3 key="first_h_hashtag" class="lang">Якія сацыяльные сеткі?</h3>
+                            <div>
+                                <p key="first_p_hashtag">Instagram, Facebook</p>
+                            </div>
+                    
+                            <h3 key="second_h_hashtag" class="lang">Мэта?</h3>
+                            <div>
+                                <p key="second_p_hashtag" class="lang">Мэта хаштэга - павялічыць наведванне музеяў, мемарыяльных комплексаў, абеліскаў, манументаў і іншых помнікаў прысвечаных
+                                Вялікай Айчыннай Вайны.</p>
+                            </div>
+                    
+                            <h3 key="third_h_hashtag" class="lang">Што рабіць?</h3>
+                            <div>
+                                <p key="third_p1_hashtag" class="lang">1. Наведаць музей, мемарыяльны комплекс, манумент ці любы іншы помнік пра Вялікую Айчынную Вайну.</p>
+                                <p key="third_p2_hashtag" class="lang">2. Сфатаграфавацца каля памятнага месца і выкласці публікацыю ў сацыяльныя сеткі (Instagram, Facebook)</p>
+                                <p key="third_p3_hashtag" class="lang">3. Адзначыць #belaruswar у публікацыі, каб мы змаглі вас знайсці</p>
+                            </div>
 
-                        <h3 key="fourth_h_hashtag" class="lang">Па ўсёй Беларусі?</h3>
-                        <div>
-                            <p key="fourth_p_hashtag" class="lang">Так, вы можаце наведваць помнікі па усёй краіне.</p>
-                        </div>
+                            <h3 key="fourth_h_hashtag" class="lang">Па ўсёй Беларусі?</h3>
+                            <div>
+                                <p key="fourth_p_hashtag" class="lang">Так, вы можаце наведваць помнікі па усёй краіне.</p>
+                            </div>
 
-                        <h3 key="fivth_h_hashtag" class="lang">Які хэштэг?</h3>
-                        <div>
-                            <p>#belaruswar</p>
+                            <h3 key="fivth_h_hashtag" class="lang">Які хэштэг?</h3>
+                            <div>
+                                <p>#belaruswar</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Footer -->
             <div class="footer">
-                <div class="logo_footer block_footer">
-                    <div class="logo_footer_name footer_first_child">belaruswar</div>
-                    <i class='bx bxs-star kio'></i>
+                <div class="logo_footer">
+                    <div class="logo_footer_name">belaruswar</div>
+                    <i class='bx bxs-star logo_element'></i>
                 </div>
-                <div class="menu_footer links_footer block_footer">
-                    <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-                    <a href="../main.html">
-                        <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
-                    </a>
-                    <a href="museum.html" class="lang" key="museum_footer">Пакой славы</a>
-                    <a href="archive.html" class="lang" key="archive_footer">Архіў</a>
-                    <a href="test.html" class="lang" key="test_footer">Тэст</a>
-                    <a href="history.html" class="lang" key="history_footer">Гісторыя</a>
-                    <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
+                <div class="menu_footer links_footer">
+                    <div class="footer_menu_first_child lang" key="menu_footer">Змест:</div>
+                    <a href="../main.html" class="lang" key="main_href">Галоўная</a>
+                    <a href="museum.html" class="lang" key="museum_href">Музей</a>
+                    <a href="archive.html" class="lang" key="archive_href">Архіў</a>
+                    <a href="test.html" class="lang" key="test_href">Тэст</a>
+                    <a href="history.html" class="lang" key="history_href">Гісторыя</a>
+                    <a href="medals.html" class="lang" key="medals_href">Узнагароды</a>
+                    <a href="#" class="lang" key="other_href">Дадаткова</a>
                 </div>
-                <div class="menu_footer block_footer lang">
-                    <div class="footer_first_child lang" key="language_footer">Мова:</div>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="language_footer">Мова:</div>
                     <a id="en" class="translate">English</a>
                     <a id="ru" class="translate">Русский</a>
-                    <a id="by" class="translate">Беларуская мова</a>
+                    <a id="by" class="translate">Беларускі</a>
                 </div>
-                <div class="menu_footer social_footer block_footer" lang>
-                    <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="social_footer">Сацыялкі:</div>
                     <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
                     <a href="https://t.me/belaruswar">Telegram</a>
                     <a href="https://vk.com/public208818660">VK</a>
                 </div>
-                <div class="email_footer block_footer lang">
-                    <div class="footer_first_child lang" key="email">Пошта:</div>
-                    <a href="mailto:belaruswar@mail.ru" class="email_link">
-                        <div class="email_footer_list">belaruswar@mail.ru</div>
-                    </a>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="email_footer">Пошта:</div>
+                    <a href="mailto:belaruswar@mail.ru">belaruswar@mail.ru</a>
                 </div>
             </div>
-            <div class="after_footer">
-                <a class="belaruswar_footer lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
-                <a>Korzun Ilya 2021</a>
-            </div>
-            <!-- Меню -->
-            <div class="sidebar">
-                <div class="logo-content">
-                    <div class="logo">
-                        <div class="logo_name">belaruswar</div>
-                        <i class='bx bxs-star'></i>
-                    </div>
-                    <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
-                </div>
-                <ul class="nav_list">
-                    <li>
-                        <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
-                        <input type="text" placeholder="Search ...">
-                        <span class="tooltip lang" key="search">Пошук</span>
-                    </li>
-                    <li>
-                        <a href="../main.html" class="lang">
-                            <i class='bx bxs-star'></i>
-                            <span class="links_name lang" key="main_href">Галоўная</span>
-                        </a>
-                        <span class="tooltip lang" key="main_href">Галоўная</span>
-                    </li>
-                    <li>
-                        <a href="museum.html" class="lang">
-                            <i class='bx bxs-landmark'></i>
-                            <span class="links_name lang" key="museum">Пакой славы</span>
-                        </a>
-                        <span class="tooltip lang" key="museum">Пакой славы</span>
-                    </li>
-                    <li>
-                        <a href="archive.html" class="lang">
-                            <i class='bx bx-archive'></i>
-                            <span class="links_name lang" key="archive">Архіў</span>
-                        </a>
-                        <span class="tooltip lang" key="archive">Архіў</span>
-                    </li>
-                    <li>
-                        <a href="test.html" class="lang">
-                            <i class='bx bx-question-mark'></i>
-                            <span class="links_name lang" key="test">Тэст</span>
-                        </a>
-                        <span class="tooltip lang" key="test">Тэст</span>
-                    </li>
-                    <li>
-                        <a href="history.html">
-                            <i class='bx bx-book-bookmark'></i>
-                            <span class="links_name lang" key="history">Гісторыя</span>
-                        </a>
-                        <span class="tooltip lang" key="history">Гісторыя</span>
-                    </li>
-                    <li>
-                        <a href="medals.html">
-                            <i class='bx bxs-medal'></i>
-                            <span class="links_name lang" key="medal">Узнагароды</span>
-                        </a>
-                        <span class="tooltip lang" key="medal">Узнагароды</span>
-                    </li>
-                    <li class="language"></li>
-                    <ul class="sub-menu">
-                        <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
-                        <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
-                        <li><a id="by" class="translate">BY</a><span class="tooltip bel">Беларуская мова</span></li>
-                    </ul>
-                </ul>
+            <div class="copyright_footer">
+                <a class="lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
+                <a>Korzun Ilya 2021 - 2022</a>
             </div>
         </div>
     </div>
+    <style>
+        /* Обложка сраницы */
+        .promo {
+            background: white;
+            color: black;
+        }
+        .hash_promo_red {
+            color: #be0b20;
+        }
+        .title_pages_promo {
+            color: black;
+        }
+    </style>
     <!-- Подключение аккордеона -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
     <script src="../js/accord.js"></script>
+    <!-- Пасхалка, адаптивное меню, ссылки на разделы -->
     <script>
+        // Ссылки на разделы
         function image1() {
             window.open("https://www.facebook.com/photo/?fbid=307656344694986&set=a.153094883484467");
         }
@@ -263,6 +339,21 @@
         function image10() {
             window.open("https://www.facebook.com/hashtag/belaruswar/");
         }
+
+        // Пасхалка
+        console.log("Instagram: korzun_ilya")
+
+        // Адаптивное меню
+        var menuButton = document.querySelector('.menu_button');
+        var menu = document.querySelector('.mobile_menu');
+
+        menuButton.addEventListener('click', function () {
+            menu.classList.toggle('mobile_menu_active');
+        })
     </script>
+    <!-- Подключение файла для удаления анимаций на мобилках -->
+    <script src="../js/adapt.js"></script>
+    <!-- Подключение файла jquery.min.js -->
+    <script src="../jquery.min.js"></script>
 </body>
 </html>

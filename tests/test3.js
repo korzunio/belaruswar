@@ -1,5 +1,3 @@
-
-
 const option1 = document.querySelector('.option1')
 const option2 = document.querySelector('.option2')
 const option3 = document.querySelector('.option3')
@@ -26,7 +24,7 @@ const btnTryAgain = document.getElementById('btn-try-again');
 
 const questions = [
   {
-    question: 'Як называлася аперацыя па вызваленні Беларусі?',
+    question: 'Як называлася стратэгічная наступальная аперацыя па вызваленні Беларусі?',
     options: [
       '«Баграціён»',
       '«Іскра»',
@@ -56,7 +54,7 @@ const questions = [
     rightAnswer: 3
   },
   {
-    question: 'У якім годзе быў адкрыты мемарыяльны комплекс Хатынь?',
+    question: 'У якім годзе быў адкрыты мемарыяльны комплекс «Хатынь»?',
     options: [
       '1969',
       '1971',

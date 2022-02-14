@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="by">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Шріфт Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
     <!-- Шріфт Comfortaa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,130 +21,176 @@
         new WOW().init();
     </script>
 </head>
-<!-- Адаптивное меню -->
+<!-- Меню для мобилок -->
 <header class="mobile_header">
     <div class="logo_header">
         <div class="logo_header_name">belaruswar</div>
-        <i class='bx bxs-star kio'></i>
+        <i class='bx bxs-star'></i>
     </div>
     <div class="header_mobile_menu menu_button">
         <i class='bx bx-menu'></i>
     </div>
 </header>
 <body>
-    <!-- Адаптивное меню -->
+    <!-- Меню для мобилок -->
     <div class="mobile_menu">
-        <div class="menu_footer links_footer block_footer">
-            <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-            <a href="main.html">
-                <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
-            </a>
-            <a href="pages/museum.html" class="lang" key="museum_footer">Пакой славы</a>
-            <a href="pages/archive.html" class="lang" key="archive_footer">Архіў</a>
-            <a href="pages/test.html" class="lang" key="test_footer">Тэст</a>
-            <a href="pages/history.html" class="lang" key="history_footer">Гісторыя</a>
-            <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
+        <div class="menu_footer links_footer">
+            <div class="footer_menu_first_child lang" key="menu_footer">Змест:</div>
+            <a href="main.html" class="lang" key="main_href">Галоўная</a>
+            <a href="pages/museum.html" class="lang" key="museum_href">Музей</a>
+            <a href="pages/archive.html" class="lang" key="archive_href">Архіў</a>
+            <a href="pages/test.html" class="lang" key="test_href">Тэст</a>
+            <a href="pages/history.html" class="lang" key="history_href">Гісторыя</a>
+            <a href="pages/medals.html" class="lang" key="medals_href">Узнагароды</a>
+            <a href="#" class="lang" key="other_href">Дадаткова</a>
         </div>
-        <div class="menu_footer block_footer lang">
-            <div class="footer_first_child lang" key="language_footer">Мова:</div>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="language_footer">Мова:</div>
             <a id="en" class="translate">English</a>
             <a id="ru" class="translate">Русский</a>
-            <a id="by" class="translate">Беларуская мова</a>
+            <a id="by" class="translate">Беларускі</a>
         </div>
-        <div class="menu_footer social_footer block_footer" lang>
-            <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="social_footer">Сацыялкі:</div>
             <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
             <a href="https://t.me/belaruswar">Telegram</a>
             <a href="https://vk.com/public208818660">VK</a>
         </div>
-        <div class="email_footer block_footer email_header lang">
-            <div class="footer_first_child lang" key="email">Пошта:</div>
-            <a href="mailto:belaruswar@mail.ru" class="email_link">
-                <div class="email_footer_list">belaruswar@mail.ru</div>
-            </a>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="email_footer">Пошта:</div>
+            <a href="mailto:belaruswar@mail.ru">belaruswar@mail.ru</a>
         </div>
     </div>
     <!-- Сайт -->
     <div id="web-page">
+        <!-- Десктопное меню -->
+        <div class="sidebar">
+            <div class="logotype">
+                <div class="logo">
+                    <div class="logo_name">belaruswar</div>
+                    <i class='bx bxs-star logo_element'></i>
+                </div>
+                <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
+                    <input type="text" placeholder="Search ...">
+                    <span class="tooltip lang" key="search">Пошук</span>
+                </li>
+                <li>
+                    <a href="pages/museum.html" class="lang">
+                        <i class='bx bxs-landmark'></i>
+                        <span class="links_name lang" key="museum_href">Музей</span>
+                    </a>
+                    <span class="tooltip lang" key="museum_href">Музей</span>
+                </li>
+                <li>
+                    <a href="pages/archive.html" class="lang">
+                        <i class='bx bx-archive'></i>
+                        <span class="links_name lang" key="archive_href">Архіў</span>
+                    </a>
+                    <span class="tooltip lang" key="archive_href">Архіў</span>
+                </li>
+                <li>
+                    <a href="pages/test.html" class="lang">
+                        <i class='bx bx-question-mark'></i>
+                        <span class="links_name lang" key="test_href">Тэст</span>
+                    </a>
+                    <span class="tooltip lang" key="test_href">Тэст</span>
+                </li>
+                <li>
+                    <a href="pages/history.html">
+                        <i class='bx bx-book-bookmark'></i>
+                        <span class="links_name lang" key="history_href">Гісторыя</span>
+                    </a>
+                    <span class="tooltip lang" key="history_href">Гісторыя</span>
+                </li>
+                <li>
+                    <a href="pages/medals.html">
+                        <i class='bx bxs-medal'></i>
+                        <span class="links_name lang" key="medals_href">Узнагароды</span>
+                    </a>
+                    <span class="tooltip lang" key="medals_href">Узнагароды</span>
+                </li>
+                <li>
+                    <a href="pages/hash.html">
+                        <i class='bx bx-hash'></i>
+                        <span class="links_name lang">#belaruswar</span>
+                    </a>
+                    <span class="tooltip lang">#belaruswar</span>
+                </li>
+                <li class="language"></li>
+                <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
+                <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
+                <li><a id="by" class="translate">BY</a><span class="tooltip">Беларускі</span></li>
+            </ul>
+        </div>
         <!-- Блок с контентом страницы сайта -->
         <div class="content" id="webpage_content">
             <!-- Обложка (CSS "Обложка") -->
             <div class="promo">
-                <div class="title_promo lang">
+                <h1 class="title_promo lang">
                     belaruswar
-                </div>
+                </h1>
                 <div class="social_promo">
-                    <a href="https://vk.com/public208818660"><i class='bx bxl-vk'></i></a>
-                    <a href="https://www.instagram.com/belaruswar_official/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://vk.com/belarus_war"><i class='bx bxl-vk'></i></a>
+                    <a href="https://www.instagram.com/belaruswar_official"><i class='bx bxl-instagram'></i></a>
                     <a href="https://t.me/belaruswar"><i class='bx bxl-telegram'></i></a>
                     <a href="mailto:belaruswar@mail.ru"><i class='bx bx-mail-send'></i></a>
                 </div>
-                <div class="text_promo animate__animated animate__fadeInRightBig lang" key="promo_main_text" id="text_promo">
+                <p class="text_promo animate__animated animate__fadeInRightBig lang" key="promo_main_text" id="text_promo">
                     Перамога ў Вялікай Айчыннай вайне — гераічны подзвіг народа. Дзень Перамогі мы адзначаем як галоўнае
                     свята краіны. Вечная памяць загінуўшым у баях! Слава пераможцам!
-                </div>
+                </p>
             </div>
             <!-- О сайте (CSS "Текст") -->
             <div class="text_about">
-                <div class="title_about_with_stars animate__animated animate__fadeInRightBig wow" id="title_about_with_stars">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none"
-                        class="svg_element">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z"
-                            fill="#BE0B20" />
+                <div class="title_with_stars" id="title_about_with_stars">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z" fill="#BE0B20" />
                     </svg>
 
-                    <div class="title_about animate__animated animate__fadeInRightBig wow lang" key="about_site_text" id="title_about">Аб сайце</div>
+                    <div class="animate__animated animate__fadeInRightBig wow lang" key="about_site_text" id="title_about">Аб сайце</div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none"
-                        class="svg_element">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z"
-                            fill="#BE0B20" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25" viewBox="0 0 29 26" fill="none" class="svg_element">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4922 0L18.7082 8.58909L29 9.57115L21.2966 15.8532L23.4511 25.0346L14.4922 20.3426L5.5334 25.0346L7.68787 15.8532L0 9.57115L10.2918 8.58909L14.4922 0Z" fill="#BE0B20" />
                     </svg>
                 </div>
-                <div class="paragraph_about about_site">
+                <div class="paragraph_about">
                     <p class="animate__animated animate__fadeInRightBig wow lang" key="defenition_belarus_remember" id="paragraph_about_first">
                         Хто не памятае гісторыі сваёй краіны — той не мае будучыні. Больш за 75 гадоў прайшло. Беларусь
                         памятае і шануе подзвіг
                         тых, хто загінуў, і жывых, вядомых і безыменных беларусаў — салдат Вялікай Айчыннай, партызан і
                         падпольшчыкаў. Беларусь памятае
-                        мільёны грамадзян, сагнаных у фашысцкае рабства, закатаваных у канцлагерах і гета, памятае тых,
-                        хто каваў Перамогу ў
+                        мільёны грамадзян, сагнаных у фашысцкае рабства, закатаваных у канцлагерах і гета, памятае тых, хто каваў Перамогу ў
                         тыле ворага каля станкоў і вызваляў краіну ад нямецка-фашысцкіх захопнікаў. Беларусь памятае і
-                        шануе Вялікую Перамогу, якая
-                        аб'яднала і заўсёды будзе аб'ядноўваць людзей розных пакаленняў ад малога да вялікага, колькі б
-                        часу ні прайшло, памятае
-                        кожнага без выключэння абаронцы Айчыны. Мы верныя гэтай памяці беларусы захоўваюць яе ў кожным
+                        шануе Вялікую Перамогу, якая аб'яднала і заўсёды будзе аб'ядноўваць людзей розных пакаленняў ад малога да вялікага, колькі б
+                        часу ні прайшло, памятае кожнага без выключэння абаронцы Айчыны. Мы верныя гэтай памяці беларусы захоўваюць яе ў кожным
                         доме, кожнай сям'і. І маладое пакаленне не дазволіць перапісаць праўдзівую гісторыю пра тую страшную вайну і гераізм
                         нашых прадзедаў, дзядоў і бацькоў.
                     </p>
                     <p class="animate__animated animate__fadeInRightBig wow lang" key="text_about_site_first" id="paragraph_about_second">
-                        Праект "Вечны агонь нашай памяці" створаны для выхавання ў падрастаючага пакалення
-                        грамадзянскасці, патрыятызму, беражлівых адносін да
-                        гісторыі сваёй краіны, гонар за подзвіг сваіх дзядоў і прадзедаў.
+                        Праект «Belaruswar» створаны для выхавання ў падрастаючага пакалення
+                        грамадзянскасці, патрыятызму, беражлівых адносін да гісторыі сваёй краіны, гонар за подзвіг сваіх дзядоў і прадзедаў.
                     </p>
                     <p class="animate__animated animate__fadeInRightBig wow lang" key="text_about_site_second"  id="paragraph_about_third">
                         На сайце ёсць архіў з ваеннымі дакументамі, раздзел «Гарады-героі», інфармацыя пра Пакой баявой
-                        славы Гімназіі №7,
-                        фотаальбом і тэсты на веданне гісторыі Вялікай Айчыннай вайны. Праходзячы тэсты, вы даведаецеся
+                        славы Гімназіі №7, фотаальбом і тэсты на веданне гісторыі Вялікай Айчыннай вайны. Праходзячы тэсты, вы даведаецеся
                         шмат новага пра Беларусь у час вайны, знаёмячыся з ваенным архівам, вы
                         даведаецеся пра сваіх дзядоў, прадзедоў, якія змагаліся за нашу Радзіму! Пакой баявой славы -
                         гэта музейная экспазіцыя,
                         прысвечаная юным абаронцам Айчыны, якая знаходзіцца ў Гімназіі №7 г. Мінска. Раздзел
-                        «Гарады-героі» дазволіць вам
-                        даведацца шмат новага і пра свой горад. Сайт пастаянна папаўняецца новымі цікавымі фактамі і
+                        «Гарады-героі» дазволіць вам даведацца шмат новага і пра свой горад. Сайт пастаянна папаўняецца новымі цікавымі фактамі і
                         матэрыяламі.
                     </p>
                     <p class="animate__animated animate__fadeInRightBig wow lang" key="text_about_site_third"  id="paragraph_about_four">
                         Мы - патрыёты сваёй краіны! Мы ніколі не забудзем гісторыю Беларусі часоў Вялікай Айчыннай
-                        Вайны! Таму мэта стварэння
-                        сайта - ушанаваць памяць сваіх дзядоў і прадзедаў, якія змагаліся за Радзіму і цаной свайго
-                        жыцця здабылі для нас ПЕРАМОГУ!
+                        Вайны! Таму мэта стварэння сайта - ушанаваць памяць сваіх дзядоў і прадзедаў, якія змагаліся за Радзіму і цаной свайго жыцця здабылі для нас ПЕРАМОГУ!
                     </p>
                 </div>
             </div>
-            <!-- Кликабельные блоки (CSS "Клик") -->
+            <!-- Кликабельные блоки (CSS "Клик-блоки") -->
             <div class="click_blocks">
                 <div class="click_block animate__animated animate__fadeInRightBig wow" id="click_block_first">
                     <div class="title_click_block lang" key="blocks_medals">
@@ -173,22 +215,21 @@
                     </div>
                 </div>
             </div>
-            <!-- Интересный факт -->
+            <!-- Интересный факт (CSS "Факт") -->
             <div class="interesting_fact">
-                <img src="./img/левитан.png" class="animate__animated animate__fadeInLeftBig wow" id="image_fact_first">
+                <img src="./img/левитан.png" class="animate__animated animate__fadeInLeftBig wow" alt="Интересный факт — Левитан">
                 <div class="text_interesting_fact">
-                    <div class="title_interesting_fact lang" key="title_inter_fact">
+                    <p class="title_interesting_fact lang" key="title_inter_fact">
                         А вы ведалі што ...
-                    </div>
-                    <div class="definition_interesting_fact lang" key="definition_inter_fact">
+                    </p>
+                    <p class="definition_interesting_fact lang" key="definition_inter_fact">
                         Гітлер асабіста аддаў загад як толькі будзе ўзятая Масква, першым павесіць Юрыя Левітана.
-                        Левітан быў
-                        ворагам №1 для Гітлера. І за яго галаву было абяцана ўзнагарода па адных крыніцах 100 000 марак,
+                        Левітан быў ворагам №1 для Гітлера. І за яго галаву было абяцана ўзнагарода па адных крыніцах 100 000 марак,
                         па іншых - 200 000. Па тых часах парадаксальная сума.
-                    </div>
-                    <div class="definition_interesting_fact lang" key="definition_second_inter_fact">
+                    </p>
+                    <p class="definition_interesting_fact lang" key="definition_second_inter_fact">
                         Даведайцеся шмат новага пры праходжанні тэста!
-                    </div>
+                    </p>
                     <button class="button_interesting_fact lang" onclick="test()" key="button_blocks_test">
                         ПРАЙСЦІ ТЭСТ
                     </button>
@@ -196,110 +237,56 @@
             </div>
             <!-- Слайдер "Города-герои" -->
             <div id="app"></div>
-            <!-- Блок Footer -->
+            <!-- Социальные сети проекта -->
+            <div class="social">
+                <div class="social_modal">
+                    <h1 class="lang" key="title_social_modal">Наш праект у сацыяльных сетках:</h1>
+                    <div class="social_links">
+                        <a href="https://t.me/belaruswar"><i class='bx bxl-telegram'></i></a>
+                        <a href="https://www.instagram.com/belaruswar_official"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://vk.com/belarus_war"><i class='bx bxl-vk'></i></a>
+                    </div>
+                    <p class="lang" key="text_social_modal">
+                        У сацыяльных сетках мы выкладаем апошнія навіны праекту, абнаўленні сайта, а таксама праводзім конкурсы!
+                    </p>
+                </div>
+            </div>
+            <!-- Footer -->
             <div class="footer">
-                <div class="logo_footer block_footer">
-                    <div class="logo_footer_name footer_first_child">belaruswar</div>
-                    <i class='bx bxs-star kio'></i>
+                <div class="logo_footer">
+                    <div class="logo_footer_name">belaruswar</div>
+                    <i class='bx bxs-star logo_element'></i>
                 </div>
-                <div class="menu_footer links_footer block_footer">
-                    <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-                    <a href="main.html">
-                        <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
-                    </a>
-                    <a href="pages/museum.html" class="lang" key="museum_footer">Пакой славы</a>
-                    <a href="pages/archive.html" class="lang" key="archive_footer">Архіў</a>
-                    <a href="pages/test.html" class="lang" key="test_footer">Тэст</a>
-                    <a href="pages/history.html" class="lang" key="history_footer">Гісторыя</a>
-                    <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
+                <div class="menu_footer links_footer">
+                    <div class="footer_menu_first_child lang" key="menu_footer">Змест:</div>
+                    <a href="main.html" class="lang" key="main_href">Галоўная</a>
+                    <a href="pages/museum.html" class="lang" key="museum_href">Музей</a>
+                    <a href="pages/archive.html" class="lang" key="archive_href">Архіў</a>
+                    <a href="pages/test.html" class="lang" key="test_href">Тэст</a>
+                    <a href="pages/history.html" class="lang" key="history_href">Гісторыя</a>
+                    <a href="pages/medals.html" class="lang" key="medals_href">Узнагароды</a>
+                    <a href="#" class="lang" key="other_href">Дадаткова</a>
                 </div>
-                <div class="menu_footer block_footer lang">
-                    <div class="footer_first_child lang" key="language_footer">Мова:</div>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="language_footer">Мова:</div>
                     <a id="en" class="translate">English</a>
                     <a id="ru" class="translate">Русский</a>
-                    <a id="by" class="translate">Беларуская мова</a>
+                    <a id="by" class="translate">Беларускі</a>
                 </div>
-                <div class="menu_footer social_footer block_footer" lang>
-                    <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="social_footer">Сацыялкі:</div>
                     <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
                     <a href="https://t.me/belaruswar">Telegram</a>
                     <a href="https://vk.com/public208818660">VK</a>
                 </div>
-                <div class="email_footer block_footer lang">
-                    <div class="footer_first_child lang" key="email">Пошта:</div>
-                    <a href="mailto:belaruswar@mail.ru" class="email_link">
-                        <div class="email_footer_list">belaruswar@mail.ru</div>
-                    </a>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="email_footer">Пошта:</div>
+                    <a href="mailto:belaruswar@mail.ru">belaruswar@mail.ru</a>
                 </div>
             </div>
-            <div class="after_footer">
-                <a class="belaruswar_footer lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
-                <a>Korzun Ilya 2021</a>
-            </div>
-            <!-- Меню -->
-            <div class="sidebar">
-                <div class="logo-content">
-                    <div class="logo">
-                        <div class="logo_name">belaruswar</div>
-                        <i class='bx bxs-star'></i>
-                    </div>
-                    <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
-                </div>
-                <ul class="nav_list">
-                    <li>
-                        <i class='bx bx-search' onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
-                        <input type="text" placeholder="Search ...">
-                        <span class="tooltip lang" key="search">Пошук</span>
-                    </li>
-                    <li>
-                        <a href="pages/museum.html" class="lang">
-                            <i class='bx bxs-landmark'></i>
-                            <span class="links_name lang" key="museum">Пакой славы</span>
-                        </a>
-                        <span class="tooltip lang" key="museum">Пакой славы</span>
-                    </li>
-                    <li>
-                        <a href="pages/archive.html" class="lang">
-                            <i class='bx bx-archive'></i>
-                            <span class="links_name lang" key="archive">Архіў</span>
-                        </a>
-                        <span class="tooltip lang" key="archive">Архіў</span>
-                    </li>
-                    <li>
-                        <a href="pages/test.html" class="lang">
-                            <i class='bx bx-question-mark'></i>
-                            <span class="links_name lang" key="test">Тэст</span>
-                        </a>
-                        <span class="tooltip lang" key="test">Тэст</span>
-                    </li>
-                    <li>
-                        <a href="pages/history.html">
-                            <i class='bx bx-book-bookmark'></i>
-                            <span class="links_name lang" key="history">Гісторыя</span>
-                        </a>
-                        <span class="tooltip lang" key="history">Гісторыя</span>
-                    </li>
-                    <li>
-                        <a href="pages/medals.html">
-                            <i class='bx bxs-medal'></i>
-                            <span class="links_name lang" key="medal">Узнагароды</span>
-                        </a>
-                        <span class="tooltip lang" key="medal">Узнагароды</span>
-                    </li>
-                    <li>
-                        <a href="pages/hash.html">
-                            <i class='bx bx-hash'></i>
-                            <span class="links_name lang">belaruswar</span>
-                        </a>
-                        <span class="tooltip lang">belaruswar</span>
-                    </li>
-                    <li class="language"></li>
-                    <ul class="sub-menu">
-                        <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
-                        <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
-                        <li><a id="by" class="translate">BY</a><span class="tooltip bel">Беларуская мова</span></li>
-                    </ul>
-                </ul>
+            <div class="copyright_footer">
+                <a class="lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
+                <a>Korzun Ilya 2021 - 2022</a>
             </div>
         </div>
     </div>
@@ -307,19 +294,17 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js'></script>
     <script src="js/index.js"></script>
-    <!-- Пасхалка и адаптивное меню-->
+    <!-- Пасхалка, адаптивное меню, ссылка на тест -->
     <script>
-        console.log("Instagram: korzun_ilya")
-    </script>
-    <!-- Левитан - тест -->
-    <script>
+        // Ссылка на тест
         function test() {
             window.open("./pages/test.html");
         }
-    </script>
-    <!-- Подключение файла для удаления анимаций -->
-    <script src="adapt.js"></script>
-    <script>
+
+        // Пасхалка
+        console.log("Instagram: korzun_ilya")
+    
+        // Адаптивное меню 
         var menuButton = document.querySelector('.menu_button');
         var menu = document.querySelector('.mobile_menu');
 
@@ -327,6 +312,8 @@
             menu.classList.toggle('mobile_menu_active');
         })
     </script>
+    <!-- Подключение файла для удаления анимаций на мобилках -->
+    <script src="../js/adapt.js"></script>
     <!-- Подключение файла jquery.min.js -->
     <script src="jquery.min.js"></script>
 </body>

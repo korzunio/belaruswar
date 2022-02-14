@@ -1,12 +1,11 @@
 /* Письма */
 .letter_block {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
+  justify-content: space-between;
+  align-items: flex-start;
   background-color: black;
   border-bottom: 1px solid rgb(36, 36, 36);
-  padding: 50px 0 50px 0;
+  padding: 50px 40px 50px 40px;
 }
 .letter_block_second {
   flex-direction: row-reverse;
@@ -19,11 +18,9 @@
   cursor: pointer;
 }
 .text_letter_block {
-  width: 50%;
-  font-size: 22px;
-  line-height: 32px;
+  width: 60%;
 }
-.text_letter_block p {
+.text_letter_block p:not(:first-child) {
   padding-top: 30px;
 }
 .text_letter_block p:last-child {
@@ -32,14 +29,13 @@
 
 /* Текст почты */
 .email_block {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/background2.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
-  font-size: 20px;
-  line-height: 30px;
   padding: 35px 40px 35px 40px;
   background-attachment: fixed;
 }
@@ -47,9 +43,9 @@
   width: 70%;
 }
 .image_email_block a i {
-  font-size: 35px;
+  font-size: 40px;
   color: white;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .image_email_block a i:hover {
   color: #be0b20;

@@ -1,22 +1,44 @@
-/* Обложка */
-.promo_test {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("../img/солдаты.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: white;
+/* Факты об ордене славы */
+.facts {
+  background: black;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  flex-direction: column;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(36, 36, 36);
 }
 .title_about {
   background: black;
-  color: white;
+  font-size: 45px;
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+.title_about:not(.title_about.title_about_first_child) {
+  border-bottom: 1px solid rgb(36, 36, 36);
+}
+.medal_facts {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 40px 0 40px;
+}
+.list_facts_medal {
+  padding: 0 80px 0 0;
+  font-size: 22px;
+  line-height: 32px;
+}
+.list_facts_medal li:not(:last-child) {
+  padding-bottom: 30px;
+}
+.list_facts {
+  padding: 0 40px 0 40px;
+  font-size: 22px;
+  line-height: 32px;
+}
+.list_facts li {
+  padding-top: 20px;
 }
 
-/* Солдаты */
+/* Обладатели ордена */
 .title_hero_medal {
   font-weight: bold;
   font-size: 27px;
@@ -27,77 +49,27 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 40px 0 40px;
-  color: white;
   background-color: black;
 }
-.letter_block:not(.letter_block.letter_block_first_child) {
+.letter_block:not(:first-child) {
   padding-top: 80px;
-}
-.letter_block_first_child {
-  padding-top: 50px;
 }
 .letter_block_second {
   flex-direction: row-reverse;
 }
 .text_letter_block {
   width: 70%;
-  font-size: 20px;
-  line-height: 30px;
 }
 .text_letter_block p:not(:first-child) {
   padding-top: 30px;
 }
 .text_after {
-  margin: 0 auto;
   background: black;
-  color: white;
-  font-size: 20px;
-  line-height: 30px;
-  padding: 50px 40px 0 40px;
+  padding: 50px 40px 50px 40px;
+  border-bottom: 1px solid rgb(36, 36, 36);
 }
 .text_after p:not(:first-child) {
   padding-top: 20px;
-}
-
-/* Footer */
-.footer {
-  color: white;
-  background-color: black;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 0 40px 50px 40px;
-}
-.menu_footer {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.menu_footer a:not(:first-child),
-.email_footer_list {
-  margin-top: 10px;
-}
-.logo_footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.logo_footer_name {
-  padding-right: 10px;
-}
-.menu_footer a,
-.email_footer_list {
-  opacity: 0.5;
-  text-decoration: none;
-  color: white;
-  transition: 0.5s;
-}
-.menu_footer a:hover,
-.email_footer_list:hover {
-  opacity: 1;
-}
-.footer_first_child {
-  font-weight: bold;
 }
 
 /* Адаптация сайта */

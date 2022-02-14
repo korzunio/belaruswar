@@ -1,0 +1,67 @@
+/* О фотоаппарате */
+.about_photo {
+  background: black;
+  font-size: 22px;
+  line-height: 32px;
+  padding: 50px 40px 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text_about_photo {
+  width: 60%;
+}
+.text_about_photo p:first-child {
+  padding-bottom: 25px;
+}
+
+/* Фотогаллерея */
+.places_card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.places_card_size_sm {
+  grid-column: span 2;
+}
+.places_card_size_bg {
+  grid-column: span 3;
+}
+.places_card-pic {
+  width: 100%;
+  transition: 0.15s;
+}
+.places_card::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.places_card-pic_size-sm {
+  height: 283px;
+  object-fit: cover;
+}
+.places {
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+}
+.places_cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.places_card {
+  position: relative;
+  overflow: hidden;
+}
+.places_card:hover .places_card-pic {
+  transform: scale(1.05);
+}

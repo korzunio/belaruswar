@@ -1,25 +1,8 @@
-/* Обложка */
-.promo_archive {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-    url("../img/table-mess.png");
-  background-color: black;
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 /* Разделы архива */
 .links_blocks_archive {
   display: flex;
   justify-content: space-between;
   background-color: black;
-  color: white;
-  width: 100%;
   padding: 50px 40px 0 40px;
 }
 .links_blocks_archive_second {
@@ -33,15 +16,17 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  overflow: hidden;
 }
 .link_block_second {
-  width: 47%;
+  width: 48%;
   height: 500px;
   background-size: cover;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   padding: 0 15px 0 15px;
+  overflow: hidden;
 }
 .title_link_block {
   font-weight: bold;
@@ -57,6 +42,7 @@
   display: block;
 }
 .link_block:hover .title_link_block {
+  padding-bottom: 10px;
   border-bottom: 3px solid #be0b20;
   transition: 0.5s all ease;
 }
@@ -64,6 +50,7 @@
   display: block;
 }
 .link_block_second:hover .title_link_block {
+  padding-bottom: 10px;
   border-bottom: 3px solid #be0b20;
   transition: 0.5s all ease;
 }
@@ -71,7 +58,6 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url("../img/фотограф.jpg");
   background-position: center center;
-  background-size: cover;
 }
 .link_letters {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),

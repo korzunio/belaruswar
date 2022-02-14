@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   padding: 50px 40px 0 40px;
-  color: white;
   background: black;
 }
 .block_variant {
@@ -190,6 +189,7 @@
     url("../img/тест-партизаны.jpg");
   background-size: cover;
 }
+
 /* Истории */
 .history_first {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
@@ -332,4 +332,10 @@
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../img/газета-бел.jpg");
   background-size: cover;
+}
+
+/* Отступ для теста */
+/* Убрать когда на всех страницах будет интересный факт */
+.last_blocks_variant_test {
+  padding-bottom: 50px;
 }

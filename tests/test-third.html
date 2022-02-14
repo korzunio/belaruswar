@@ -1,37 +1,67 @@
 <!DOCTYPE html>
-<html lang="by">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belaruswar — Тэст "Бітвы"</title>
+    <title>Belaruswar — Тэст «Бітвы»</title>
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="tests.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Шріфт Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
     <!-- Шріфт Comfortaa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Подключение библиотеки с Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- Подключение файла wow.js -->
-    <script src="../wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
 </head>
-
+<!-- Меню для мобилок -->
+<header class="mobile_header">
+    <div class="logo_header">
+        <div class="logo_header_name">belaruswar</div>
+        <i class='bx bxs-star'></i>
+    </div>
+    <div class="header_mobile_menu menu_button">
+        <i class='bx bx-menu'></i>
+    </div>
+</header>
 <body>
+    <!-- Меню для мобилок -->
+    <div class="mobile_menu">
+        <div class="menu_footer links_footer">
+            <div class="footer_menu_first_child lang" key="menu_footer">Змест:</div>
+            <a href="../main.html" class="lang" key="main_href">Галоўная</a>
+            <a href="../pages/museum.html" class="lang" key="museum_href">Музей</a>
+            <a href="../pages/archive.html" class="lang" key="archive_href">Архіў</a>
+            <a href="../pages/test.html" class="lang" key="test_href">Тэст</a>
+            <a href="../pages/history.html" class="lang" key="history_href">Гісторыя</a>
+            <a href="../pages/medals.html" class="lang" key="medals_href">Узнагароды</a>
+            <a href="#" class="lang" key="other_href">Дадаткова</a>
+        </div>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="language_footer">Мова:</div>
+            <a id="en" class="translate">English</a>
+            <a id="ru" class="translate">Русский</a>
+            <a id="by" class="translate">Беларускі</a>
+        </div>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="social_footer">Сацыялкі:</div>
+            <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
+            <a href="https://t.me/belaruswar">Telegram</a>
+            <a href="https://vk.com/public208818660">VK</a>
+        </div>
+        <div class="menu_footer">
+            <div class="footer_menu_first_child lang" key="email_footer">Пошта:</div>
+            <a href="mailto:belaruswar@mail.ru">belaruswar@mail.ru</a>
+        </div>
+    </div>
+    <!-- Сайт -->
     <div id="web-page">
+        <!-- Десктопное меню -->
         <div class="sidebar">
-            <div class="logo-content">
+            <div class="logotype">
                 <div class="logo">
                     <div class="logo_name">belaruswar</div>
-                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star logo_element'></i>
                 </div>
                 <i class='bx bx-menu' id="btn" onclick="document.getElementById('web-page').classList.toggle('expanded')"></i>
             </div>
@@ -51,44 +81,42 @@
                 <li>
                     <a href="../pages/museum.html" class="lang">
                         <i class='bx bxs-landmark'></i>
-                        <span class="links_name lang" key="museum">Пакой славы</span>
+                        <span class="links_name lang" key="museum_href">Музей</span>
                     </a>
-                    <span class="tooltip lang" key="museum">Пакой славы</span>
+                    <span class="tooltip lang" key="museum_href">Музей</span>
                 </li>
                 <li>
                     <a href="../pages/archive.html" class="lang">
                         <i class='bx bx-archive'></i>
-                        <span class="links_name lang" key="archive">Архіў</span>
+                        <span class="links_name lang" key="archive_href">Архіў</span>
                     </a>
-                    <span class="tooltip lang" key="archive">Архіў</span>
+                    <span class="tooltip lang" key="archive_href">Архіў</span>
                 </li>
                 <li>
                     <a href="../pages/test.html" class="lang">
                         <i class='bx bx-question-mark'></i>
-                        <span class="links_name lang" key="test">Тэст</span>
+                        <span class="links_name lang" key="test_href">Тэст</span>
                     </a>
-                    <span class="tooltip lang" key="test">Тэст</span>
+                    <span class="tooltip lang" key="test_href">Тэст</span>
                 </li>
                 <li>
                     <a href="../pages/history.html">
                         <i class='bx bx-book-bookmark'></i>
-                        <span class="links_name lang" key="history">Гісторыя</span>
+                        <span class="links_name lang" key="history_href">Гісторыя</span>
                     </a>
-                    <span class="tooltip lang" key="history">Гісторыя</span>
+                    <span class="tooltip lang" key="history_href">Гісторыя</span>
                 </li>
                 <li>
                     <a href="../pages/medals.html">
                         <i class='bx bxs-medal'></i>
-                        <span class="links_name lang" key="medal">Узнагароды</span>
+                        <span class="links_name lang" key="medals_href">Узнагароды</span>
                     </a>
-                    <span class="tooltip lang" key="medal">Узнагароды</span>
+                    <span class="tooltip lang" key="medals_href">Узнагароды</span>
                 </li>
                 <li class="language"></li>
-                <ul class="sub-menu">
-                    <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
-                    <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
-                    <li><a href="test-third.html">BY</a><span class="tooltip bel">Беларуская мова</span></li>
-                </ul>
+                <li><a id="en" class="translate">ENG</a><span class="tooltip">English</span></li>
+                <li><a id="ru" class="translate">RU</a><span class="tooltip">Русский</span></li>
+                <li><a id="by" class="translate">BY</a><span class="tooltip">Беларускі</span></li>
             </ul>
         </div>
         <!-- Блок с контентом страницы сайта -->
@@ -97,16 +125,16 @@
             <div class="quiz-over-modal">
                 <div class="content-modal">
                     <h1>Ваш вынік:</h1>
-                    <p>Вы адказалі на
+                    <p>Вы адказалі верна на
                         <span id="correct-answer"></span> з
-                        <span id="number-of-all-questions-2"></span> пытанняў
+                        <span id="number-of-all-questions-2"></span> пытанняў.
                     </p>
-                    <button id="btn-try-again">Закрыць</button>
+                    <button id="btn-try-again">Добра!</button>
                 </div>
             </div>
             <div class="quiz-container">
                 <div class="quiz-title-container">
-                    <h2>Тэст "БІТВЫ"</h2>
+                    <h2>Тэст «БІТВЫ»</h2>
                     <p>Тэст прысвечаны найважнейшым бітвам і аперацыям ў гісторыі Вялікай Айчыннай Вайны! Розныя гісторыі ў розных гарадах!</p>
                 </div>
                 <div class="question-number">
@@ -131,60 +159,57 @@
             </div>
             <!-- Footer -->
             <div class="footer">
-                <div class="logo_footer block_footer">
-                    <div class="logo_footer_name footer_first_child">belaruswar</div>
-                    <i class='bx bxs-star kio'></i>
+                <div class="logo_footer">
+                    <div class="logo_footer_name">belaruswar</div>
+                    <i class='bx bxs-star logo_element'></i>
                 </div>
-                <div class="menu_footer links_footer block_footer">
-                    <div class="footer_first_child lang" key="menu_footer">Змест сайта:</div>
-                    <a href="../main.html">
-                        <div class="menu_footer_list lang" key="main_footer">Галоўная</div>
-                    </a>
-                    <a href="../pages/museum.html" class="lang" key="museum_footer">Пакой славы</a>
-                    <a href="../pages/archive.html" class="lang" key="archive_footer">Архіў</a>
-                    <a href="../pages/test.html" class="lang" key="test_footer">Тэст</a>
-                    <a href="../pages/history.html" class="lang" key="history_footer">Гісторыя</a>
-                    <a href="#" class="other_footer lang" key="footer_other">Дадаткова</a>
+                <div class="menu_footer links_footer">
+                    <div class="footer_menu_first_child lang" key="menu_footer">Змест:</div>
+                    <a href="../main.html" class="lang" key="main_href">Галоўная</a>
+                    <a href="../pages/museum.html" class="lang" key="museum_href">Музей</a>
+                    <a href="../pages/archive.html" class="lang" key="archive_href">Архіў</a>
+                    <a href="../pages/test.html" class="lang" key="test_href">Тэст</a>
+                    <a href="../pages/history.html" class="lang" key="history_href">Гісторыя</a>
+                    <a href="../pages/medals.html" class="lang" key="medals_href">Узнагароды</a>
+                    <a href="#" class="lang" key="other_href">Дадаткова</a>
                 </div>
-                <div class="menu_footer block_footer lang">
-                    <div class="footer_first_child lang" key="language_footer">Мова:</div>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="language_footer">Мова:</div>
                     <a id="en" class="translate">English</a>
                     <a id="ru" class="translate">Русский</a>
-                    <a href="test-second.html">Беларуская мова</a>
+                    <a id="by" class="translate">Беларускі</a>
                 </div>
-                <div class="menu_footer social_footer block_footer" lang>
-                    <div class="footer_first_child lang" key="social_footer">Сацыялкі:</div>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="social_footer">Сацыялкі:</div>
                     <a href="https://www.instagram.com/belaruswar_official/">Instagram</a>
                     <a href="https://t.me/belaruswar">Telegram</a>
                     <a href="https://vk.com/public208818660">VK</a>
                 </div>
-                <div class="email_footer block_footer lang">
-                    <div class="footer_first_child lang" key="email">Пошта:</div>
-                    <a href="mailto:belaruswar@mail.ru" class="email_link">
-                        <div class="email_footer_list">belaruswar@mail.ru</div>
-                    </a>
+                <div class="menu_footer">
+                    <div class="footer_menu_first_child lang" key="email_footer">Пошта:</div>
+                    <a href="mailto:belaruswar@mail.ru">belaruswar@mail.ru</a>
                 </div>
             </div>
-            <div class="after_footer">
-                <a class="belaruswar_footer lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
-                <a>Korzun Ilya 2021</a>
+            <div class="copyright_footer">
+                <a class="lang" key="footer_memory">Вечная памяць загінуўшым у баях!</a>
+                <a>Korzun Ilya 2021 - 2022</a>
             </div>
         </div>
     </div>
+    <!-- Пасхалка, адаптивное меню -->
+    <script>
+        // Пасхалка
+        console.log("Instagram: korzun_ilya")
+
+        // Адаптивное меню
+        var menuButton = document.querySelector('.menu_button');
+        var menu = document.querySelector('.mobile_menu');
+
+        menuButton.addEventListener('click', function () {
+            menu.classList.toggle('mobile_menu_active');
+        })
+    </script>
+    <!-- Скрипты для теста -->
     <script src="test3.js"></script>
-    <style>
-        .promo_test {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)),
-                url("../img/битвы.jpeg");
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-    </style>
 </body>
 </html>
