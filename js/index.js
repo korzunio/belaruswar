@@ -136,55 +136,55 @@ var CitiesSlider = function (_React$Component) {
 var slides = [{
   city: 'брэсцкая_крэпасць',
   country: 'беларусь',
-  img: './img/брест-вар.jpg'
+  img: './img/слайдер-брест.jpg'
 }, {
   city: 'керч',
   country: 'расія',
-  img: './img/керчь-вар.jpeg'
+  img: './img/слайдер-керчь.jpeg'
 }, {
   city: 'кіеў',
   country: 'украіна',
-  img: './img/киев-вар.jpg'
+  img: './img/слайдер-киев.jpg'
 }, {
   city: 'севастопаль',
   country: 'расія',
-  img: './img/севастополь-вар.jpg'
+  img: './img/слайдер-севастополь.jpg'
 }, {
   city: 'масква',
   country: 'расія',
-  img: './img/москва-вар.jpg'
+  img: './img/слайдер-москва.jpg'
 }, {
   city: 'мінск',
   country: 'беларусь',
-  img: './img/минск-вар.jpg'
+  img: './img/слайдер-минск.jpg'
 }, {
   city: 'смаленск',
   country: 'расія',
-  img: './img/смоленск-вар.jpg'
+  img: './img/слайдер-смоленск.jpg'
 }, {
   city: 'ленінград',
   country: 'расія',
-  img: './img/ленинград-вар.jpeg'
+  img: './img/слайдер-ленинград.jpeg'
 }, {
   city: 'адэса',
   country: 'украіна',
-  img: './img/одесса-вар.jpg'
+  img: './img/слайдер-одесса.jpg'
 }, {
   city: 'тула',
   country: 'расія',
-  img: './img/тула-вар.jpg'
+  img: './img/слайдер-тула.jpg'
 }, {
   city: 'мурманск',
   country: 'расія',
-  img: './img/мурманск-вар.jpg'
+  img: './img/слайдер-мурманск.jpg'
 }, {
   city: 'новарасійск',
   country: 'расія',
-  img: './img/новороссийск-вар.jpg'
+  img: './img/слайдер-новороссийск.jpg'
 }, {
   city: 'сталінград',
   country: 'расія',
-  img: './img/сталинград-вар.jpg'
+  img: './img/слайдер-сталинград.jpg'
 }];
 
 ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app'));

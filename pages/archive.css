@@ -56,17 +56,17 @@
 }
 .link_gallery {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("../img/фотограф.jpg");
+    url("../img/background_photoalbum.jpg");
   background-position: center center;
 }
 .link_letters {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("../img/газеты.jpg");
+    url("../img/background_letters.jpg");
   background-size: cover;
 }
 .link_newspapers {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("../img/письма.jpg");
+    url("../img/background_newspapers.jpg");
   background-size: cover;
 }
 .link_parads {
@@ -93,19 +93,19 @@
 }
 .link_newspapers:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/письма.jpg");
+    url("../img/background_newspapers.jpg");
   cursor: pointer;
   background-size: cover;
 }
 .link_letters:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газеты.jpg");
+    url("../img/background_letters.jpg");
   cursor: pointer;
   background-size: cover;
 }
 .link_gallery:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/фотограф.jpg");
+    url("../img/background_photoalbum.jpg");
   cursor: pointer;
   background-position: center center;
 }

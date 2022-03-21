@@ -21,7 +21,7 @@
   --nav-panel-width: 78px;
 }
 #web-page.expanded {
-  --nav-panel-width: 20%;
+  --nav-panel-width: 22%;
 }
 #web-page {
   display: flex;
@@ -252,7 +252,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)),
-    url("img/background2.jpg");
+    url("img/background.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -325,8 +325,8 @@ body {
   padding-bottom: 20px;
 }
 .text_about {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url("img/table-mess.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("img/about.png"), url("img/about2.jfif");
   background-color: black;
   background-size: cover;
   padding: 0 40px 30px 40px;
@@ -338,7 +338,7 @@ body {
   justify-content: space-between;
   padding: 0 40px 40px 40px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)),
-    url("img/background2.jpg");
+    url("img/background.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -414,22 +414,18 @@ body {
 /* Блок с социалками */
 .social {
   background: #be0b20;
-  height: 500px;
-  display: flex;
-  align-items: center;
   color: black;
+  padding: 50px 40px;
 }
 .social_modal {
   background: white;
-  height: 350px;
-  margin: 0 auto;
   border-radius: 5px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
   padding: 40px 40px;
-  margin: 0 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+}
+.social_modal div,
+h1 {
+  margin-bottom: 60px;
 }
 .social_links a {
   color: black;
@@ -628,12 +624,6 @@ body {
   }
   .footer {
     padding: 50px 20px 50px 20px;
-  }
-  .social {
-    height: 700px;
-  }
-  .social_modal {
-    height: 500px;
   }
 }
 @media screen and (max-width: 570px) {

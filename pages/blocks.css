@@ -39,303 +39,305 @@
 /* Битвы */
 .battle_first {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../img/брест.jpg");
+    url("../img/Битвы/оборона\ брестской\ крепости.jpg");
   background-position: center center;
 }
 .battle_second {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/минск-свобода.jpg");
+    url("../img/Битвы/освобождение\ минска.jpg");
   background-size: cover;
 }
 .battle_third {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/хатынь.jfif");
+    url("../img/Битвы/хатынь.jfif");
   background-size: cover;
 }
 .battle_fourth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/москва.jpg");
+    url("../img/Битвы/битва\ за\ москву.jpg");
   background-position: center center;
   background-size: cover;
 }
 .battle_fifth {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../img/багратион.jpg");
+    url("../img/Битвы/операция\ багратион.jpg");
   background-size: cover;
 }
 .battle_sixth {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/курская\ битва.jpg");
+    url("../img/Битвы/курская\ битва.jpg");
   background-size: cover;
 }
 .battle_seventh {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/искра.jpg");
+    url("../img/Битвы/операция\ искра.jpg");
   background-size: cover;
   background-position: center;
 }
 .battle_eigth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/сталинград.jpeg");
+    url("../img/Битвы/сталинградская\ битва.jpeg");
   background-size: cover;
 }
 .battle_ninth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/ржевская битва.jpeg");
+    url("../img/Битвы/ржевская\ битва.jpeg");
 }
 .battle_tenth {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../img/гомель.jpg");
+    url("../img/Битвы/гомельско-речицкая\ операция.jpg");
   background-size: cover;
 }
 .battle_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/брест.jpg");
+    url("../img/Битвы/оборона\ брестской\ крепости.jpg");
   background-position: center center;
 }
 .battle_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/минск-свобода.jpg");
+    url("../img/Битвы/освобождение\ минска.jpg");
   background-size: cover;
 }
 .battle_third:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/хатынь.jfif");
+    url("../img/Битвы/хатынь.jfif");
   background-size: cover;
 }
 .battle_fourth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/москва.jpg");
+    url("../img/Битвы/битва\ за\ москву.jpg");
   background-position: center center;
   background-size: cover;
 }
 .battle_fifth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/багратион.jpg");
+    url("../img/Битвы/операция\ багратион.jpg");
   background-size: cover;
 }
 .battle_sixth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/курская\ битва.jpg");
+    url("../img/Битвы/курская\ битва.jpg");
   background-size: cover;
 }
 .battle_seventh:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/искра.jpg");
+    url("../img/Битвы/операция\ искра.jpg");
   background-size: cover;
   background-position: center;
 }
 .battle_eigth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/сталинград.jpeg");
+    url("../img/Битвы/сталинградская\ битва.jpeg");
   background-size: cover;
 }
 .battle_ninth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/ржевская битва.jpeg");
+    url("../img/Битвы/ржевская\ битва.jpeg");
 }
 .battle_tenth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/гомель.jpg");
+    url("../img/Битвы/гомельско-речицкая\ операция.jpg");
   background-size: cover;
 }
 
 /* Тесты */
 .test_first {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/background3.jpg");
+    url("../img/Тесты/тест\ война.jpg");
 }
 .test_second {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/background-archive.jpg");
+    url("../img/Тесты/тест\ фильмы.jpg");
   background-size: cover;
 }
 .test_third {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)),
-    url("../img/битвы.jpeg");
+    url("../img/Тесты/тест\ битвы.jpeg");
   background-size: cover;
 }
 .test_fourth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("../img/тест-литература.jpg");
+    url("../img/Тесты/тест-литература.jpg");
   background-size: cover;
 }
 .test_fifth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("../img/тест-партизаны.jpg");
+    url("../img/Тесты/тест-партизаны.jpg");
   background-size: cover;
 }
 .test_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/background3.jpg");
+    url("../img/Тесты/тест\ война.jpg");
 }
 .test_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/background-archive.jpg");
+    url("../img/Тесты/тест\ фильмы.jpg");
   background-size: cover;
 }
 .test_third:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/битвы.jpeg");
+    url("../img/Тесты/тест\ битвы.jpeg");
   background-size: cover;
 }
 .test_fourth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/тест-литература.jpg");
+    url("../img/Тесты/тест-литература.jpg");
   background-size: cover;
 }
 .test_fifth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/тест-партизаны.jpg");
+    url("../img/Тесты/тест-партизаны.jpg");
   background-size: cover;
 }
 
 /* Истории */
 .history_first {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/солдаты.jpg");
+    url("../img/background_soldiers.jpg");
   background-position: center center;
 }
 .history_second {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("../img/битвы.jpeg");
+    url("../img/Тесты/тест\ битвы.jpeg");
   background-size: cover;
+  background-position: right;
 }
 .history_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/солдаты.jpg");
+    url("../img/background_soldiers.jpg");
   background-position: center center;
 }
 .history_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/битвы.jpeg");
+    url("../img/Тесты/тест\ битвы.jpeg");
   background-size: cover;
+  background-position: right;
 }
 
 /* Газеты */
 .newspaper_first {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/газета-известия.jfif");
+    url("../img/Газеты/газета-известия.jfif");
   background-size: cover;
 }
 .newspaper_second {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/газета-вм.jfif");
+    url("../img/Газеты/газета-вм.jfif");
   background-size: cover;
 }
 .newspaper_third {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/газета-кп.jfif");
+    url("../img/Газеты/газета-кп.jfif");
   background-size: cover;
 }
 .newspaper_fourth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/газета-кз.jfif");
+    url("../img/Газеты/газета-кз.jfif");
   background-size: cover;
 }
 .newspaper_fifth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/газета-кв.jfif");
+    url("../img/Газеты/газета-кв.jfif");
   background-size: cover;
 }
 .newspaper_sixth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/газета-кф.jfif");
+    url("../img/Газеты/газета-кф.jfif");
   background-size: cover;
 }
 .newspaper_seventh {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/газета-ли.jfif");
+    url("../img/Газеты/газета-ли.jfif");
   background-size: cover;
 }
 .newspaper_eighth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/газета-лг.jfif");
+    url("../img/Газеты/газета-лг.jfif");
   background-size: cover;
 }
 .newspaper_ninth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/газета-мб.jfif");
+    url("../img/Газеты/газета-мб.jfif");
   background-size: cover;
 }
 .newspaper_tenth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/газета-правда.jfif");
+    url("../img/Газеты/газета-правда.jfif");
   background-size: cover;
 }
 .newspaper_eleventh {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../img/газета-си.jfif");
+    url("../img/Газеты/газета-си.jfif");
   background-size: cover;
 }
 .newspaper_twelfth {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/газета-бел.jpg");
+    url("../img/Газеты/газета-бел.jpg");
   background-size: cover;
 }
 .newspaper_first:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-известия.jfif");
+    url("../img/Газеты/газета-известия.jfif");
   background-size: cover;
 }
 .newspaper_second:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-вм.jfif");
+    url("../img/Газеты/газета-вм.jfif");
   background-size: cover;
 }
 .newspaper_third:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-кп.jfif");
+    url("../img/Газеты/газета-кп.jfif");
   background-size: cover;
 }
 .newspaper_fourth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-кз.jfif");
+    url("../img/Газеты/газета-кз.jfif");
   background-size: cover;
 }
 .newspaper_fifth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-кв.jfif");
+    url("../img/Газеты/газета-кв.jfif");
   background-size: cover;
 }
 .newspaper_sixth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-кф.jfif");
+    url("../img/Газеты/газета-кф.jfif");
   background-size: cover;
 }
 .newspaper_seventh:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-ли.jfif");
+    url("../img/Газеты/газета-ли.jfif");
   background-size: cover;
 }
 .newspaper_eighth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-лг.jfif");
+    url("../img/Газеты/газета-лг.jfif");
   background-size: cover;
 }
 .newspaper_ninth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-мб.jfif");
+    url("../img/Газеты/газета-мб.jfif");
   background-size: cover;
 }
 .newspaper_tenth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-правда.jfif");
+    url("../img/Газеты/газета-правда.jfif");
   background-size: cover;
 }
 .newspaper_eleventh:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-си.jfif");
+    url("../img/Газеты/газета-си.jfif");
   background-size: cover;
 }
 .newspaper_twelfth:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../img/газета-бел.jpg");
+    url("../img/Газеты/газета-бел.jpg");
   background-size: cover;
 }
 
-/* Отступ для теста */
-/* Убрать когда на всех страницах будет интересный факт */
+/* Отступ для теста 
+  Убрать когда на всех страницах будет интересный факт */
 .last_blocks_variant_test {
   padding-bottom: 50px;
 }
