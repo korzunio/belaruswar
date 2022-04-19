@@ -5,32 +5,41 @@
   box-sizing: border-box;
   font-family: "Comfortaa", cursive;
 }
+
 ::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-track {
   background: #e7f1fb;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #be0b20;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #520911;
 }
+
 :root {
   --nav-panel-width: 78px;
 }
+
 #web-page.expanded {
   --nav-panel-width: 22%;
 }
+
 #web-page {
   display: flex;
 }
+
 #webpage_content {
   min-height: 100vh;
   margin-left: 78px;
   flex: 2;
 }
+
 p {
   font-size: 22px;
   line-height: 32px;
@@ -51,6 +60,7 @@ p {
   z-index: 800;
   display: none;
 }
+
 .mobile_menu {
   color: white;
   background-color: black;
@@ -63,16 +73,20 @@ p {
   position: fixed;
   z-index: 200;
 }
+
 .mobile_menu_active {
   display: none;
 }
+
 .logo_header {
   display: flex;
   align-items: center;
 }
+
 .logo_header i {
   padding-left: 5px;
 }
+
 .header_mobile_menu i {
   color: #ffffff;
   font-size: 30px;
@@ -83,6 +97,7 @@ p {
   transition: all 0.5s ease;
   border-radius: 12px;
 }
+
 .header_mobile_menu i:hover {
   color: rgb(0, 0, 0);
   background-color: white;
@@ -101,9 +116,11 @@ p {
   border-right: 1px solid rgba(36, 36, 36);
   z-index: 800;
 }
+
 .logotype {
   display: flex;
 }
+
 .sidebar .logo {
   color: #fff;
   width: 100%;
@@ -112,18 +129,23 @@ p {
   font-size: 18px;
   font-weight: 800;
 }
+
 .bxs-star {
   color: #be0b20;
 }
+
 .logo_element {
   padding-left: 7px;
 }
+
 .expanded .logo {
   display: flex;
 }
+
 .logotype .logo .logo_name {
   margin-left: 10px;
 }
+
 .sidebar #btn {
   color: #ffffff;
   font-size: 30px;
@@ -134,16 +156,20 @@ p {
   transition: all 0.5s ease;
   border-radius: 12px;
 }
+
 .sidebar #btn:hover {
   color: rgb(0, 0, 0);
   background-color: white;
 }
+
 .expanded #btn {
   margin-left: 20px;
 }
+
 .sidebar ul.nav_list {
   margin-top: 20px;
 }
+
 .sidebar ul li {
   list-style: none;
   position: relative;
@@ -153,6 +179,7 @@ p {
   list-style: none;
   line-height: 50px;
 }
+
 .sidebar ul li a {
   color: #fff;
   display: flex;
@@ -163,10 +190,12 @@ p {
   border-radius: 12px;
   white-space: nowrap;
 }
+
 .sidebar ul li a:hover {
   color: black;
   background: white;
 }
+
 .sidebar ul li input {
   position: absolute;
   height: 100%;
@@ -181,9 +210,11 @@ p {
   font-size: 15px;
   color: #fff;
 }
+
 .sidebar ul li input:focus {
   border: 1px solid rgb(75, 75, 75);
 }
+
 .sidebar ul li .bx-search {
   position: absolute;
   z-index: 100;
@@ -191,10 +222,12 @@ p {
   font-size: 22px;
   transition: all 0.5s ease;
 }
+
 .sidebar ul li .bx-search:hover {
   background: #fff;
   color: rgb(0, 0, 0);
 }
+
 .sidebar ul li i {
   height: 50px;
   min-width: 50px;
@@ -203,6 +236,7 @@ p {
   text-align: center;
   font-size: 28px;
 }
+
 .sidebar ul li .tooltip {
   position: absolute;
   height: 35px;
@@ -221,17 +255,21 @@ p {
   pointer-events: none;
   display: block;
 }
+
 .expanded ul li .tooltip {
   display: none;
 }
+
 .sidebar ul li:hover .tooltip {
   top: 50%;
   transition: 0.5s all ease;
   opacity: 1;
 }
+
 .sidebar .links_name {
   display: none;
 }
+
 .expanded .links_name {
   display: block;
   flex: 2;
@@ -245,6 +283,7 @@ body {
   overflow-x: hidden;
   color: white;
 }
+
 .promo {
   height: 100vh;
   /* min-height: 800px; */
@@ -256,6 +295,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
 .title_promo {
   font-size: 170px;
   color: transparent;
@@ -267,13 +307,16 @@ body {
   padding: 0 0 0 30px;
   font-weight: bold;
 }
+
 .social_promo {
   padding: 0 0 0 40px;
   display: flex;
 }
+
 .social_promo a:not(:last-child) {
   margin-right: 50px;
 }
+
 .social_promo i {
   color: white;
   font-size: 30px;
@@ -282,24 +325,29 @@ body {
   padding: 10px;
   transition: 0.5s;
 }
+
 .social_promo i:hover {
   color: rgb(36, 36, 36);
   background: white;
 }
+
 @keyframes back {
   100% {
     background-position: 2000px 0;
   }
 }
+
 .text_promo {
   width: 80%;
   padding: 0 0 0 40px;
   font-size: 25px;
   line-height: 35px;
 }
+
 .animate__animated.text_promo {
   --animate-duration: 2s;
 }
+
 /* Стили заголовков на всех страницах, кроме главной */
 .title_pages_promo {
   font-size: 140px;
@@ -312,6 +360,7 @@ body {
   padding: 0 0 0 30px;
   font-weight: bold;
 }
+
 /* Текст */
 .title_with_stars {
   display: flex;
@@ -321,9 +370,11 @@ body {
   font-size: 45px;
   text-align: center;
 }
+
 .text_about .paragraph_about p:not(:last-child) {
   padding-bottom: 20px;
 }
+
 .text_about {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url("img/about.png"), url("img/about2.jfif");
@@ -342,24 +393,29 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
 .click_block {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
+
 .click_block div {
   padding-top: 40px;
 }
+
 .title_click_block {
   font-size: 30px;
   font-weight: bold;
 }
+
 .definiton_click_block {
   opacity: 0.6;
   line-height: 27px;
   font-size: 18px;
   width: 80%;
 }
+
 .button_click_block {
   background-color: #be0b20;
   color: white;
@@ -369,6 +425,7 @@ body {
   font-size: 15px;
   transition: 0.5s all ease;
 }
+
 .button_click_block:hover {
   color: #be0b20;
   background-color: white;
@@ -382,13 +439,16 @@ body {
   align-items: flex-end;
   background: rgb(15, 15, 15);
 }
+
 .text_interesting_fact {
   margin: 50px 40px;
   align-self: center;
 }
+
 .definition_interesting_fact {
   padding: 30px 0 30px 0;
 }
+
 .title_interesting_fact {
   font-size: 30px;
   font-weight: bold;
@@ -396,6 +456,7 @@ body {
   width: 40%;
   padding-bottom: 15px;
 }
+
 .button_interesting_fact {
   background: #be0b20;
   color: white;
@@ -405,6 +466,7 @@ body {
   font-size: 18px;
   transition: 0.5s all ease;
 }
+
 .button_interesting_fact:hover {
   color: #be0b20;
   background: white;
@@ -417,22 +479,26 @@ body {
   color: black;
   padding: 50px 40px;
 }
+
 .social_modal {
   background: white;
   border-radius: 5px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
   padding: 40px 40px;
 }
+
 .social_modal div,
 h1 {
   margin-bottom: 60px;
 }
+
 .social_links a {
   color: black;
   font-size: 50px;
   margin-right: 50px;
   transition: 0.3s;
 }
+
 .social_links a:hover {
   opacity: 0.6;
   cursor: pointer;
@@ -446,18 +512,22 @@ h1 {
   justify-content: space-between;
   padding: 50px 40px 30px 40px;
 }
+
 .menu_footer {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
+
 .logo_footer {
   display: flex;
   align-items: center;
 }
+
 .translate {
   cursor: pointer;
 }
+
 .menu_footer a {
   opacity: 0.5;
   text-decoration: none;
@@ -465,13 +535,16 @@ h1 {
   transition: 0.5s;
   margin-top: 12px;
 }
+
 .menu_footer a:hover {
   opacity: 1;
   text-decoration: underline;
 }
+
 .footer_menu_first_child {
   font-weight: bold;
 }
+
 .copyright_footer {
   background-color: black;
   display: flex;
@@ -479,6 +552,7 @@ h1 {
   align-items: center;
   padding-bottom: 15px;
 }
+
 .copyright_footer a {
   color: white;
   opacity: 0.5;
@@ -490,153 +564,223 @@ h1 {
   .title_interesting_fact {
     width: 70%;
   }
+
   .child_book {
     flex-direction: column-reverse;
   }
+
   .definition_book {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 1300px) {
   .sidebar {
     display: none;
   }
+
   #webpage_content {
     margin-left: 0;
   }
+
   .mobile_header {
     display: flex;
   }
+
   .mobile_menu_active {
     display: flex;
   }
+
   .title_inter_fact {
     font-size: 25px;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .interesting_fact {
     flex-direction: column;
     padding: 0;
   }
+
   .interesting_fact img {
     display: none;
   }
+
   .text_interesting_fact {
     padding: 40px 50px 40px 50px;
     width: 100%;
   }
+
   .our_children {
     flex-direction: column;
     padding: 0;
   }
+
   .our_children div {
     padding-top: 50px;
     margin: 0 auto;
   }
 }
+
 @media screen and (max-width: 1100px) {
   .title_promo {
     font-size: 140px;
   }
+
   .places_card_size_sm {
     grid-column: span 6;
   }
+
   .places_card_size_bg {
     grid-column: span 6;
   }
 }
+
 @media screen and (max-width: 920px) {
   .paragraph_about {
     font-size: 19px;
     line-height: 25px;
   }
+
   .text_about {
     padding: 30px 20px 30px 20px;
   }
+
   .text_promo {
     font-size: 22px;
     line-height: 32px;
   }
+
   .title_about_with_stars div {
     font-size: 30px;
   }
+
   .click_blocks {
     flex-direction: column;
   }
+
   .title_promo {
     font-size: 100px;
   }
+
   .footer {
     flex-direction: column;
   }
+
   .block_footer:not(:last-child) {
     padding-bottom: 40px;
   }
 }
+
 @media screen and (max-width: 750px) {
   .slider__slide-heading span {
     font-size: 40px;
   }
+
   .email_header {
     display: none;
   }
+
   .text_promo {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 640px) {
   .title_pages_promo {
     font-size: 60px;
     padding: 0 20px 0 20px;
   }
+
   .title_promo {
     font-size: 60px;
     padding: 0 20px 0 20px;
   }
+
   .mobile_header {
     padding: 0 20px 0 20px;
   }
+
   .social_promo {
     padding: 0 20px 0 20px;
   }
+
   .text_promo {
     padding: 0 20px 0 20px;
     font-size: 20px;
   }
+
   .list_facts {
     padding: 0 20px 0 20px;
   }
+
   .mobile_menu {
     padding: 70px 20px 0 20px;
   }
+
   .menu_footer {
     padding-bottom: 50px;
   }
+
   .text_about {
     padding: 30px 20px 30px 20px;
   }
+
   .click_blocks {
     padding: 0 20px 0 20px;
   }
+
   .text_interesting_fact {
     padding: 50px 20px 50px 20px;
   }
+
   .footer {
     padding: 50px 20px 50px 20px;
   }
 }
+
 @media screen and (max-width: 570px) {
   .mobile_menu {
     flex-direction: column;
   }
+
   .logo_header {
     font-size: 20px;
   }
+
   .slider__slide-heading span {
     font-size: 30px;
   }
+
   .slider__slide-subheading {
     font-size: 20px;
   }
+}
+
+
+/* Ссылка на карту */
+.email_block {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/background.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 35px 40px 35px 40px;
+  background-attachment: fixed;
+}
+
+.text_email_block {
+  width: 70%;
+}
+
+.image_email_block a i {
+  font-size: 40px;
+  color: white;
+  transition: 0.3s;
+}
+
+.image_email_block a i:hover {
+  color: #be0b20;
 }
